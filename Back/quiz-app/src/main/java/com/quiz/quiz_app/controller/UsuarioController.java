@@ -18,7 +18,7 @@ public class UsuarioController {
         return usuarioService.listar();
     }
 
-    @PostMapping
+    @PostMapping("create")
     public Usuario salvar(@RequestBody Usuario usuario) {
         return usuarioService.salvar(usuario);
     }

@@ -6,9 +6,9 @@ CREATE TABLE questoesAtividade (
     C TEXT NOT NULL,
     D TEXT NOT NULL,
     E TEXT NOT NULL,
-    opcaoCorreta ENUM('A', 'B', 'C', 'D', 'E') NOT NULL,
+    opcao_correta ENUM('A', 'B', 'C', 'D', 'E') NOT NULL,
     imagem TEXT,
-    idAtividade INT NOT NULL,
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (idAtividade) REFERENCES atividade(id)
+    id_atividade INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_atividade) REFERENCES atividade(id)
 );
