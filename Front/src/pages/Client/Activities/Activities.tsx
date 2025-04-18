@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface Activity {
   id: number;
@@ -10,7 +9,7 @@ interface Activity {
 
 export default function ClientActivities() {
   const [atividades, setAtividades] = useState<Activity[]>([]);
-  const navigate = useNavigate(); // Hook para redirecionar
+  const [descricao, setDescricao] = useState<string>("");
 
   useEffect(() => {
     // Simula o carregamento das atividades disponíveis
@@ -20,7 +19,11 @@ export default function ClientActivities() {
       { id: 103, titulo: "Matemática Aplicada", descricao: "Problemas e porcentagem.", tempo: "20 min" },
     ]);
   }, []);
-  
+
+  const handleDescricaoChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setDescricao(e.target.value);
+  };
+
   return (
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Atividades Disponíveis</h1>
@@ -40,6 +43,17 @@ export default function ClientActivities() {
             </button>
           </div>
         ))}
+      </div>
+      
+      {/* Aqui é onde o textarea é adicionado para edição de descrição */}
+      <div className="mt-6">
+        <label className="block font-medium text-gray-700">Editar Descrição</label>
+        <textarea
+          className="w-full p-3 border border-gray-300 rounded-md"
+          rows={4}
+          value={descricao}
+          onChange={handleDescricaoChange}
+        />
       </div>
     </div>
   );
