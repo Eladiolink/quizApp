@@ -109,7 +109,7 @@ export default function AddActivity() {
           <form onSubmit={handleSaveQuestion} className="space-y-4">
             <div>
               <label className="block font-medium">Texto da questão:</label>
-              <Editor />
+              {/* <Editor /> */}
             </div>
 
             <div>

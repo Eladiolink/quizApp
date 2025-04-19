@@ -1,6 +1,5 @@
-package com.quiz.quiz_app.configuration;
+package com.quiz.quiz_app.Configuration;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

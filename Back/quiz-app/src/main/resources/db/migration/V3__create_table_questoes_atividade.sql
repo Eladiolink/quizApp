@@ -1,11 +1,11 @@
-CREATE TABLE questoesAtividade (
+CREATE TABLE questoes_atividade (
     id INT AUTO_INCREMENT PRIMARY KEY,
     questao TEXT NOT NULL,
-    A TEXT NOT NULL,
-    B TEXT NOT NULL,
-    C TEXT NOT NULL,
-    D TEXT NOT NULL,
-    E TEXT NOT NULL,
+    opcao_a TEXT NOT NULL,
+    opcao_b TEXT NOT NULL,
+    opcao_c TEXT NOT NULL,
+    opcao_d TEXT NOT NULL,
+    opcao_e TEXT NOT NULL,
     opcao_correta ENUM('A', 'B', 'C', 'D', 'E') NOT NULL,
     imagem TEXT,
     id_atividade INT NOT NULL,
