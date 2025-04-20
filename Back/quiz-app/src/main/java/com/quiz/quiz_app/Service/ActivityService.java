@@ -1,5 +1,8 @@
 package com.quiz.quiz_app.Service;
 
+import com.quiz.quiz_app.DTO.Activity.ActivityMapper;
+import com.quiz.quiz_app.DTO.Activity.ActivityRequestDTO;
+import com.quiz.quiz_app.DTO.Activity.ActivityResponseDTO;
 import com.quiz.quiz_app.Entity.Activity;
 import com.quiz.quiz_app.Repository.ActivityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,18 +16,22 @@ public class ActivityService {
 
     @Autowired
     private ActivityRepository activityRepository;
+    @Autowired
+    private ActivityMapper activityMapper;
 
-    public List<Activity> getAll() {
-        return activityRepository.findAll();
+    public List<ActivityResponseDTO> getAll() {
+        return activityMapper.toListActivityResponseDTO(activityRepository.findAll());
     }
 
-    public Activity getById(Integer id) {
+    public ActivityResponseDTO getById(Integer id) {
         Optional<Activity> activity = activityRepository.findById(id);
-        return activity.orElse(null);
+        return activityMapper.toActivityResponseDto(activity.orElse(null));
     }
 
-    public Activity save(Activity activity) {
-        return activityRepository.save(activity);
+    public ActivityResponseDTO save(ActivityRequestDTO dto) {
+        Activity activity = activityMapper.toActivity(dto);
+
+        return activityMapper.toActivityResponseDto(activityRepository.save(activity));
     }
 
     public void delete(Integer id) {

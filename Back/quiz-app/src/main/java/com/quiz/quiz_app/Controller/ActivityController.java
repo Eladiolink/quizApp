@@ -1,5 +1,7 @@
 package com.quiz.quiz_app.Controller;
 
+import com.quiz.quiz_app.DTO.Activity.ActivityRequestDTO;
+import com.quiz.quiz_app.DTO.Activity.ActivityResponseDTO;
 import com.quiz.quiz_app.Entity.Activity;
 import com.quiz.quiz_app.Service.ActivityService;
 import lombok.extern.java.Log;
@@ -16,23 +18,22 @@ public class ActivityController {
     private ActivityService activityService;
 
     @GetMapping
-    public List<Activity> getAll() {
+    public List<ActivityResponseDTO> getAll() {
         return activityService.getAll();
     }
 
     @GetMapping("/{id}")
-    public Activity getById(@PathVariable Integer id) {
+    public ActivityResponseDTO getById(@PathVariable Integer id) {
         return activityService.getById(id);
     }
 
-    @PostMapping
-    public Activity create(@RequestBody Activity activity) {
+    @PostMapping("create")
+    public ActivityResponseDTO create(@RequestBody ActivityRequestDTO activity) {
         return activityService.save(activity);
     }
 
     @PutMapping("/{id}")
-    public Activity update(@PathVariable Integer id, @RequestBody Activity activity) {
-        activity.setId(id);
+    public ActivityResponseDTO update(@PathVariable Integer id, @RequestBody ActivityRequestDTO activity) {
         return activityService.save(activity);
     }
 

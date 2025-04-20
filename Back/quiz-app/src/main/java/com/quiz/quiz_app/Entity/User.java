@@ -2,11 +2,10 @@ package com.quiz.quiz_app.Entity;
 
 import com.quiz.quiz_app.Enum.UserType;
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
+
 
 @Entity
 @Table(name = "usuario")
@@ -33,6 +32,12 @@ public class User {
     @Column(name = "senha", nullable = false)
     private String password;
 
-    @Column(name = "created_at", updatable = false)
+    @Column(name = "created_at", updatable = false, nullable = false)
     private LocalDateTime createdAt;
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+    }
+
 }

@@ -29,8 +29,13 @@ public class Activity {
     @JoinColumn(name = "criado_por")
     private User createdBy;
 
-    @Column(name = "created_at", updatable = false)
+    @Column(name = "created_at", updatable = false, nullable = false)
     private LocalDateTime createdAt;
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+    }
 }
 
 

@@ -1,6 +1,8 @@
 package com.quiz.quiz_app.Controller;
+import com.quiz.quiz_app.DTO.User.UserRequestCreateDTO;
+import com.quiz.quiz_app.DTO.User.UserResponseDTO;
 import com.quiz.quiz_app.Entity.User;
-import com.quiz.quiz_app.Service.UsuarioService;
+import com.quiz.quiz_app.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +13,17 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UsuarioService usuarioService;
+    private UserService userService;
 
     @GetMapping
-    public List<User> listar() {
-        return usuarioService.listar();
+    public List<UserResponseDTO> listar() {
+        var res = userService.listar();
+        return res;
     }
 
     @PostMapping("create")
-    public User salvar(@RequestBody User user) {
-        return usuarioService.salvar(user);
+    public UserResponseDTO salvar(@RequestBody UserRequestCreateDTO user) {
+        var a = userService.salvar(user);
+        return a;
     }
 }
