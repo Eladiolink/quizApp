@@ -1,5 +1,20 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {
+  Typography,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  IconButton,
+  Button,
+  Box,
+} from "@mui/material";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 interface Activity {
   id: number;
@@ -12,7 +27,6 @@ export default function Activities() {
   const [activities, setActivities] = useState<Activity[]>([]);
 
   useEffect(() => {
-    // Simulação de dados de atividades
     setActivities([
       { id: 1, title: "Atividade 1", description: "Descrição da atividade 1", status: "ativo" },
       { id: 2, title: "Atividade 2", description: "Descrição da atividade 2", status: "inativo" },
@@ -21,48 +35,62 @@ export default function Activities() {
   }, []);
 
   const handleDelete = (id: number) => {
-    // Lógica para excluir atividade
-    setActivities(activities.filter(activity => activity.id !== id));
+    setActivities((prev) => prev.filter((activity) => activity.id !== id));
   };
 
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-6">Gerenciar Atividades</h1>
-      <table className="min-w-full bg-white shadow-md rounded-lg">
-        <thead>
-          <tr>
-            <th className="py-3 px-4 text-left">Título</th>
-            <th className="py-3 px-4 text-left">Descrição</th>
-            <th className="py-3 px-4 text-left">Status</th>
-            <th className="py-3 px-4 text-left">Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          {activities.map(activity => (
-            <tr key={activity.id} className="border-b">
-              <td className="py-3 px-4">{activity.title}</td>
-              <td className="py-3 px-4">{activity.description}</td>
-              <td className="py-3 px-4">{activity.status}</td>
-              <td className="py-3 px-4">
-                <Link to={`/admin/activities/edit/${activity.id}`} className="text-blue-500 hover:text-blue-700 mr-4">
-                  Editar
-                </Link>
-                <button
-                  onClick={() => handleDelete(activity.id)}
-                  className="text-red-500 hover:text-red-700"
-                >
-                  Excluir
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="mt-6">
-        <Link to="/admin/activities/create" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+    <Box sx={{ p: 4 }}>
+      <Typography variant="h4" fontWeight="bold" gutterBottom>
+        Gerenciar Atividades
+      </Typography>
+
+      <TableContainer component={Paper} elevation={3}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell><strong>Título</strong></TableCell>
+              <TableCell><strong>Descrição</strong></TableCell>
+              <TableCell><strong>Status</strong></TableCell>
+              <TableCell align="center"><strong>Ações</strong></TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {activities.map((activity) => (
+              <TableRow key={activity.id}>
+                <TableCell>{activity.title}</TableCell>
+                <TableCell>{activity.description}</TableCell>
+                <TableCell>{activity.status}</TableCell>
+                <TableCell align="center">
+                  <IconButton
+                    component={Link}
+                    to={`/admin/activities/edit/${activity.id}`}
+                    color="primary"
+                  >
+                    <EditIcon />
+                  </IconButton>
+                  <IconButton
+                    color="error"
+                    onClick={() => handleDelete(activity.id)}
+                  >
+                    <DeleteIcon />
+                  </IconButton>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+
+      <Box mt={4}>
+        <Button
+          component={Link}
+          to="/admin/activities/create"
+          variant="contained"
+          color="primary"
+        >
           Adicionar Nova Atividade
-        </Link>
-      </div>
-    </div>
+        </Button>
+      </Box>
+    </Box>
   );
 }

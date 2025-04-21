@@ -1,39 +1,73 @@
 import { useAuth } from "../../contexts/AuthContext";
 import { Link } from "react-router-dom";
+import {
+  Box,
+  Typography,
+  Grid,
+  Paper,
+  Button,
+} from "@mui/material";
 
 export default function Dashboard() {
   const { user } = useAuth();
 
   return (
-    <div className="p-8">
+    <Box p={4}>
       {/* Cabeçalho */}
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Bem-vindo, {user?.name}</h1>
-      </div>
+      <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
+        <Typography variant="h5" fontWeight="bold">
+          Bem-vindo, {user?.name}
+        </Typography>
+      </Box>
 
       {/* Cards de estatísticas */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">Total de Atividades</h3>
-          <p className="text-3xl font-bold">120</p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">Usuários Registrados</h3>
-          <p className="text-3xl font-bold">50</p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">Atividades Pendentes</h3>
-          <p className="text-3xl font-bold">5</p>
-        </div>
-      </div>
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={4}>
+          <Paper elevation={3} sx={{ p: 3 }}>
+            <Typography variant="h6" gutterBottom>
+              Total de Atividades
+            </Typography>
+            <Typography variant="h4" fontWeight="bold">
+              120
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Paper elevation={3} sx={{ p: 3 }}>
+            <Typography variant="h6" gutterBottom>
+              Usuários Registrados
+            </Typography>
+            <Typography variant="h4" fontWeight="bold">
+              50
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Paper elevation={3} sx={{ p: 3 }}>
+            <Typography variant="h6" gutterBottom>
+              Atividades Pendentes
+            </Typography>
+            <Typography variant="h4" fontWeight="bold">
+              5
+            </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
 
       {/* Área de gerenciamento */}
-      <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-4">Gerenciar Atividades</h2>
-        <Link to="/admin/activities/create" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+      <Box mt={6}>
+        <Typography variant="h6" gutterBottom>
+          Gerenciar Atividades
+        </Typography>
+        <Button
+          component={Link}
+          to="/admin/activities/create"
+          variant="contained"
+          color="primary"
+        >
           Adicionar Nova Atividade
-        </Link>
-      </div>
-    </div>
+        </Button>
+      </Box>
+    </Box>
   );
 }

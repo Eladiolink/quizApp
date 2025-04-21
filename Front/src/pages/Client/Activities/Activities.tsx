@@ -1,4 +1,15 @@
 import { useEffect, useState } from "react";
+import {
+  Box,
+  Container,
+  Typography,
+  Paper,
+  Button,
+  TextField,
+  Card,
+  CardContent,
+  CardActions,
+} from "@mui/material";
 
 interface Activity {
   id: number;
@@ -20,41 +31,36 @@ export default function ClientActivities() {
     ]);
   }, []);
 
-  const handleDescricaoChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleDescricaoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDescricao(e.target.value);
   };
 
   return (
-    <div className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">Atividades Disponíveis</h1>
-      <div className="space-y-6">
+    <Container maxWidth="lg" sx={{ py: 6 }}>
+      <Typography variant="h4" fontWeight="bold" gutterBottom>
+        Atividades Disponíveis
+      </Typography>
+
+      <Box sx={{ display: "grid", gap: 3 }}>
         {atividades.map((atividade) => (
-          <div
-            key={atividade.id}
-            className="bg-white shadow-md rounded-lg p-6 flex justify-between items-center"
-          >
-            <div>
-              <h2 className="text-xl font-semibold">{atividade.titulo}</h2>
-              <p className="text-gray-600">{atividade.descricao}</p>
-              <span className="text-sm text-gray-500">Tempo estimado: {atividade.tempo}</span>
-            </div>
-            <button className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
-              Iniciar
-            </button>
-          </div>
+          <Card key={atividade.id} sx={{ display: "flex", justifyContent: "space-between", p: 2 }}>
+            <CardContent sx={{ flex: 1 }}>
+              <Typography variant="h6" component="div">
+                {atividade.titulo}
+              </Typography>
+              <Typography color="text.secondary">{atividade.descricao}</Typography>
+              <Typography variant="body2" color="text.secondary">
+                Tempo estimado: {atividade.tempo}
+              </Typography>
+            </CardContent>
+            <CardActions sx={{ display: "flex", alignItems: "center" }}>
+              <Button variant="contained" color="primary">
+                Iniciar
+              </Button>
+            </CardActions>
+          </Card>
         ))}
-      </div>
-      
-      {/* Aqui é onde o textarea é adicionado para edição de descrição */}
-      <div className="mt-6">
-        <label className="block font-medium text-gray-700">Editar Descrição</label>
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded-md"
-          rows={4}
-          value={descricao}
-          onChange={handleDescricaoChange}
-        />
-      </div>
-    </div>
+      </Box>
+    </Container>
   );
 }

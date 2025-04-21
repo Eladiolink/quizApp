@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
+import {
+  Box,
+  Typography,
+  TextField,
+  Button,
+  Paper,
+  MenuItem,
+  Select,
+  FormControl,
+  InputLabel,
+} from '@mui/material';
 import Notification from '../../../../components/common/Notification';
-import Editor from '../../../../components/common/Editor';
+import Editor from '../../../../components/common/Editor'; // ou TextAreaEditor
 
 export default function AddActivity() {
   const [showForm, setShowForm] = useState(false);
@@ -64,7 +75,7 @@ export default function AddActivity() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded shadow relative">
+    <Paper elevation={3} sx={{ maxWidth: 800, mx: 'auto', mt: 6, p: 4 }}>
       {notification && (
         <Notification
           message={notification.message}
@@ -75,84 +86,86 @@ export default function AddActivity() {
 
       {!showForm ? (
         <>
-          <h2 className="text-2xl font-bold mb-4">Nova Atividade</h2>
-          <div className="space-y-4">
-            <div>
-              <label className="block font-medium">Título:</label>
-              <input
-                type="text"
-                className="w-full p-2 border rounded"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
-            </div>
-            <div>
-              <label className="block font-medium">Descrição:</label>
-              <textarea
-                className="w-full p-2 border rounded"
-                rows={3}
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              />
-            </div>
-            <button
-              onClick={handleStart}
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-            >
+          <Typography variant="h5" fontWeight="bold" mb={3}>
+            Nova Atividade
+          </Typography>
+          <Box display="flex" flexDirection="column" gap={3}>
+            <TextField
+              label="Título"
+              fullWidth
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <TextField
+              label="Descrição"
+              fullWidth
+              multiline
+              rows={3}
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+            <Button variant="contained" onClick={handleStart}>
               Prosseguir para adicionar questões
-            </button>
-          </div>
+            </Button>
+          </Box>
         </>
       ) : (
         <>
-          <h2 className="text-xl font-semibold mb-4">Adicionar Questão</h2>
-          <form onSubmit={handleSaveQuestion} className="space-y-4">
-            <div>
-              <label className="block font-medium">Texto da questão:</label>
-              {/* <Editor /> */}
-            </div>
+          <Typography variant="h6" fontWeight="bold" mb={2}>
+            Adicionar Questão
+          </Typography>
+          <Box component="form" onSubmit={handleSaveQuestion} display="flex" flexDirection="column" gap={3}>
+            <Box>
+              <Typography fontWeight="medium" mb={1}>
+                Texto da questão:
+              </Typography>
+              <Editor value={questionText} onChange={(value: string) => setQuestionText(value)} />
+            </Box>
 
-            <div>
-              <label className="block font-medium mb-2">Alternativas:</label>
+            <Box>
+              <Typography fontWeight="medium" mb={2}>
+                Alternativas:
+              </Typography>
               {alternatives.map((alt, index) => (
-                <div key={index} className="flex items-center gap-2 mb-2">
-                  <span className="w-5 font-bold">{String.fromCharCode(65 + index)})</span>
-                  <input
-                    type="text"
-                    className="flex-1 p-2 border rounded"
+                <Box key={index} display="flex" alignItems="center" gap={2} mb={2}>
+                  <Typography fontWeight="bold" width={20}>
+                    {String.fromCharCode(65 + index)}) 
+                  </Typography>
+                  <TextField
+                    fullWidth
                     value={alt}
                     onChange={(e) => handleAlternativeChange(index, e.target.value)}
                   />
-                  <input
-                    type="radio"
-                    name="correct"
-                    checked={correctIndex === index}
-                    onChange={() => setCorrectIndex(index)}
-                    title="Marcar como correta"
-                  />
-                </div>
+                </Box>
               ))}
-            </div>
+            </Box>
 
-            <div className="flex gap-4">
-              <button
-                type="submit"
-                className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+            <FormControl fullWidth>
+              <InputLabel>Alternativa correta</InputLabel>
+              <Select
+                value={correctIndex !== null ? correctIndex : ""}
+                onChange={(e) => setCorrectIndex(Number(e.target.value))}
+                label="Alternativa correta"
               >
+                {alternatives.map((_, index) => (
+                  <MenuItem key={index} value={index}>
+                    {String.fromCharCode(65 + index)}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+
+            <Box display="flex" gap={2}>
+              <Button type="submit" variant="contained" color="success">
                 Salvar Questão
-              </button>
-
-              <button
-                type="button"
-                onClick={handleFinishActivity}
-                className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
-              >
+              </Button>
+              <Button variant="contained" color="error" onClick={handleFinishActivity}>
                 Finalizar Atividade
-              </button>
-            </div>
-          </form>
+              </Button>
+            </Box>
+          </Box>
         </>
       )}
-    </div>
+    </Paper>
   );
 }
