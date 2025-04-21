@@ -4,6 +4,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum UserType {
     ADMIN,
-    CLIENT
+    CLIENTE
 }
 
