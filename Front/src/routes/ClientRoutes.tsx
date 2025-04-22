@@ -8,7 +8,7 @@ export const ClientRoutes = (
     <Route
       path="/cliente"
       element={
-        <PrivateRoute roles={["client"]}>
+        <PrivateRoute roles={["CLIENTE"]}>
           <ClientHome />
         </PrivateRoute>
       }
@@ -16,7 +16,7 @@ export const ClientRoutes = (
     <Route
       path="/cliente/atividades"
       element={
-        <PrivateRoute roles={["client"]}>
+        <PrivateRoute roles={["CLIENTE"]}>
           <ClientActivities />
         </PrivateRoute>
       }

@@ -34,7 +34,6 @@ export default function Activities() {
         try {
           const data = await getActivities();
           setActivityResponseDTO(data);
-          console.log(data)
         } catch (err) {
           console.error('Erro ao buscar atividades:', err);
         }

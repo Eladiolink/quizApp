@@ -19,7 +19,6 @@ export default function Users() {
           try {
             const data = await getUsers();
             setUserResponseDTO(data);
-            console.log(data)
           } catch (err) {
             console.error('Erro ao buscar usuarios:', err);
           }

@@ -10,8 +10,10 @@ import {
   TextField,
   IconButton,
 } from "@mui/material";
-import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { Brightness4, Brightness7, Token } from "@mui/icons-material";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
+import { AuthLogin } from "../../interfaces/Auth";
+import { authLogin } from "../../services/authService";
 
 export default function Login() {
   const { login } = useAuth();
@@ -28,9 +30,25 @@ export default function Login() {
     },
   });
 
-  const handleLogin = (role: "admin" | "client") => {
-    login({ name: "Usuário", role });
-    navigate(role === "admin" ? "/admin" : "/cliente");
+  const handleLogin = () => {
+    
+    const activityRequest: AuthLogin = {
+          email: email,
+          password: password,
+        };    
+        
+    authLogin(activityRequest)
+    const storedRole = localStorage.getItem("role");
+    const storedToken = localStorage.getItem("token");
+    
+    console.log(storedRole)
+    let role: "ADMIN" | "CLIENTE" = storedRole === "ADMIN" || storedRole === "CLIENTE"
+      ? storedRole
+      : "CLIENTE";
+    let token: string | null = storedToken;
+      
+    login({ token: token, role: role } );
+    navigate(role === "ADMIN" ? "/admin" : "/cliente");
   };
 
   const toggleTheme = () => {
@@ -82,18 +100,10 @@ export default function Login() {
             <Button
               variant="contained"
               color="primary"
-              onClick={() => handleLogin("admin")}
+              onClick={() => handleLogin()}
               fullWidth
             >
-              Entrar como Admin
-            </Button>
-            <Button
-              variant="contained"
-              color="success"
-              onClick={() => handleLogin("client")}
-              fullWidth
-            >
-              Entrar como Cliente
+              Entrar
             </Button>
           </Stack>
         </Paper>

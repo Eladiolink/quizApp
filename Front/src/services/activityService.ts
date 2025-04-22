@@ -3,10 +3,23 @@ import api from './Api';
 
 
 export async function getActivities(): Promise<ActivityResponseDTO[]> {
-    const response = await api.get<ActivityResponseDTO[]>('/activity');
-    return response.data;
+  const token = localStorage.getItem("token");
+
+  const response = await api.get<ActivityResponseDTO[]>('/activity', {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  return response.data;
 }
 
 export async function createActivity(data: ActivityRequestDTO): Promise<void> {
-  await api.post('/activity/create', data);
+  const token = localStorage.getItem("token");
+
+  await api.post('/activity/create', data, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
 }

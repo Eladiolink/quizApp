@@ -26,7 +26,6 @@ export default function ClientHome() {
   ];
 
   const handleIniciarAtividade = () => {
-    console.log("Hello World");
     navigate(`/cliente/atividades`);
   };
 

@@ -10,7 +10,7 @@ import {
 
 export default function Dashboard() {
   const { user } = useAuth();
-
+    
   return (
     <Box p={4}>
       {/* Cabeçalho */}

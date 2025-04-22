@@ -50,7 +50,6 @@ export default function AddActivity() {
       correctIndex,
     };
 
-    console.log("Questão criada:", newQuestion);
     showNotification("Questão salva com sucesso!");
 
     setQuestionText("");
