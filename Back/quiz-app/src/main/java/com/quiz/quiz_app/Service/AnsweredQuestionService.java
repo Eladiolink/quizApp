@@ -22,10 +22,10 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class AnsweredQuestionService {
 
-    private final AnsweredQuestionRepository answeredQuestionRepository;
-    private final UserRepository userRepository;
-    private final ActivityQuestionRepository activityQuestionRepository;
-    private final AnsweredQuestionMapper answeredQuestionMapper;
+    private  AnsweredQuestionRepository answeredQuestionRepository;
+    private  UserRepository userRepository;
+    private  ActivityQuestionRepository activityQuestionRepository;
+    private  AnsweredQuestionMapper answeredQuestionMapper;
 
     // CREATE
     public AnsweredQuestionResponseDTO create(AnsweredQuestionRequestDTO dto) {

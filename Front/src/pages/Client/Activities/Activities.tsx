@@ -10,6 +10,8 @@ import {
   CardContent,
   CardActions,
 } from "@mui/material";
+import { ActivityResponseDTO } from "../../../interfaces/Activity";
+import { getActivities } from "../../../services/activityService";
 
 interface Activity {
   id: number;
@@ -21,6 +23,21 @@ interface Activity {
 export default function ClientActivities() {
   const [atividades, setAtividades] = useState<Activity[]>([]);
   const [descricao, setDescricao] = useState<string>("");
+  const [activityResponseDTO, setActivityResponseDTO] = useState<ActivityResponseDTO[]>([]);
+
+  useEffect(() => {
+    async function fetchUsers() {
+      try {
+        const data = await getActivities();
+        setActivityResponseDTO(data);
+        console.log(data)
+      } catch (err) {
+        console.error('Erro ao buscar usuários:', err);
+      }
+    }
+
+    fetchUsers();
+  }, []);
 
   useEffect(() => {
     // Simula o carregamento das atividades disponíveis
@@ -42,15 +59,15 @@ export default function ClientActivities() {
       </Typography>
 
       <Box sx={{ display: "grid", gap: 3 }}>
-        {atividades.map((atividade) => (
+        {activityResponseDTO.map((atividade) => (
           <Card key={atividade.id} sx={{ display: "flex", justifyContent: "space-between", p: 2 }}>
             <CardContent sx={{ flex: 1 }}>
               <Typography variant="h6" component="div">
-                {atividade.titulo}
+                {atividade.title}
               </Typography>
-              <Typography color="text.secondary">{atividade.descricao}</Typography>
+              <Typography color="text.secondary">{atividade.description}</Typography>
               <Typography variant="body2" color="text.secondary">
-                Tempo estimado: {atividade.tempo}
+                Tempo estimado: {"10 min"}
               </Typography>
             </CardContent>
             <CardActions sx={{ display: "flex", alignItems: "center" }}>

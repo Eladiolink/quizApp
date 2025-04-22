@@ -15,6 +15,8 @@ import {
 } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { ActivityResponseDTO } from "../../../../interfaces/Activity";
+import { getActivities } from "../../../../services/activityService";
 
 interface Activity {
   id: number;
@@ -25,6 +27,21 @@ interface Activity {
 
 export default function Activities() {
   const [activities, setActivities] = useState<Activity[]>([]);
+  const [activityResponseDTO, setActivityResponseDTO] = useState<ActivityResponseDTO[]>([]);
+  
+    useEffect(() => {
+      async function fetchActivities() {
+        try {
+          const data = await getActivities();
+          setActivityResponseDTO(data);
+          console.log(data)
+        } catch (err) {
+          console.error('Erro ao buscar atividades:', err);
+        }
+      }
+  
+      fetchActivities();
+    }, []);
 
   useEffect(() => {
     setActivities([
@@ -55,11 +72,11 @@ export default function Activities() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {activities.map((activity) => (
+            {activityResponseDTO.map((activity) => (
               <TableRow key={activity.id}>
                 <TableCell>{activity.title}</TableCell>
                 <TableCell>{activity.description}</TableCell>
-                <TableCell>{activity.status}</TableCell>
+                <TableCell>{"ativo"}</TableCell>
                 <TableCell align="center">
                   <IconButton
                     component={Link}

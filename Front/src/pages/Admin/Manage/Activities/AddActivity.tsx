@@ -12,6 +12,8 @@ import {
 } from '@mui/material';
 import Notification from '../../../../components/common/Notification';
 import Editor from '../../../../components/common/Editor'; // ou TextAreaEditor
+import { ActivityRequestDTO } from '../../../../interfaces/Activity';
+import { createActivity } from '../../../../services/activityService';
 
 export default function AddActivity() {
   const [showForm, setShowForm] = useState(false);
@@ -61,6 +63,15 @@ export default function AddActivity() {
       showNotification("Preencha título e descrição.", "error");
       return;
     }
+    
+    const activityRequest: ActivityRequestDTO = {
+      title: title,
+      description: description,
+      createdById: 1,
+    };    
+    
+    createActivity(activityRequest)
+
     setShowForm(true);
   };
 

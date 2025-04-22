@@ -12,4 +12,5 @@ public class UserResponseDTO {
     private Integer id;
     private String name;
     private UserType type;
+    private String email;
 }

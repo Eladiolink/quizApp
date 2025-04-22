@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { getUsers } from "../../../../services/userService";
+import { UserResponseDTO } from "../../../../interfaces/User";
 
 interface User {
   id: number;
@@ -10,15 +12,21 @@ interface User {
 
 export default function Users() {
   const [users, setUsers] = useState<User[]>([]);
-
-  useEffect(() => {
-    // Simulação de dados de usuários
-    setUsers([
-      { id: 1, name: "Admin User", email: "admin@example.com", role: "admin" },
-      { id: 2, name: "Client User", email: "client@example.com", role: "client" },
-      { id: 3, name: "Another User", email: "another@example.com", role: "client" },
-    ]);
-  }, []);
+   const [userResponseDTO, setUserResponseDTO] = useState<UserResponseDTO[]>([]);
+    
+      useEffect(() => {
+        async function fetchActivities() {
+          try {
+            const data = await getUsers();
+            setUserResponseDTO(data);
+            console.log(data)
+          } catch (err) {
+            console.error('Erro ao buscar usuarios:', err);
+          }
+        }
+    
+        fetchActivities();
+      }, []);
 
   const handleDelete = (id: number) => {
     // Lógica para excluir usuário
@@ -38,11 +46,11 @@ export default function Users() {
           </tr>
         </thead>
         <tbody>
-          {users.map(user => (
+          {userResponseDTO.map(user => (
             <tr key={user.id} className="border-b">
               <td className="py-3 px-4">{user.name}</td>
               <td className="py-3 px-4">{user.email}</td>
-              <td className="py-3 px-4">{user.role}</td>
+              <td className="py-3 px-4">{user.type}</td>
               <td className="py-3 px-4">
                 <Link to={`/admin/users/edit/${user.id}`} className="text-blue-500 hover:text-blue-700 mr-4">
                   Editar
