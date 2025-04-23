@@ -20,7 +20,8 @@ public class ActivityQuestion {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "questao", nullable = false)
+    @Lob
+    @Column(name = "questao", nullable = false, columnDefinition = "TEXT")
     private String question;
 
     @Column(name = "opcao_a", nullable = false)

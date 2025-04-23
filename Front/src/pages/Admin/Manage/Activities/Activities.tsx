@@ -16,7 +16,8 @@ import {
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ActivityResponseDTO } from "../../../../interfaces/Activity";
-import { getActivities } from "../../../../services/activityService";
+import { deleteActivity, getActivities } from "../../../../services/activityService";
+import { del } from "../../../../services/Api";
 
 interface Activity {
   id: number;
@@ -42,18 +43,14 @@ export default function Activities() {
       fetchActivities();
     }, []);
 
-  useEffect(() => {
-    setActivities([
-      { id: 1, title: "Atividade 1", description: "Descrição da atividade 1", status: "ativo" },
-      { id: 2, title: "Atividade 2", description: "Descrição da atividade 2", status: "inativo" },
-      { id: 3, title: "Atividade 3", description: "Descrição da atividade 3", status: "ativo" },
-    ]);
-  }, []);
-
-  const handleDelete = (id: number) => {
-    setActivities((prev) => prev.filter((activity) => activity.id !== id));
-  };
-
+    const handleDelete = async (id: number) => {
+      try {
+        await deleteActivity(id);
+        setActivityResponseDTO((prev) => prev.filter((activity) => activity.id !== id));
+      } catch (error) {
+        console.error("Erro ao deletar atividade:", error);
+      }
+    };
   return (
     <Box sx={{ p: 4 }}>
       <Typography variant="h4" fontWeight="bold" gutterBottom>

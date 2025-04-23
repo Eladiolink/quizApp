@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { ActivityResponseDTO } from "../../../interfaces/Activity";
 import { getActivities } from "../../../services/activityService";
+import { useNavigate } from "react-router-dom";
 
 interface Activity {
   id: number;
@@ -38,17 +39,12 @@ export default function ClientActivities() {
     fetchUsers();
   }, []);
 
-  useEffect(() => {
-    // Simula o carregamento das atividades disponíveis
-    setAtividades([
-      { id: 101, titulo: "Raciocínio Lógico", descricao: "10 questões desafiadoras.", tempo: "15 min" },
-      { id: 102, titulo: "Ortografia", descricao: "Corrija palavras e frases.", tempo: "10 min" },
-      { id: 103, titulo: "Matemática Aplicada", descricao: "Problemas e porcentagem.", tempo: "20 min" },
-    ]);
-  }, []);
+  const navigate = useNavigate(); // 👈 Hook para redirecionar
 
-  const handleDescricaoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setDescricao(e.target.value);
+  // ...
+
+  const handleIniciar = (atividadeId: number) => {
+    navigate(`/cliente/atividade/${atividadeId}`);
   };
 
   return (
@@ -70,7 +66,11 @@ export default function ClientActivities() {
               </Typography>
             </CardContent>
             <CardActions sx={{ display: "flex", alignItems: "center" }}>
-              <Button variant="contained" color="primary">
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => handleIniciar(atividade.id)} // 👈 Ação ao clicar
+              >
                 Iniciar
               </Button>
             </CardActions>

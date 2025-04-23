@@ -34,7 +34,7 @@ export default function ClientHome() {
       {/* Cabeçalho */}
       <Box mb={6}>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
-          Olá, {user?.name}! 👋
+          Olá, {localStorage.getItem("name")?.split(" ")[0]}! 👋
         </Typography>
         <Typography color="text.secondary">
           Bem-vindo à sua área de atividades. Aqui você pode acompanhar seu progresso e continuar seus desafios.

@@ -14,14 +14,17 @@ import Notification from '../../../../components/common/Notification';
 import Editor from '../../../../components/common/Editor'; // ou TextAreaEditor
 import { ActivityRequestDTO } from '../../../../interfaces/Activity';
 import { createActivity } from '../../../../services/activityService';
+import { ActivityQuestionRequestDTO, CorrectOption } from '../../../../interfaces/ActivityQuestion';
+import { createQuestion } from '../../../../services/activityQuestionService';
 
 export default function AddActivity() {
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState("");
+  const [idQuestion, setIdQuestion] = useState(-1);
   const [description, setDescription] = useState("");
   const [questionText, setQuestionText] = useState("");
   const [alternatives, setAlternatives] = useState(["", "", "", "", ""]);
-  const [correctIndex, setCorrectIndex] = useState<number | null>(null);
+  const [correctIndex, setCorrectIndex] = useState< number| null>(null);
   const [notification, setNotification] = useState<{ message: string; type?: "success" | "error" } | null>(null);
 
   const showNotification = (message: string, type: "success" | "error" = "success") => {
@@ -42,14 +45,19 @@ export default function AddActivity() {
       return;
     }
 
-    const newQuestion = {
-      title,
-      description,
-      questionText,
-      alternatives,
-      correctIndex,
+    const questionId = ['A','B','C','D','E']
+    const newQuestion: ActivityQuestionRequestDTO = {
+      question: questionText,
+      optionA: alternatives[0],
+      optionB: alternatives[1],
+      optionC: alternatives[2],
+      optionD: alternatives[3],
+      optionE: alternatives[4],
+      correctOption: questionId[correctIndex],
+      activityId: idQuestion
     };
 
+    createQuestion(newQuestion)
     showNotification("Questão salva com sucesso!");
 
     setQuestionText("");
@@ -62,14 +70,18 @@ export default function AddActivity() {
       showNotification("Preencha título e descrição.", "error");
       return;
     }
-    
+
     const activityRequest: ActivityRequestDTO = {
       title: title,
       description: description,
       createdById: 1,
-    };    
-    
+    };
+
     createActivity(activityRequest)
+      .then((result) => {
+        setIdQuestion(result.id)
+      })
+
 
     setShowForm(true);
   };
@@ -139,7 +151,7 @@ export default function AddActivity() {
               {alternatives.map((alt, index) => (
                 <Box key={index} display="flex" alignItems="center" gap={2} mb={2}>
                   <Typography fontWeight="bold" width={20}>
-                    {String.fromCharCode(65 + index)}) 
+                    {String.fromCharCode(65 + index)})
                   </Typography>
                   <TextField
                     fullWidth
