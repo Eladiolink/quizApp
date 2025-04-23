@@ -1,4 +1,4 @@
-import { ActivityRequestDTO, ActivityResponseDTO } from '../interfaces/Activity';
+import { ActivityAnswered, ActivityRequestDTO, ActivityResponseDTO } from '../interfaces/Activity';
 import { del, get, post } from './Api';
 
 
@@ -15,3 +15,7 @@ export async function deleteActivity(id: number): Promise<void> {
   await del(`/activity/${id}`);
 }
 
+export async function getActivityAnswered(id: number): Promise<ActivityAnswered[]> {
+  const response = await get<ActivityAnswered[]>(`/activity/allActivities/${id}`);
+  return response;
+}

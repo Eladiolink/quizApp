@@ -14,16 +14,28 @@ import {
   TableRow,
   Chip,
 } from "@mui/material";
+import { ActivityAnswered } from "../../interfaces/Activity";
+import { useEffect, useState } from "react";
+import { getActivityAnswered } from "../../services/activityService";
 
 export default function ClientHome() {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [atividadesRecentes,setAtividadesRecentes] =  useState<ActivityAnswered[]>([]);
 
-  const atividadesRecentes = [
-    { id: 1, titulo: "Quiz de Lógica", status: "Concluído", pontuacao: "80%" },
-    { id: 2, titulo: "Matemática Básica", status: "Pendente", pontuacao: "-" },
-    { id: 3, titulo: "Interpretação de Texto", status: "Concluído", pontuacao: "95%" },
-  ];
+  useEffect(() => {
+    const id = localStorage.getItem("id");
+    if (id) {
+      const parsedId = parseInt(id);
+      if (!isNaN(parsedId)) {
+        getActivityAnswered(parsedId).then(res => setAtividadesRecentes(res));
+      } else {
+        console.error("ID salvo no localStorage não é um número válido.");
+      }
+    } else {
+      console.error("ID não encontrado no localStorage.");
+    }
+  }, []);
 
   const handleIniciarAtividade = () => {
     navigate(`/cliente/atividades`);
@@ -80,15 +92,15 @@ export default function ClientHome() {
             <TableBody>
               {atividadesRecentes.map((atividade) => (
                 <TableRow key={atividade.id}>
-                  <TableCell>{atividade.titulo}</TableCell>
+                  <TableCell>{atividade.title}</TableCell>
                   <TableCell>
                     <Chip
-                      label={atividade.status}
-                      color={atividade.status === "Concluído" ? "success" : "warning"}
+                      label={'Concluído'}
+                      color={'Concluído' === "Concluído" ? "success" : "warning"}
                       variant="outlined"
                     />
                   </TableCell>
-                  <TableCell>{atividade.pontuacao}</TableCell>
+                  <TableCell>{"80%"}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

@@ -11,6 +11,7 @@ import com.quiz.quiz_app.Repository.ActivityQuestionRepository;
 import com.quiz.quiz_app.Repository.AnsweredQuestionRepository;
 import com.quiz.quiz_app.Repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class AnsweredQuestionService {
 
     private  AnsweredQuestionRepository answeredQuestionRepository;
@@ -29,8 +30,7 @@ public class AnsweredQuestionService {
 
     // CREATE
     public AnsweredQuestionResponseDTO create(AnsweredQuestionRequestDTO dto) {
-        User user = userRepository.findById(dto.getClientId())
-                .orElseThrow(() -> new EntityNotFoundException("User not found"));
+        User user = userRepository.findById(dto.getClientId()).get();;
 
         // Verifica se o usuário é do tipo CLIENTE
         if (user.getType() != UserType.CLIENTE) {

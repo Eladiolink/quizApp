@@ -11,3 +11,9 @@ export interface ActivityRequestDTO {
   description: string;
   createdById: number;
 }
+
+export interface ActivityAnswered {
+  id: number;
+  title: string;
+  description: string;
+}

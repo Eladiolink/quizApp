@@ -41,4 +41,8 @@ public class ActivityService {
     public void delete(Integer id) {
         activityRepository.deleteById(id);
     }
+
+    public List<Activity> findAllByClientAnswered(Integer id){
+         return activityRepository.findAllByClientAnswered(id);
+    }
 }

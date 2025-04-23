@@ -6,6 +6,7 @@ import com.quiz.quiz_app.Entity.Activity;
 import com.quiz.quiz_app.Service.ActivityService;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,5 +41,11 @@ public class ActivityController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id) {
         activityService.delete(id);
+    }
+
+    @GetMapping("/allActivities/{id}")
+    public ResponseEntity findAllByClientAnswered(@PathVariable Integer id){
+
+        return ResponseEntity.ok(activityService.findAllByClientAnswered(id));
     }
 }

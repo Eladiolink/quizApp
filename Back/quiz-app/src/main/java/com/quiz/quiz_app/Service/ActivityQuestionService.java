@@ -17,9 +17,9 @@ import java.util.List;
 @AllArgsConstructor
 public class ActivityQuestionService {
 
-    private final ActivityQuestionRepository questionRepository;
-    private final ActivityRepository activityRepository;
-    private final ActivityQuestionMapper activityQuestionMapper;
+    private  ActivityQuestionRepository questionRepository;
+    private  ActivityRepository activityRepository;
+    private  ActivityQuestionMapper activityQuestionMapper;
 
     public ActivityQuestionResponseDTO create(ActivityQuestionResquestDTO dto) {
         Activity activity = activityRepository.findById(dto.getActivityId())
