@@ -26,6 +26,10 @@ public class ActivityService {
         return activityMapper.toListActivityResponseDTO(activityRepository.findAll());
     }
 
+    public List<ActivityResponseDTO> getAllByCientId(Integer id) {
+        return activityMapper.toListActivityResponseDTO(activityRepository.findAllActivitiesNotAnsweredByClient(id));
+    }
+
     public ActivityResponseDTO getById(Integer id) {
         Optional<Activity> activity = activityRepository.findById(id);
         return activityMapper.toActivityResponseDto(activity.orElse(null));

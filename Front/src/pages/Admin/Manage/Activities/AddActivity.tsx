@@ -10,7 +10,7 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
-import Notification from '../../../../components/common/Notification';
+import {Notification} from '../../../../components/common/Notification';
 import Editor from '../../../../components/common/Editor'; // ou TextAreaEditor
 import { ActivityRequestDTO } from '../../../../interfaces/Activity';
 import { createActivity } from '../../../../services/activityService';

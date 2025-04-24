@@ -3,33 +3,30 @@ import {
   Box,
   Container,
   Typography,
-  Paper,
   Button,
-  TextField,
   Card,
   CardContent,
   CardActions,
 } from "@mui/material";
 import { ActivityResponseDTO } from "../../../interfaces/Activity";
-import { getActivities } from "../../../services/activityService";
-import { useNavigate } from "react-router-dom";
+import { getFindAllActivitiesNotAnsweredByClient } from "../../../services/activityService";
+import { useLocation, useNavigate } from "react-router-dom";
+import { NotificationClient} from "../../../components/common/Notification";
+import getId from "../../../utils/GetForLocalStorage";
 
-interface Activity {
-  id: number;
-  titulo: string;
-  descricao: string;
-  tempo: string;
-}
 
 export default function ClientActivities() {
-  const [atividades, setAtividades] = useState<Activity[]>([]);
-  const [descricao, setDescricao] = useState<string>("");
   const [activityResponseDTO, setActivityResponseDTO] = useState<ActivityResponseDTO[]>([]);
+  const location = useLocation();
+  const [message, setMessage] = useState(location.state?.message || "");
+  const [type, setType] = useState(location.state?.type || "");
+
 
   useEffect(() => {
     async function fetchUsers() {
       try {
-        const data = await getActivities();
+        const id = getId()??0;
+        const data = await getFindAllActivitiesNotAnsweredByClient(id);
         setActivityResponseDTO(data);
       } catch (err) {
         console.error('Erro ao buscar usuários:', err);
@@ -39,12 +36,18 @@ export default function ClientActivities() {
     fetchUsers();
   }, []);
 
-  const navigate = useNavigate(); // 👈 Hook para redirecionar
-
-  // ...
+  const navigate = useNavigate();
 
   const handleIniciar = (atividadeId: number) => {
     navigate(`/cliente/atividade/${atividadeId}`);
+    setMessage(null);
+    setType(null);
+  };
+
+  const handleCloseNotification = () => {
+    setMessage(null);
+    setType(null);
+    console.log("OKKKKK")
   };
 
   return (
@@ -76,6 +79,7 @@ export default function ClientActivities() {
             </CardActions>
           </Card>
         ))}
+        {message && <NotificationClient message={message} type={type} onClose={handleCloseNotification}/>}
       </Box>
     </Container>
   );

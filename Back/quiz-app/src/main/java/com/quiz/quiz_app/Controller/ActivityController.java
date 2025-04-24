@@ -23,6 +23,11 @@ public class ActivityController {
         return activityService.getAll();
     }
 
+    @GetMapping("/findAllActivitiesNotAnsweredByClient/{id}")
+    public List<ActivityResponseDTO> findAllActivitiesNotAnsweredByClient(@PathVariable Integer id) {
+        return activityService.getAllByCientId(id);
+    }
+
     @GetMapping("/{id}")
     public ActivityResponseDTO getById(@PathVariable Integer id) {
         return activityService.getById(id);

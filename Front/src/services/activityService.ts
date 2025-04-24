@@ -1,10 +1,13 @@
 import { ActivityAnswered, ActivityRequestDTO, ActivityResponseDTO } from '../interfaces/Activity';
 import { del, get, post } from './Api';
 
-
 export async function getActivities(): Promise<ActivityResponseDTO[]> {
   const response = await get<ActivityResponseDTO[]>("/activity");
   return response;
+}
+
+export async function getFindAllActivitiesNotAnsweredByClient(id: number): Promise<ActivityResponseDTO[]> {
+  return await get<ActivityResponseDTO[]>(`/activity/findAllActivitiesNotAnsweredByClient/${id}`);
 }
 
 export async function createActivity(data: ActivityRequestDTO): Promise<ActivityResponseDTO> {

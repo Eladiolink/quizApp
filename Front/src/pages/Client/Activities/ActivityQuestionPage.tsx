@@ -10,20 +10,33 @@ import {
   Button,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { ClientActivityQuestionResponseDTO } from "../../../interfaces/ActivityQuestion";
 import { getQuestionsByActivity } from "../../../services/activityQuestionService";
+import { answeredQuestion } from "../../../services/answeredQuestion";
+import { AnsweredQuestionRequestDTO } from "../../../interfaces/AnsweredQuestion";
+import getId from "../../../utils/GetForLocalStorage";
+import { NotificationClient } from "../../../components/common/Notification";
 
 export default function ActivityQuestionPage() {
   const { id } = useParams();
   const [questoes, setQuestoes] = useState<ClientActivityQuestionResponseDTO[]>([]);
   const [respostas, setRespostas] = useState<{ [key: number]: string }>({});
+  const [notificationMessage, setNotificationMessage] = useState<string>("");
+  const [notificationType, setNotificationType] = useState<"success" | "error">("success");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     if (id) {
       getQuestionsByActivity(parseInt(id)).then((res) => {
         setQuestoes(res);
       });
+
+      if (location.state != null) {
+        location.state.message = null;
+        location.state.type = null;
+      }
     }
   }, [id]);
 
@@ -32,8 +45,32 @@ export default function ActivityQuestionPage() {
   };
 
   const handleSubmit = () => {
-    console.log("Respostas enviadas:", respostas);
-    // Aqui você pode chamar um serviço ou fazer o POST para a API
+    const clientId: number = getId() ?? 0;
+    const qtdQuestoes = questoes.length
+    const qtdRespostas = Object.keys(respostas).length
+
+    if (qtdQuestoes != qtdRespostas) {
+      setNotificationMessage("Para finalizar, faça todas as questões!");
+      setNotificationType("error");
+      return
+    }
+
+    for (const key in respostas) {
+      if (respostas.hasOwnProperty(key)) {
+        const value = respostas[key];
+        const question: AnsweredQuestionRequestDTO = {
+          clientId,
+          questionId: parseInt(key),
+          selectedOption: value
+        };
+
+        answeredQuestion(question)
+      }
+    }
+
+    navigate("/cliente/atividades", {
+      state: { message: "Atividade finalizada com sucesso!", type: "success" },
+    });
   };
 
   return (
@@ -75,6 +112,15 @@ export default function ActivityQuestionPage() {
           Enviar Respostas
         </Button>
       </Box>
+
+      {/* Exibição da notificação */}
+      {notificationMessage && (
+        <NotificationClient
+          message={notificationMessage}
+          type={notificationType}
+          onClose={() => setNotificationMessage("")}
+        />
+      )}
     </Container>
   );
 }
