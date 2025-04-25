@@ -78,7 +78,6 @@ export default function ActivityQuestionPage() {
       <Typography variant="h4" gutterBottom fontWeight="bold">
         Responder Atividade
       </Typography>
-
       {questoes.map((questao, index) => (
         <Box key={questao.id} mb={4}>
           <Paper elevation={3} sx={{ p: 3 }}>

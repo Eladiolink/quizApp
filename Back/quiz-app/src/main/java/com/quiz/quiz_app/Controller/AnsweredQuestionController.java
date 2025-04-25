@@ -44,4 +44,13 @@ public class AnsweredQuestionController {
     public void delete(@PathVariable Integer id) {
         answeredQuestionService.delete(id);
     }
+
+    @GetMapping("/{id}/user/{userId}")
+    public ResponseEntity activityClientAnswered(
+            @PathVariable("id") Integer id,
+            @PathVariable("userId") Integer userId
+    ){
+        answeredQuestionService.activityClientAnswered(id,userId);
+        return ResponseEntity.ok().build();
+    }
 }

@@ -89,4 +89,9 @@ public class AnsweredQuestionService {
         }
         answeredQuestionRepository.deleteById(id);
     }
+
+    public void activityClientAnswered(Integer id, Integer userId){
+        var a = answeredQuestionRepository.findAllActivitiesNotAnsweredByClient(id,userId);
+        return;
+    }
 }
