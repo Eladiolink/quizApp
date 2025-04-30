@@ -1,33 +1,61 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { AppBar, Toolbar, Typography, IconButton, Button, CssBaseline, useTheme, createTheme, ThemeProvider } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Button,
+  CssBaseline,
+  createTheme,
+  ThemeProvider,
+} from "@mui/material";
 import { Brightness4, Brightness7, ExitToApp } from "@mui/icons-material";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 
 export default function ClientLayout() {
-  const { logout, user } = useAuth();
+  const { logout } = useAuth();
   const navigate = useNavigate();
-  const [darkMode, setDarkMode] = useState(false);
+
+  // 1. Inicializar com valor do localStorage
+  const [darkMode, setDarkMode] = useState(() => {
+    const stored = localStorage.getItem("darkMode");
+    return stored === "true";
+  });
+
+  // 2. Salvar no localStorage ao mudar
+  useEffect(() => {
+    localStorage.setItem("darkMode", String(darkMode));
+  }, [darkMode]);
 
   const toggleTheme = () => {
     setDarkMode((prev) => !prev);
   };
 
-  const theme = useMemo(() => createTheme({
-    palette: {
-      mode: darkMode ? "dark" : "light",
-      primary: {
-        main: "#1976d2",
-      },
-    },
-  }), [darkMode]);
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: darkMode ? "dark" : "light",
+          primary: {
+            main: "#1976d2",
+          },
+        },
+      }),
+    [darkMode]
+  );
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="static" color="primary">
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h6" component="div">
+          <Typography
+            variant="h6"
+            component="div"
+            onClick={() => navigate("/cliente")}
+            sx={{ cursor: "pointer" }}
+          >
             Bem-vindo, {localStorage.getItem("name")?.split(" ")[0] || "Usuário"}
           </Typography>
 

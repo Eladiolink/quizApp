@@ -4,6 +4,7 @@ import { PrivateRoute } from "./PrivateRoute";
 import ClientLayout from "../pages/Client/ClientLayout";
 import ClientHome from "../pages/Client/Home";
 import ActivityQuestionPage from "../pages/Client/Activities/ActivityQuestionPage";
+import ActivityResultPage from "../pages/Client/Activities/ActivityResultPage";
 
 export const ClientRoutes = (
   <Route
@@ -36,6 +37,15 @@ export const ClientRoutes = (
       element={
         <PrivateRoute roles={["CLIENTE"]}>
           <ActivityQuestionPage />
+        </PrivateRoute>
+      }
+    />
+
+<Route
+      path="/cliente/result/:activityId/user/:userId"
+      element={
+        <PrivateRoute roles={["CLIENTE"]}>
+          <ActivityResultPage />
         </PrivateRoute>
       }
     />

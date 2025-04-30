@@ -1,25 +1,63 @@
 import { Outlet, Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
-import { Drawer, List, ListItem, ListItemText, Button, Typography, IconButton, Switch } from "@mui/material";
-import { Dashboard, Assignment, People, Brightness4, Brightness7, Menu, ExitToApp } from "@mui/icons-material";
-import { useState } from "react";
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  IconButton,
+  Typography,
+  Tooltip,
+  createTheme,
+  ThemeProvider,
+} from "@mui/material";
+import {
+  Dashboard,
+  Assignment,
+  People,
+  Brightness4,
+  Brightness7,
+  Menu,
+  ExitToApp,
+} from "@mui/icons-material";
+import { useState, useEffect, useMemo } from "react";
 
 export default function AdminLayout() {
   const { logout } = useAuth();
-  const [darkMode, setDarkMode] = useState(false); // Para controlar o tema
-  const [compactSidebar, setCompactSidebar] = useState(false); // Para controlar a largura da sidebar
+
+  const [darkMode, setDarkMode] = useState(() => {
+    const stored = localStorage.getItem("darkMode");
+    return stored === "true";
+  });
+  
+  const theme = useMemo(() =>
+    createTheme({
+      palette: {
+        mode: darkMode ? "dark" : "light",
+        primary: {
+          main: "#1976d2",
+        },
+      },
+    }), [darkMode]
+  );
+  
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", String(darkMode));
+  }, [darkMode]);
+
+  const [compactSidebar, setCompactSidebar] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prev) => !prev);
   };
 
   const toggleSidebar = () => {
-    setCompactSidebar(!compactSidebar);
+    setCompactSidebar((prev) => !prev);
   };
 
   return (
     <div className={`flex h-screen ${darkMode ? "bg-gray-900" : "bg-gray-100"}`}>
-      {/* Sidebar */}
       <Drawer
         variant="permanent"
         sx={{
@@ -33,9 +71,9 @@ export default function AdminLayout() {
             transition: "width 0.3s ease",
             display: "flex",
             flexDirection: "column",
-            height: "100%", // Garantir que a sidebar ocupe toda a altura da tela
-            overflowY: compactSidebar ? "hidden" : "auto", // Remover a rolagem quando compacta
-            overflowX: "hidden", // Evitar a barra de rolagem no eixo X
+            height: "100%",
+            overflowY: compactSidebar ? "hidden" : "auto",
+            overflowX: "hidden",
           },
         }}
       >
@@ -65,44 +103,35 @@ export default function AdminLayout() {
           </ListItem>
         </List>
 
-        <Button
-          onClick={logout}
-          variant="contained"
-          color="error"
-          sx={{
-            width: "100%",
-            marginTop: "auto", // Posiciona o botão no final da sidebar
-            textTransform: "none",
-            fontWeight: "bold",
-          }}
-        >
-          {compactSidebar ? (
-            <ExitToApp sx={{ color: "white" }} />
-          ) : (
-            "Sair"
-          )}
-        </Button>
+        {/* Sair (Somente Ícone) */}
+        <div style={{ marginTop: "auto", display: "flex", justifyContent: "center" }}>
+          <Tooltip title="Sair">
+            <IconButton onClick={logout} color="error">
+              <ExitToApp />
+            </IconButton>
+          </Tooltip>
+        </div>
 
-        {/* Dark Mode Switch */}
-        <div className="mt-4">
+        {/* Dark Mode Toggle */}
+        <div className="mt-4" style={{ display: "flex", justifyContent: "center" }}>
           <IconButton onClick={toggleDarkMode} color="inherit">
             {darkMode ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
-          <Switch checked={darkMode} onChange={toggleDarkMode} />
         </div>
 
         {/* Sidebar Toggle Button */}
-        <div className="mt-4">
+        <div className="mt-4" style={{ display: "flex", justifyContent: "center" }}>
           <IconButton onClick={toggleSidebar} color="inherit">
             <Menu />
           </IconButton>
         </div>
       </Drawer>
-
-      {/* Conteúdo principal */}
+      
+      <ThemeProvider theme={theme}>
       <main className="flex-1 overflow-y-auto p-6">
         <Outlet />
       </main>
+      </ThemeProvider>
     </div>
   );
 }

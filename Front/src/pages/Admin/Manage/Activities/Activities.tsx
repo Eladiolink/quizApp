@@ -29,31 +29,37 @@ interface Activity {
 export default function Activities() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [activityResponseDTO, setActivityResponseDTO] = useState<ActivityResponseDTO[]>([]);
-  
-    useEffect(() => {
-      async function fetchActivities() {
-        try {
-          const data = await getActivities();
-          setActivityResponseDTO(data);
-        } catch (err) {
-          console.error('Erro ao buscar atividades:', err);
-        }
-      }
-  
-      fetchActivities();
-    }, []);
 
-    const handleDelete = async (id: number) => {
+  useEffect(() => {
+    async function fetchActivities() {
       try {
-        await deleteActivity(id);
-        setActivityResponseDTO((prev) => prev.filter((activity) => activity.id !== id));
-      } catch (error) {
-        console.error("Erro ao deletar atividade:", error);
+        const data = await getActivities();
+        setActivityResponseDTO(data);
+      } catch (err) {
+        console.error('Erro ao buscar atividades:', err);
       }
-    };
+    }
+
+    fetchActivities();
+  }, []);
+
+  const handleDelete = async (id: number) => {
+    try {
+      await deleteActivity(id);
+      setActivityResponseDTO((prev) => prev.filter((activity) => activity.id !== id));
+    } catch (error) {
+      console.error("Erro ao deletar atividade:", error);
+    }
+  };
+
   return (
     <Box sx={{ p: 4 }}>
-      <Typography variant="h4" fontWeight="bold" gutterBottom>
+      <Typography 
+        variant="h4" 
+        fontWeight="bold" 
+        gutterBottom
+        sx={{ color: (theme) => theme.palette.text.primary }}  // Aqui ajustamos a cor do título
+      >
         Gerenciar Atividades
       </Typography>
 
@@ -61,10 +67,18 @@ export default function Activities() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Título</strong></TableCell>
-              <TableCell><strong>Descrição</strong></TableCell>
-              <TableCell><strong>Status</strong></TableCell>
-              <TableCell align="center"><strong>Ações</strong></TableCell>
+              <TableCell>
+                <strong>Título</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Descrição</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Status</strong>
+              </TableCell>
+              <TableCell align="center">
+                <strong>Ações</strong>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

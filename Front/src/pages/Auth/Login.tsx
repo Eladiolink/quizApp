@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import {
@@ -10,7 +10,7 @@ import {
   TextField,
   IconButton,
 } from "@mui/material";
-import { Brightness4, Brightness7, Token } from "@mui/icons-material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import { AuthLogin } from "../../interfaces/Auth";
 import { authLogin } from "../../services/authService";
@@ -22,7 +22,16 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [darkMode, setDarkMode] = useState(false);
+  // 1. Estado inicial com localStorage
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true";
+  });
+
+  // 2. Atualiza o localStorage sempre que darkMode mudar
+  useEffect(() => {
+    localStorage.setItem("darkMode", String(darkMode));
+  }, [darkMode]);
 
   const theme = createTheme({
     palette: {
@@ -31,23 +40,24 @@ export default function Login() {
   });
 
   const handleLogin = () => {
-    
     const activityRequest: AuthLogin = {
-          email: email,
-          password: password,
-        };    
-        
-    authLogin(activityRequest)
+      email: email,
+      password: password,
+    };
+
+    authLogin(activityRequest);
+
     const storedRole = localStorage.getItem("role");
     const storedToken = localStorage.getItem("token");
-    
-    console.log(storedRole)
-    let role: "ADMIN" | "CLIENTE" = storedRole === "ADMIN" || storedRole === "CLIENTE"
-      ? storedRole
-      : "CLIENTE";
+
+    let role: "ADMIN" | "CLIENTE" =
+      storedRole === "ADMIN" || storedRole === "CLIENTE"
+        ? storedRole
+        : "CLIENTE";
+
     let token: string | null = storedToken;
-      
-    login({ token: token, role: role } );
+
+    login({ token: token, role: role });
     navigate(role === "ADMIN" ? "/admin" : "/cliente");
   };
 

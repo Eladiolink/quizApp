@@ -13,6 +13,7 @@ import {
   TableHead,
   TableRow,
   Chip,
+  useTheme,
 } from "@mui/material";
 import { ActivityAnswered } from "../../interfaces/Activity";
 import { useEffect, useState } from "react";
@@ -21,7 +22,8 @@ import { getActivityAnswered } from "../../services/activityService";
 export default function ClientHome() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const [atividadesRecentes,setAtividadesRecentes] =  useState<ActivityAnswered[]>([]);
+  const theme = useTheme();
+  const [atividadesRecentes, setAtividadesRecentes] = useState<ActivityAnswered[]>([]);
 
   useEffect(() => {
     const id = localStorage.getItem("id");
@@ -82,7 +84,14 @@ export default function ClientHome() {
         </Typography>
         <TableContainer component={Paper}>
           <Table>
-            <TableHead sx={{ backgroundColor: "#f9f9f9" }}>
+            <TableHead
+              sx={{
+                backgroundColor:
+                  theme.palette.mode === "dark"
+                    ? theme.palette.grey[900]
+                    : "#f9f9f9",
+              }}
+            >
               <TableRow>
                 <TableCell><strong>Título</strong></TableCell>
                 <TableCell><strong>Status</strong></TableCell>
@@ -91,12 +100,20 @@ export default function ClientHome() {
             </TableHead>
             <TableBody>
               {atividadesRecentes.map((atividade) => (
-                <TableRow key={atividade.id}>
+                <TableRow
+                  key={atividade.id}
+                  hover
+                  sx={{ cursor: "pointer" }}
+                  onClick={() => {
+                    const userId = localStorage.getItem("id");
+                    navigate(`/cliente/result/${atividade.id}/user/${userId}`);
+                  }}
+                >
                   <TableCell>{atividade.title}</TableCell>
                   <TableCell>
                     <Chip
-                      label={'Concluído'}
-                      color={'Concluído' === "Concluído" ? "success" : "warning"}
+                      label={"Concluído"}
+                      color={"success"}
                       variant="outlined"
                     />
                   </TableCell>

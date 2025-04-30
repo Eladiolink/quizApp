@@ -1,21 +1,19 @@
-import { useAuth } from "../../contexts/AuthContext";
+import { Box, Typography, Grid, Paper, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import {
-  Box,
-  Typography,
-  Grid,
-  Paper,
-  Button,
-} from "@mui/material";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function Dashboard() {
   const { user } = useAuth();
-    
+
   return (
     <Box p={4}>
       {/* Cabeçalho */}
       <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
-        <Typography variant="h5" fontWeight="bold">
+        <Typography 
+          variant="h5" 
+          fontWeight="bold"
+          sx={{ color: (theme) => theme.palette.text.primary }}  // Aqui ajustamos a cor de acordo com o tema
+        >
           Bem-vindo, {user?.name}
         </Typography>
       </Box>
@@ -56,7 +54,11 @@ export default function Dashboard() {
 
       {/* Área de gerenciamento */}
       <Box mt={6}>
-        <Typography variant="h6" gutterBottom>
+        <Typography 
+          variant="h6" 
+          gutterBottom 
+          sx={{ color: (theme) => theme.palette.text.primary }}  // Ajuste similar aqui
+        >
           Gerenciar Atividades
         </Typography>
         <Button
