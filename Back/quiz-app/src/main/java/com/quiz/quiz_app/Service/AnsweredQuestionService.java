@@ -1,8 +1,6 @@
 package com.quiz.quiz_app.Service;
 
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredQuestionMapper;
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredQuestionRequestDTO;
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredQuestionResponseDTO;
+import com.quiz.quiz_app.DTO.AnsweredQuestion.*;
 import com.quiz.quiz_app.Entity.ActivityQuestion;
 import com.quiz.quiz_app.Entity.AnsweredQuestion;
 import com.quiz.quiz_app.Entity.User;
@@ -16,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -90,8 +89,14 @@ public class AnsweredQuestionService {
         answeredQuestionRepository.deleteById(id);
     }
 
-    public void activityClientAnswered(Integer id, Integer userId){
-        var a = answeredQuestionRepository.findAllActivitiesNotAnsweredByClient(id,userId);
-        return;
+    public List<AnsweredQuestionSummaryDTO> activityClientAnswered(Integer id, Integer userId){
+        List<AnsweredQuestionSummaryDTO> questionsDTO = new ArrayList<>();
+        List<Object[]> questions = answeredQuestionRepository.findAllActivitiesNotAnsweredByClient(id,userId);
+
+        for(Object[] question : questions){
+            questionsDTO.add(new AnsweredQuestionSummaryDTO(question));
+        }
+
+        return questionsDTO;
     }
 }

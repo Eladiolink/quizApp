@@ -19,4 +19,7 @@ public interface AnsweredQuestionMapper {
     @Mapping(source = "client.id", target = "clientId")
     @Mapping(source = "question.id", target = "questionId")
     List<AnsweredQuestionResponseDTO> toListAnsweredQuestionResponseDTO(List<AnsweredQuestion> entities);
+
+//    AnsweredQuestionClientDTO AnsweredQuestionClientDTOmap(Object[] value);
+//    List<AnsweredQuestionClientDTO> toAnsweredQuestionClientDTO(List<Object[]> entities);
 }

@@ -50,7 +50,6 @@ public class AnsweredQuestionController {
             @PathVariable("id") Integer id,
             @PathVariable("userId") Integer userId
     ){
-        answeredQuestionService.activityClientAnswered(id,userId);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok( answeredQuestionService.activityClientAnswered(id,userId) );
     }
 }
