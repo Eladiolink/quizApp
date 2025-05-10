@@ -27,7 +27,7 @@ public class AuthenticationController {
     @Autowired
     private UserRepository userRepository;
 
-    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*", allowCredentials = "true")
+    @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
     @PostMapping("/login")
     public ResponseEntity login(@RequestBody @Validated AuthenticationDTO data){
         var usernamePassword = new UsernamePasswordAuthenticationToken(data.email(), data.password());

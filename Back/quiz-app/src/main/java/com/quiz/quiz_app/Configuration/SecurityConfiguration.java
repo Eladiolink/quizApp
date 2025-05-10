@@ -25,6 +25,7 @@ import java.util.Collections;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
+
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
 
@@ -32,12 +33,11 @@ public class SecurityConfiguration {
     private SecurityFilter securityFilter;
 
     @Bean
-    public SecurityFilterChain securityFilterChain (HttpSecurity httpSecurity) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .cors()
-                .and()
+                .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Garante que o CORS do bean será usado
                 .csrf(csrf -> csrf.disable())
-                .sessionManagement( session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
@@ -55,21 +55,27 @@ public class SecurityConfiguration {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Collections.singletonList("http://localhost:5173"));
+        // Usa allowedOriginPatterns ao invés de allowedOrigins
+        configuration.setAllowedOriginPatterns(Collections.singletonList("http://localhost:5173"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("Content-Type", "Authorization"));
         configuration.setAllowCredentials(true);
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
+
         return source;
     }
+
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){ return new BCryptPasswordEncoder(); }
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider() {

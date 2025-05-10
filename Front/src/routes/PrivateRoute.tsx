@@ -6,11 +6,12 @@ export const PrivateRoute = ({ children, roles }: any) => {
 
   if (loading) {
     return <div>Carregando...</div>; 
-  }
+  } 
+
+  if(user == null) return <Navigate to="/login" />;
 
   if (!user) return <Navigate to="/login" />;
 
   if (roles && !roles.includes(user.role)) return <Navigate to="/unauthorized" />;
-
   return children;
 };

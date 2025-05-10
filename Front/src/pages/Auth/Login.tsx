@@ -45,20 +45,21 @@ export default function Login() {
       password: password,
     };
 
-    authLogin(activityRequest);
+    authLogin(activityRequest).then(res => {
+      const storedRole = localStorage.getItem("role");
+      const storedToken = localStorage.getItem("token");
+      if (storedToken) {
+        let role: "ADMIN" | "CLIENTE" =
+          storedRole === "ADMIN" || storedRole === "CLIENTE"
+            ? storedRole
+            : "CLIENTE";
 
-    const storedRole = localStorage.getItem("role");
-    const storedToken = localStorage.getItem("token");
+        let token: string | null = storedToken;
 
-    let role: "ADMIN" | "CLIENTE" =
-      storedRole === "ADMIN" || storedRole === "CLIENTE"
-        ? storedRole
-        : "CLIENTE";
-
-    let token: string | null = storedToken;
-
-    login({ token: token, role: role });
-    navigate(role === "ADMIN" ? "/admin" : "/cliente");
+        login({ token: token, role: role });
+        navigate(role === "ADMIN" ? "/admin" : "/cliente");
+      }
+    });
   };
 
   const toggleTheme = () => {
