@@ -2,9 +2,6 @@ package com.quiz.quiz_app.Repository;
 
 //AnsweredQuestion
 
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredActivityQuestionDTO;
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredQuestionClientDTO;
-import com.quiz.quiz_app.DTO.AnsweredQuestion.AnsweredQuestionSummaryDTO;
 import com.quiz.quiz_app.Entity.AnsweredQuestion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

@@ -23,3 +23,7 @@ install:
 
 # Rodar ambiente virtual e o servidor com o uvicorn
 serve: venv activate install run
+
+# Ajustado para chamar o Celery corretamente
+run-redis:
+	$(VENV)/bin/celery -A app.core.task.celery_app worker --loglevel=info
