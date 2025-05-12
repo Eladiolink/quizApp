@@ -3,6 +3,7 @@ package com.quiz.quiz_app.Service;
 import com.quiz.quiz_app.DTO.Activity.ActivityMapper;
 import com.quiz.quiz_app.DTO.Activity.ActivityRequestDTO;
 import com.quiz.quiz_app.DTO.Activity.ActivityResponseDTO;
+import com.quiz.quiz_app.DTO.Activity.ActivityWithStatus;
 import com.quiz.quiz_app.Entity.Activity;
 import com.quiz.quiz_app.Entity.User;
 import com.quiz.quiz_app.Repository.ActivityRepository;
@@ -46,7 +47,8 @@ public class ActivityService {
         activityRepository.deleteById(id);
     }
 
-    public List<Activity> findAllByClientAnswered(Integer id){
-         return activityRepository.findAllByClientAnswered(id);
+    public List<ActivityWithStatus> findAllByClientAnswered(Integer id){
+         var res = activityRepository.findAllByClientAnswered(id);
+         return res;
     }
 }

@@ -1,5 +1,5 @@
 from celery import Celery
-from app.integrations.llm import inicializar_llm, fazer_pergunta
+from app.integrations.ollama import inicializar_llm, fazer_pergunta
 from app.models.chat_model import fetch_question_answered
 from app.models.atividades_corrigida_model import cria_atividades_corrigida, atualiza_atividades_corrigida
 from app.models.questoes_corrigida_model import adicionar_questoes_corrigida, QuestaoCorrigidaRequest
@@ -25,8 +25,7 @@ def processar_chamada_llm(info_question):
     criation_response = cria_atividades_corrigida(info_question["activity_id"], info_question["user_id"])
     
     if criation_response is False:
-        print(criation_response["msg"])
-        return criation_response["msg"]
+        return False
     
     print(f"Activity: {info_question["activity_id"]} for User: {info_question["user_id"]}")
    

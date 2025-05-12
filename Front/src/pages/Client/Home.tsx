@@ -17,14 +17,14 @@ import {
 } from "@mui/material";
 import { ActivityAnswered } from "../../interfaces/Activity";
 import { useEffect, useState } from "react";
-import { getActivityAnswered } from "../../services/activityService";
+import { getActivityAnswered, getRequestcorrection } from "../../services/activityService";
 
 export default function ClientHome() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const theme = useTheme();
   const [atividadesRecentes, setAtividadesRecentes] = useState<ActivityAnswered[]>([]);
-
+  
   useEffect(() => {
     const id = localStorage.getItem("id");
     if (id) {
@@ -96,6 +96,7 @@ export default function ClientHome() {
                 <TableCell><strong>Título</strong></TableCell>
                 <TableCell><strong>Status</strong></TableCell>
                 <TableCell><strong>Pontuação</strong></TableCell>
+                <TableCell><strong>Correção</strong></TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -118,6 +119,23 @@ export default function ClientHome() {
                     />
                   </TableCell>
                   <TableCell>{"80%"}</TableCell>
+                  <TableCell>
+                    {atividade.status ? (
+                      <Chip label={atividade.status} color="info" variant="outlined" />
+                    ) : (
+                      <Button
+                        size="small"
+                        variant="outlined"
+                        onClick={(e) => {
+                          e.stopPropagation(); // <-- IMPORTANTE!
+                          const userId = parseInt(localStorage.getItem("id") ?? "0");
+                          getRequestcorrection(atividade.id, userId);
+                        }}
+                      >
+                        Solicitar correção
+                      </Button>
+                    )}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>

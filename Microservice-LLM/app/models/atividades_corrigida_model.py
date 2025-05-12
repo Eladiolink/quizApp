@@ -38,5 +38,25 @@ def atualiza_atividades_corrigida(activity_id: int, user_id: int, status_id: int
 
     result = conn.commit()
     connection.close()
- 
+    conn.close()
+    return result
+
+def get_atividades_corrigida(activity_id: int, user_id: int):
+    conn = get_mysql_connection()
+    connection = get_cursor_instance()
+    print(activity_id,user_id)
+    query = """
+                SELECT *
+                FROM atividades_corrigida ac
+                WHERE ac.id_atividade = %s
+                AND ac.id_cliente = %s
+            """
+
+    connection.execute(query, (activity_id, user_id))
+
+    result = connection.fetchall()
+    print(result)
+    connection.close()
+    conn.close()
+
     return result

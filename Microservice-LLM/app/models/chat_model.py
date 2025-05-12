@@ -7,6 +7,7 @@ class ChatRequest(BaseModel):
     message: str
 
 class ChatMessage(BaseModel):
+    isValid: bool
     message: str
 
 class User(BaseModel):
@@ -17,15 +18,18 @@ class User(BaseModel):
     created_at: datetime
 
 def fetch_chat_requests_from_db():
+    conn = get_mysql_connection()
     connection = get_cursor_instance()
     connection.execute("SELECT * FROM usuario")
     users = connection.fetchall()
     connection.close()
+    conn.close()
     print(type(users))
  
     return users
 
 def fetch_question_answered(activity_id: int, user_id: int):
+    conn = get_mysql_connection()
     connection = get_cursor_instance()
     query = """
                 SELECT DISTINCT q.id AS id
@@ -49,5 +53,5 @@ def fetch_question_answered(activity_id: int, user_id: int):
 
     result = connection.fetchall()
     connection.close()
- 
+    conn.close()
     return result
