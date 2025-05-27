@@ -91,7 +91,9 @@ export default function ActivityResultPage() {
             </Box>
 
             <Typography variant="h6" sx={{ textAlign: "justify" }}>
-              {currentQuestionIndex + 1}. {currentQuestion.question}
+              <pre style={{ margin: 0, whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
+                {currentQuestionIndex + 1}. {currentQuestion.question}
+              </pre>
             </Typography>
 
             {currentQuestion.image && (
@@ -142,6 +144,22 @@ export default function ActivityResultPage() {
                 })}
               </RadioGroup>
             </Box>
+          </Paper>
+
+          <Paper
+            elevation={2}
+            sx={{
+              mt: 3,
+              p: 2,
+              borderLeft: "6px solid",
+              borderColor: "green",
+              backgroundColor: theme.palette.mode === "dark" ? "#2a2a2a" : "#f0fff0",
+              borderRadius: 2,
+            }}
+          >
+            <Typography variant="subtitle1" fontWeight="bold">
+              Alternativa correta: {currentQuestion.correctOption}
+            </Typography>
           </Paper>
 
           {/* Card de correção/explicação com espaçamento abaixo */}

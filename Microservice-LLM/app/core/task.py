@@ -1,5 +1,5 @@
 from celery import Celery
-from app.integrations.ollama import inicializar_llm, fazer_pergunta
+from app.integrations.gemini import inicializar_llm, fazer_pergunta
 from app.models.chat_model import fetch_question_answered
 from app.models.atividades_corrigida_model import cria_atividades_corrigida, atualiza_atividades_corrigida
 from app.models.questoes_corrigida_model import adicionar_questoes_corrigida, QuestaoCorrigidaRequest
@@ -43,7 +43,7 @@ def correction_llm(info_question):
         llm = inicializar_llm()
         print(list(question.keys()))
         print(f"{question["questao_respondida"]} - {question["opcao_correta"]}")
-        pergunta = f"""Respoda a questão e fale por que a questão correta é {question["opcao_correta"]}) e por que as outras alternativas estão erradas:
+        pergunta = f"""Respoda a questão e fale qual é a alternativa correta e por que as outras alternativas estão erradas:
                         {question["questao"]}
 
                         A) {question["opcao_a"]}

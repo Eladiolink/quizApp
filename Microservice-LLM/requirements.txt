@@ -9,3 +9,5 @@ python-dotenv
 mysql-connector-python
 celery[redis]
 langchain-community
+langchain-google-genai
+langchain-core

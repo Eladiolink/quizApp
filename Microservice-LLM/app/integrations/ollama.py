@@ -5,7 +5,7 @@ def texto_para_markdown(texto_raw):
     texto_formatado = texto_raw.replace("\\n", "\n").replace("\\'", "'")
     return texto_formatado
 
-def inicializar_llm(model="llama3", temperature=0.8):
+def inicializar_llm(model="llama3.1:8b", temperature=0.8):
     # Inicializa o modelo do Ollama local
     llm = ChatOllama(
         model=model,
