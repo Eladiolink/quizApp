@@ -27,7 +27,7 @@ public class Activity {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "criado_por")
+    @JoinColumn(name = "criado_por", nullable = true)
     private User createdBy;
 
     @Column(name = "created_at", updatable = false, nullable = false)

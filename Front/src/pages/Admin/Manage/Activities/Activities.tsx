@@ -17,7 +17,6 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ActivityResponseDTO } from "../../../../interfaces/Activity";
 import { deleteActivity, getActivities } from "../../../../services/activityService";
-import { del } from "../../../../services/Api";
 
 interface Activity {
   id: number;
@@ -36,7 +35,7 @@ export default function Activities() {
         const data = await getActivities();
         setActivityResponseDTO(data);
       } catch (err) {
-        console.error('Erro ao buscar atividades:', err);
+        console.error("Erro ao buscar atividades:", err);
       }
     }
 
@@ -52,13 +51,32 @@ export default function Activities() {
     }
   };
 
+  const handleExportSql = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/export/activities-sql"); // Ajuste se usar proxy/backend em outra porta
+      const sqlText = await response.text();
+
+      const blob = new Blob([sqlText], { type: "text/sql" });
+      const url = window.URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "atividades_export.sql";
+      link.click();
+
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Erro ao exportar SQL:", error);
+    }
+  };
+
   return (
     <Box sx={{ p: 4 }}>
-      <Typography 
-        variant="h4" 
-        fontWeight="bold" 
+      <Typography
+        variant="h4"
+        fontWeight="bold"
         gutterBottom
-        sx={{ color: (theme) => theme.palette.text.primary }}  // Aqui ajustamos a cor do título
+        sx={{ color: (theme) => theme.palette.text.primary }}
       >
         Gerenciar Atividades
       </Typography>
@@ -95,10 +113,7 @@ export default function Activities() {
                   >
                     <EditIcon />
                   </IconButton>
-                  <IconButton
-                    color="error"
-                    onClick={() => handleDelete(activity.id)}
-                  >
+                  <IconButton color="error" onClick={() => handleDelete(activity.id)}>
                     <DeleteIcon />
                   </IconButton>
                 </TableCell>
@@ -108,7 +123,7 @@ export default function Activities() {
         </Table>
       </TableContainer>
 
-      <Box mt={4}>
+      <Box mt={4} display="flex" gap={2}>
         <Button
           component={Link}
           to="/admin/activities/create"
@@ -116,6 +131,10 @@ export default function Activities() {
           color="primary"
         >
           Adicionar Nova Atividade
+        </Button>
+
+        <Button variant="outlined" color="secondary" onClick={handleExportSql}>
+          Exportar .SQL
         </Button>
       </Box>
     </Box>
