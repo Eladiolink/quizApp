@@ -35,7 +35,7 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Garante que o CORS do bean será usado
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
@@ -44,15 +44,17 @@ public class SecurityConfiguration {
                         .requestMatchers(HttpMethod.GET, "/export/activities-sql").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
                         .requestMatchers(HttpMethod.POST, "/activity").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/activity/{id}").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/activity/*").hasRole("ADMIN")          // wildcard para id dinâmico
                         .requestMatchers(HttpMethod.DELETE, "/activity-question").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.POST, "/answered-question").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/activity/allActivities/{id}").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/activity/allActivities/*").permitAll()     // wildcard para id dinâmico
+                        .requestMatchers(HttpMethod.POST, "/import/execute-sql").permitAll()          // verbo explícito
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
+
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {

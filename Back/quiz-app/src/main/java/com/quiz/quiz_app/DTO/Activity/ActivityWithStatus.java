@@ -17,7 +17,8 @@ public class ActivityWithStatus{
         id = activity.getId();
         title = activity.getTitle();
         description = activity.getDescription();
-        createdBy = activity.getCreatedBy().getId();
+        if(activity.getCreatedBy() != null)
+            createdBy = activity.getCreatedBy().getId();
         createdAt = activity.getCreatedAt();
         status = statusCorrection;
     }

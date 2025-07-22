@@ -17,6 +17,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ActivityResponseDTO } from "../../../../interfaces/Activity";
 import { deleteActivity, getActivities } from "../../../../services/activityService";
+import SqlUploader from "../../../../components/common/SqlUploader";
 
 interface Activity {
   id: number;
@@ -137,6 +138,8 @@ export default function Activities() {
           Exportar .SQL
         </Button>
       </Box>
+
+      <SqlUploader />
     </Box>
   );
 }
