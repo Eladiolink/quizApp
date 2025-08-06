@@ -51,6 +51,6 @@ public class ActivityController {
     @GetMapping("/allActivities/{id}")
     public ResponseEntity findAllByClientAnswered(@PathVariable Integer id){
 
-        return ResponseEntity.ok(activityService.findAllByClientAnswered(id));
+        return ResponseEntity.ok(activityService.getAll());
     }
 }

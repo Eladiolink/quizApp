@@ -18,4 +18,6 @@ public class ActivityQuestionResponseDTO {
     private String image;
     private Integer activityId;
     private LocalDateTime createdAt;
+    private String knowledgeArea;
+    private Integer questionNumber;
 }

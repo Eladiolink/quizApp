@@ -18,4 +18,5 @@ public class StatusCorrection {
 
     @Column(name = "statusDesc", length = 32,nullable = false)
     private String statusDesc;
+
 }

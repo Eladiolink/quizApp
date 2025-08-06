@@ -9,4 +9,5 @@ public class ActivityRequestDTO {
     private String title;
     private String description;
     private Integer createdById;
+    private Integer activityYear;
 }

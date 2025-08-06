@@ -30,7 +30,6 @@ public class AnsweredQuestionSummaryDTO {
         this.optionE = (String) a[6];
         this.correctOption = (CorrectOption) a[7];
         this.image = (String) a[8];
-        this.selectedOption = (Option) a[9];
     }
 
     // Getters e setters

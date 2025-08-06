@@ -12,6 +12,7 @@ public class ActivityResponseDTO {
     private String description;
     private Integer createdBy;
     private LocalDateTime createdAt;
+    private Integer activityYear;
 
 }
 

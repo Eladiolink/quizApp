@@ -15,6 +15,7 @@ import {
 } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
+import AddCircleIcon from "@mui/icons-material/AddCircle"; // ícone de "mais"
 import { ActivityResponseDTO } from "../../../../interfaces/Activity";
 import { deleteActivity, getActivities } from "../../../../services/activityService";
 import SqlUploader from "../../../../components/common/SqlUploader";
@@ -54,7 +55,7 @@ export default function Activities() {
 
   const handleExportSql = async () => {
     try {
-      const response = await fetch("http://localhost:3000/export/activities-sql"); // Ajuste se usar proxy/backend em outra porta
+      const response = await fetch("http://localhost:3000/export/activities-sql"); // Ajuste se necessário
       const sqlText = await response.text();
 
       const blob = new Blob([sqlText], { type: "text/sql" });
@@ -113,6 +114,13 @@ export default function Activities() {
                     color="primary"
                   >
                     <EditIcon />
+                  </IconButton>
+                  <IconButton
+                    component={Link}
+                    to={`/admin/activities/${activity.id}/add-question`}
+                    color="success"
+                  >
+                    <AddCircleIcon />
                   </IconButton>
                   <IconButton color="error" onClick={() => handleDelete(activity.id)}>
                     <DeleteIcon />

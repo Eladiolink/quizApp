@@ -41,7 +41,7 @@ def fetch_question_answered(activity_id: int, user_id: int):
                             , q.opcao_e
                             , q.opcao_correta
                             , aq.opcao AS questao_respondida
-                FROM questoes_respondida aq
+                FROM  questoes_atividade q
                 JOIN questoes_atividade q ON aq.id_questao = q.id
                 JOIN usuario c ON aq.id_cliente = c.id
                 JOIN atividade a ON q.id_atividade = a.id
@@ -53,5 +53,29 @@ def fetch_question_answered(activity_id: int, user_id: int):
 
     result = connection.fetchall()
     connection.close()
+    conn.close()
+    return result
+
+def fetch_questions_by_activity(activity_id: int):
+    conn = get_mysql_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    query = """
+        SELECT q.id AS id,
+               q.questao AS questao,
+               q.opcao_a,
+               q.opcao_b,
+               q.opcao_c,
+               q.opcao_d,
+               q.opcao_e,
+               q.opcao_correta
+        FROM questoes_atividade q
+        WHERE q.id_atividade = %s
+    """
+
+    cursor.execute(query, (activity_id,))
+    result = cursor.fetchall()
+
+    cursor.close()
     conn.close()
     return result

@@ -26,6 +26,9 @@ public class Activity {
     @Column(name = "descricao")
     private String description;
 
+    @Column(name = "ano")
+    private Integer activityYear;
+
     @ManyToOne
     @JoinColumn(name = "criado_por", nullable = true)
     private User createdBy;

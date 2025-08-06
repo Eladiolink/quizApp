@@ -163,7 +163,7 @@ export default function ActivityResultPage() {
           </Paper>
 
           {/* Card de correção/explicação com espaçamento abaixo */}
-          {correctedQuestion.length > 0 && (
+          {/* {correctedQuestion.length > 0 && (
             <Paper
               elevation={2}
               sx={{
@@ -176,7 +176,15 @@ export default function ActivityResultPage() {
               }}
             >
               <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
-                {acertou ? "Explicação:" : "Correção:"}
+                {acertou ? `Explicação:${
+                  correctedQuestion.find(
+                    (c) => c.questionId === currentQuestion.questionId
+                  )?.model
+                }` : `Correção: ${
+                  correctedQuestion.find(
+                    (c) => c.questionId === currentQuestion.questionId
+                  )?.model
+                }`}
               </Typography>
               <Typography sx={{ textAlign: "justify", whiteSpace: "pre-line" }}>
                 {
@@ -187,6 +195,32 @@ export default function ActivityResultPage() {
               </Typography>
             </Paper>
           )}
+ */}
+
+          {correctedQuestion.map((c) =>
+  c.questionId === currentQuestion.questionId && (
+    <Paper
+      key={c.id}
+      elevation={2}
+      sx={{
+        mt: 3,
+        p: 3,
+        borderLeft: "6px solid",
+        borderColor: acertou ? "green" : "red",
+        backgroundColor: theme.palette.mode === "dark" ? "#2a2a2a" : "#fafafa",
+        borderRadius: 2,
+      }}
+    >
+      <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
+        {acertou ? `Explicação: ${c.model}` : `Correção: ${c.model}`}
+      </Typography>
+      <Typography sx={{ textAlign: "justify", whiteSpace: "pre-line" }}>
+        {c.correction ?? (acertou ? "Explicação não disponível." : "Correção não disponível.")}
+      </Typography>
+    </Paper>
+  )
+)}
+
         </Box>
       )}
     </Container>

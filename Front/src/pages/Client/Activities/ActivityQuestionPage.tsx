@@ -79,31 +79,34 @@ export default function ActivityQuestionPage() {
         Responder Atividade
       </Typography>
       {questoes.map((questao, index) => (
-        <Box key={questao.id} mb={4}>
-          <Paper elevation={3} sx={{ p: 3 }}>
-            <Typography variant="h6" gutterBottom>
-              {index + 1}. {questao.question}
-            </Typography>
+          <Box key={questao.id} mb={4}>
+            <Paper elevation={3} sx={{ p: 3 }}>
+     <Typography variant="h6" gutterBottom component="div">
+      {index + 1}.
+      <pre style={{ whiteSpace: "pre-wrap", margin: 0 }}>
+        {questao.question}
+      </pre>
+    </Typography>
 
-            <RadioGroup
-              value={respostas[questao.id] || ""}
-              onChange={(e) => handleChange(questao.id, e.target.value)}
-            >
-              {["A", "B", "C", "D", "E"].map((letra) => (
-                <FormControlLabel
-                  key={letra}
-                  value={letra}
-                  control={<Radio />}
-                  label={`${letra}) ${questao[`option${letra}` as keyof typeof questao]}`}
-                />
-              ))}
-            </RadioGroup>
-          </Paper>
+              <RadioGroup
+                value={respostas[questao.id] || ""}
+                onChange={(e) => handleChange(questao.id, e.target.value)}
+              >
+                {["A", "B", "C", "D", "E"].map((letra) => (
+                  <FormControlLabel
+                    key={letra}
+                    value={letra}
+                    control={<Radio />}
+                    label={`${letra}) ${questao[`option${letra}` as keyof typeof questao]}`}
+                  />
+                ))}
+              </RadioGroup>
+            </Paper>
 
-          {index < questoes.length - 1 && (
-            <Divider sx={{ my: 4 }} />
-          )}
-        </Box>
+            {index < questoes.length - 1 && (
+              <Divider sx={{ my: 4 }} />
+            )}
+          </Box>
       ))}
 
       <Box textAlign="center" mt={6}>

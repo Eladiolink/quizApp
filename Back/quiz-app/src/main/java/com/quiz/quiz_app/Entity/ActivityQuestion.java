@@ -7,10 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
-@Table(name = "questoesAtividade")
+@Table(name = "questoes_atividade")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -50,6 +49,12 @@ public class ActivityQuestion {
     @ManyToOne
     @JoinColumn(name = "id_atividade", nullable = false)
     private Activity activity;
+
+    @Column(name = "area_conhecimento")
+    private String knowledgeArea;
+
+    @Column(name = "numero_questao")
+    private Integer questionNumber;
 
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;

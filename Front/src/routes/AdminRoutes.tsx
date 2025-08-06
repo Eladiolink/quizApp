@@ -5,6 +5,7 @@ import ManageUser from "../pages/Admin/Manage/Users/User";
 import ManageActivities from "../pages/Admin/Manage/Activities/Activities";
 import AddActivity from "../pages/Admin/Manage/Activities/AddActivity";
 import { PrivateRoute } from "./PrivateRoute";
+import AddQuestion from "../pages/Admin/Manage/Activities/addQuestion";
 
 export const AdminRoutes = (
   <Route
@@ -19,5 +20,6 @@ export const AdminRoutes = (
     <Route path="manage/users" element={<ManageUser />} />
     <Route path="manage/activities" element={<ManageActivities />} />
     <Route path="activities/create" element={<AddActivity />} />
+    <Route path="activities/:id/add-question" element={<AddQuestion />} /> 
   </Route>
 );

@@ -14,6 +14,8 @@ import {
   TableRow,
   Chip,
   useTheme,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import { ActivityAnswered } from "../../interfaces/Activity";
 import { useEffect, useState } from "react";
@@ -23,14 +25,16 @@ export default function ClientHome() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const theme = useTheme();
+
   const [atividadesRecentes, setAtividadesRecentes] = useState<ActivityAnswered[]>([]);
-  
+  const [selectedModels, setSelectedModels] = useState<Record<number, string>>({});
+
   useEffect(() => {
     const id = localStorage.getItem("id");
     if (id) {
       const parsedId = parseInt(id);
       if (!isNaN(parsedId)) {
-        getActivityAnswered(parsedId).then(res => setAtividadesRecentes(res));
+        getActivityAnswered(parsedId).then((res) => setAtividadesRecentes(res));
       } else {
         console.error("ID salvo no localStorage não é um número válido.");
       }
@@ -96,45 +100,74 @@ export default function ClientHome() {
                 <TableCell><strong>Título</strong></TableCell>
                 <TableCell><strong>Status</strong></TableCell>
                 <TableCell><strong>Pontuação</strong></TableCell>
+                <TableCell><strong>Modelo</strong></TableCell>
                 <TableCell><strong>Correção</strong></TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {atividadesRecentes.map((atividade) => (
-                <TableRow
-                  key={atividade.id}
-                  hover
-                  sx={{ cursor: "pointer" }}
-                  onClick={() => {
-                    const userId = localStorage.getItem("id");
-                    navigate(`/cliente/result/${atividade.id}/user/${userId}`);
-                  }}
-                >
+                <TableRow key={atividade.id} hover>
                   <TableCell>{atividade.title}</TableCell>
-                  <TableCell>
-                    <Chip
-                      label={"Concluído"}
-                      color={"success"}
-                      variant="outlined"
-                    />
-                  </TableCell>
-                  <TableCell>{"80%"}</TableCell>
+
+                  {/* Status com botão "Ver resultado" */}
                   <TableCell>
                     {atividade.status ? (
-                      <Chip label={atividade.status} color="info" variant="outlined" />
-                    ) : (
                       <Button
                         size="small"
                         variant="outlined"
-                        onClick={(e) => {
-                          e.stopPropagation(); // <-- IMPORTANTE!
-                          const userId = parseInt(localStorage.getItem("id") ?? "0");
-                          getRequestcorrection(atividade.id, userId);
+                        onClick={() => {
+                          const userId = localStorage.getItem("id");
+                          navigate(`/cliente/result/${atividade.id}/user/${userId}`);
                         }}
                       >
-                        Solicitar correção
+                        Ver resultado
                       </Button>
-                    )}
+                    ) : (
+ <Button
+                        size="small"
+                        variant="outlined"
+                        onClick={() => {
+                          const userId = localStorage.getItem("id");
+                          navigate(`/cliente/result/${atividade.id}/user/${userId}`);
+                        }}
+                      >
+                        Ver resultado
+                      </Button>                    )}
+                  </TableCell>
+
+                  <TableCell>{"80%"}</TableCell>
+
+                  {/* Dropdown de modelos */}
+                  <TableCell>
+                    <Select
+                      size="small"
+                      value={selectedModels[atividade.id] || "gemini"}
+                      onChange={(e) => {
+                        setSelectedModels((prev) => ({
+                          ...prev,
+                          [atividade.id]: e.target.value,
+                        }));
+                      }}
+                    >
+                      <MenuItem value="gemini">Gemini</MenuItem>
+                      <MenuItem value="gpt-4">GPT-4</MenuItem>
+                    </Select>
+                  </TableCell>
+
+                  {/* Correção sempre visível */}
+                  <TableCell>
+                    <Button
+                      size="small"
+                      variant="outlined"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const userId = parseInt(localStorage.getItem("id") ?? "0");
+                        const model = selectedModels[atividade.id] || "gemini";
+                        getRequestcorrection(atividade.id, userId, model);
+                      }}
+                    >
+                      Solicitar correção
+                    </Button>
                   </TableCell>
                 </TableRow>
               ))}

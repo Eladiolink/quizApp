@@ -10,7 +10,7 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
-import {Notification} from '../../../../components/common/Notification';
+import { Notification } from '../../../../components/common/Notification';
 import Editor from '../../../../components/common/Editor'; // ou TextAreaEditor
 import { ActivityRequestDTO } from '../../../../interfaces/Activity';
 import { createActivity } from '../../../../services/activityService';
@@ -24,8 +24,12 @@ export default function AddActivity() {
   const [description, setDescription] = useState("");
   const [questionText, setQuestionText] = useState("");
   const [alternatives, setAlternatives] = useState(["", "", "", "", ""]);
-  const [correctIndex, setCorrectIndex] = useState< number| null>(null);
+  const [correctIndex, setCorrectIndex] = useState<number | null>(null);
   const [notification, setNotification] = useState<{ message: string; type?: "success" | "error" } | null>(null);
+  const [knowledgeArea, setKnowledgeArea] = useState<string|null>(null);
+  const [activityYear, setActivityYear] = useState<number>(new Date().getFullYear());
+  const [questionNumber, setquestionNumber] = useState<number|null>(null);
+
 
   const showNotification = (message: string, type: "success" | "error" = "success") => {
     setNotification({ message, type });
@@ -45,7 +49,7 @@ export default function AddActivity() {
       return;
     }
 
-    const questionId = ['A','B','C','D','E']
+    const questionId = ['A', 'B', 'C', 'D', 'E']
     const newQuestion: ActivityQuestionRequestDTO = {
       question: questionText,
       optionA: alternatives[0],
@@ -54,7 +58,9 @@ export default function AddActivity() {
       optionD: alternatives[3],
       optionE: alternatives[4],
       correctOption: questionId[correctIndex],
-      activityId: idQuestion
+      activityId: idQuestion,
+      knowledgeArea: knowledgeArea,
+      questionNumber: questionNumber == null ? 0: questionNumber
     };
 
     createQuestion(newQuestion)
@@ -75,6 +81,7 @@ export default function AddActivity() {
       title: title,
       description: description,
       createdById: 1,
+      activityYear: activityYear
     };
 
     createActivity(activityRequest)
@@ -94,6 +101,8 @@ export default function AddActivity() {
     setAlternatives(["", "", "", "", ""]);
     setCorrectIndex(null);
     setShowForm(false);
+    setKnowledgeArea("");
+    setActivityYear(new Date().getFullYear());
   };
 
   return (
@@ -125,6 +134,13 @@ export default function AddActivity() {
               rows={3}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+            />
+            <TextField
+              label="Ano da Atividade"
+              type="number"
+              value={activityYear}
+              onChange={(e) => setActivityYear(e.target.value === "" ? new Date().getFullYear() : parseInt(e.target.value))}
+              fullWidth
             />
             <Button variant="contained" onClick={handleStart}>
               Prosseguir para adicionar questões
@@ -176,6 +192,22 @@ export default function AddActivity() {
                 ))}
               </Select>
             </FormControl>
+
+            <TextField
+              label="Número da Questão"
+              type="number"
+              fullWidth
+              value={questionNumber}
+              onChange={(e) => setquestionNumber(e.target.value === "" ? null : parseInt(e.target.value))}
+            />
+
+            <TextField
+              label="Área do Conhecimento"
+              fullWidth
+              value={knowledgeArea}
+              onChange={(e) => setKnowledgeArea(e.target.value)}
+            />
+
 
             <Box display="flex" gap={2}>
               <Button type="submit" variant="contained" color="success">

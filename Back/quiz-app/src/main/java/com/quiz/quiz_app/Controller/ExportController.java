@@ -37,52 +37,54 @@ public class ExportController {
 
         StringBuilder sqlBuilder = new StringBuilder();
 
-        // Cria um contador para nomear as variáveis temporárias
         int counter = 1;
         Map<Integer, String> activityIdToSqlVar = new HashMap<>();
 
         // Exporta atividades
         for (Activity activity : activities) {
             sqlBuilder.append(String.format(
-                    "INSERT INTO atividade (titulo, descricao, criado_por, created_at) VALUES ('%s', '%s', %s, '%s');\n",
+                    "INSERT INTO atividade (titulo, descricao, criado_por, created_at, ano) " +
+                            "VALUES ('%s', '%s', %s, '%s', %d);\n",
                     escapeSql(activity.getTitle()),
                     escapeSql(activity.getDescription()),
-                    "NULL",
-                    activity.getCreatedAt()
+                    "NULL", // Ajuste se necessário
+                    activity.getCreatedAt(),
+                    activity.getActivityYear()
             ));
 
             String sqlVar = "@atividade_id_" + counter;
             sqlBuilder.append("SET " + sqlVar + " = LAST_INSERT_ID();\n\n");
-            activityIdToSqlVar.put(activity.getId(), sqlVar);
+
+            // Exporta questões
+            for (ActivityQuestion question : questions) {
+
+                if(activity.getId() != question.getActivity().getId()) continue;
+               // sqlVar = activityIdToSqlVar.get(question.getActivity().getId());
+
+                sqlBuilder.append(String.format(
+                        "INSERT INTO questoes_atividade (questao, opcao_a, opcao_b, opcao_c, opcao_d, opcao_e, opcao_correta, imagem, id_atividade, created_at, area_conhecimento, numero_questao) " +
+                                "VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s, '%s', '%s', %d);\n",
+                        escapeSql(question.getQuestion()),
+                        escapeSql(question.getOptionA()),
+                        escapeSql(question.getOptionB()),
+                        escapeSql(question.getOptionC()),
+                        escapeSql(question.getOptionD()),
+                        escapeSql(question.getOptionE()),
+                        escapeSql(question.getCorrectOption().name()),
+                        question.getImage() != null ? "'" + escapeSql(question.getImage()) + "'" : "NULL",
+                        sqlVar,
+                        question.getCreatedAt(),
+                        escapeSql(question.getKnowledgeArea()),
+                        question.getQuestionNumber()
+                ));
+            }
             counter++;
-        }
-
-        // Exporta questões associadas
-        for (ActivityQuestion question : questions) {
-            String sqlVar = activityIdToSqlVar.get(question.getActivity().getId());
-
-            sqlBuilder.append(String.format(
-                    "INSERT INTO questoes_atividade (questao, opcao_a, opcao_b, opcao_c, opcao_d, opcao_e, opcao_correta, imagem, id_atividade, created_at) " +
-                            "VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s, '%s');\n",
-                    escapeSql(question.getQuestion()),
-                    escapeSql(question.getOptionA()),
-                    escapeSql(question.getOptionB()),
-                    escapeSql(question.getOptionC()),
-                    escapeSql(question.getOptionD()),
-                    escapeSql(question.getOptionE()),
-                    question.getCorrectOption().name(),
-                    question.getImage() != null ? "'" + escapeSql(question.getImage()) + "'" : "NULL",
-                    sqlVar,
-                    question.getCreatedAt()
-            ));
         }
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=atividade_export.sql")
                 .body(sqlBuilder.toString());
     }
-
-
 
     @GetMapping(value = "/sql", produces = "text/sql")
     public ResponseEntity<String> exportUsersAsSql() {
@@ -107,6 +109,12 @@ public class ExportController {
     }
 
     private String escapeSql(String input) {
-        return input == null ? "" : input.replace("'", "''");
+        if (input == null) return "";
+        return input
+                .replace("\\", "\\\\")     // barra invertida
+                .replace("'", "''")        // aspas simples
+                .replace("\n", "\\n")      // nova linha
+                .replace("\r", "\\r")      // retorno de carro
+                .replace("\t", "\\t");     // tabulação
     }
 }

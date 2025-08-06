@@ -16,11 +16,12 @@ public class ChatController {
         chatClient = restLlmClient;
     }
 
-    @GetMapping("/activity/{activityId}/user/{userId}")
+    @GetMapping("/activity/{activityId}/user/{userId}/model/{model}")
     public String chat(
             @PathVariable("activityId") Integer activityId,
-            @PathVariable("userId") Integer userId
+            @PathVariable("userId") Integer userId,
+            @PathVariable("model") String model
     ) {
-        return chatClient.getRespostaChat(activityId,userId);
+        return chatClient.getRespostaChat(activityId,userId, model);
     }
 }

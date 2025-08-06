@@ -1,22 +1,23 @@
 from celery import Celery
-from app.integrations.gemini import inicializar_llm, fazer_pergunta
-from app.models.chat_model import fetch_question_answered
+from app.integrations.gemini import inicializar_llm as gemini, fazer_pergunta as fg_gemini
+from app.integrations.gpt import inicializar_llm as gpt, fazer_pergunta as fp_gpt
+from app.models.chat_model import fetch_question_answered, fetch_questions_by_activity
 from app.models.atividades_corrigida_model import cria_atividades_corrigida, atualiza_atividades_corrigida
 from app.models.questoes_corrigida_model import adicionar_questoes_corrigida, QuestaoCorrigidaRequest
 
 
 celery_app = Celery("worker", broker="redis://localhost:6379/0")
 
-@celery_app.task
-def processar_chamada_llms(prompt):
-    # Simula chamada demorada
-    import time
+# @celery_app.task
+# def processar_chamada_llms(prompt):
+#     # Simula chamada demorada
+#     import time
     
-    llm = inicializar_llm()
+#     llm = inicializar_llm()
 
-    pergunta = "Quanto é 4x4?"
-    resposta = fazer_pergunta(llm, pergunta)
-    return f"Resposta gerada com prompt: {resposta}"
+#     pergunta = "Quanto é 4x4?"
+#     resposta = fazer_pergunta(llm, pergunta)
+#     return f"Resposta gerada com prompt: {resposta}"
 
 @celery_app.task
 def processar_chamada_llm(info_question):
@@ -31,18 +32,30 @@ def processar_chamada_llm(info_question):
    
     resposta = correction_llm(info_question)
 
+    if resposta == False:
+            return f"LLM NAO CADASTRADA"
+
     atualiza_atividades_corrigida(info_question["activity_id"], info_question["user_id"],2)
     return f"Resposta gerada com prompt: {resposta}"
 
 def correction_llm(info_question):
-    questions = fetch_question_answered(info_question["activity_id"], info_question["user_id"])
+    questions = fetch_questions_by_activity(info_question["activity_id"])
     resposta = ""
     count = 1
     
     for question in questions:
-        llm = inicializar_llm()
+        print(info_question["model"])
+        if info_question["model"] == "gemini":
+            llm = gemini()
+            fazer_pergunta = fg_gemini
+        elif info_question["model"] == "gpt-4":
+            llm = gpt()
+            fazer_pergunta = fp_gpt
+        else:
+            print(f"LLM nao cadastrada")
+            return False
+
         print(list(question.keys()))
-        print(f"{question["questao_respondida"]} - {question["opcao_correta"]}")
         pergunta = f"""Respoda a questão e fale qual é a alternativa correta e por que as outras alternativas estão erradas:
                         {question["questao"]}
 
@@ -51,6 +64,7 @@ def correction_llm(info_question):
                         C) {question["opcao_c"]}
                         D) {question["opcao_d"]}
                         E) {question["opcao_e"]}
+        Começe com: "A alternativa correta é a #Letra", e após isso mostre a explicação.
         """
         
         print(f"PROCESSANDO PERGUNTA {count}")
@@ -61,7 +75,7 @@ def correction_llm(info_question):
         
         questaoSave = QuestaoCorrigidaRequest(
                                     correcao=resposta,
-                                    modelo="gpt-4",
+                                    modelo=info_question["model"],
                                     id_cliente=info_question["user_id"],
                                     id_questao=question["id"]
                                 )

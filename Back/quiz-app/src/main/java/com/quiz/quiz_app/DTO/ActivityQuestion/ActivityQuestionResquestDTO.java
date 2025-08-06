@@ -14,4 +14,6 @@ public class ActivityQuestionResquestDTO {
     private CorrectOption correctOption;
     private String image;
     private Integer activityId;
+    private String knowledgeArea;
+    private Integer questionNumber;
 }

@@ -14,20 +14,17 @@ public interface AnsweredQuestionRepository extends JpaRepository<AnsweredQuesti
     List<AnsweredQuestion> findAllByQuestion_Activity_Id(Integer activityId);
 
     @Query("""
-    SELECT DISTINCT aq.question.id AS id
-                  , aq.question.question AS question
-                  , aq.question.optionA
-                  , aq.question.optionB
-                  , aq.question.optionC
-                  , aq.question.optionD
-                  , aq.question.optionE
-                  , aq.question.correctOption
-                  , aq.question.image
-                  , aq.selectedOption
-      FROM AnsweredQuestion aq
-      JOIN aq.question q
-     WHERE aq.client.id = :userId
-       AND q.activity.id = :activityId
+                SELECT q.id,
+                       q.question,
+                       q.optionA,
+                       q.optionB,
+                       q.optionC,
+                       q.optionD,
+                       q.optionE,
+                       q.correctOption,
+                       q.image
+                FROM ActivityQuestion q
+                WHERE q.activity.id = :activityId
     """)
     List<Object[]> findAllActivitiesNotAnsweredByClient(@Param("activityId") Integer activityId, @Param("userId") Integer userId);
 }

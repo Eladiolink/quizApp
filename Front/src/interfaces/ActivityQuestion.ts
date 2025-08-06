@@ -8,6 +8,8 @@ export interface ActivityQuestionRequestDTO {
     correctOption: string; 
     image?: string;
     activityId: number;
+    knowledgeArea: string|null;
+    questionNumber: number;
   }
 
 export interface ActivityQuestionResponseDTO {
@@ -22,6 +24,8 @@ export interface ActivityQuestionResponseDTO {
     image?: string;
     activityId: number;
     createdAt: string;
+    knowledgeArea: string;
+    questionNumber: number;
   }
 
   export interface ClientActivityQuestionResponseDTO {
@@ -33,6 +37,7 @@ export interface ActivityQuestionResponseDTO {
     optionD: string;
     optionE: string;
     activityId: number;
+    questionNumber: number;
   }   
   
 export type CorrectOption = 'A' | 'B' | 'C' | 'D' | 'E';

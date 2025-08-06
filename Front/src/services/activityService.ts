@@ -23,7 +23,7 @@ export async function getActivityAnswered(id: number): Promise<ActivityAnswered[
   return response;
 }
 
-export async function getRequestcorrection(activityId: number, userId: number): Promise<ActivityAnswered[]> {
-  const response = await get<ActivityAnswered[]>(`chat/activity/${activityId}/user/${userId}`);
+export async function getRequestcorrection(activityId: number, userId: number, model: string): Promise<ActivityAnswered[]> {
+  const response = await get<ActivityAnswered[]>(`chat/activity/${activityId}/user/${userId}/model/${model}`);
   return response;
 }
