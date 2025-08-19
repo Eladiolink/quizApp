@@ -160,6 +160,10 @@ export default function ActivityResultPage() {
             <Typography variant="subtitle1" fontWeight="bold">
               Alternativa correta: {currentQuestion.correctOption}
             </Typography>
+
+             <Typography variant="subtitle1" fontWeight="bold">
+               Área de Conhecimento: {currentQuestion.knowledgeArea}
+            </Typography>
           </Paper>
 
           {/* Card de correção/explicação com espaçamento abaixo */}

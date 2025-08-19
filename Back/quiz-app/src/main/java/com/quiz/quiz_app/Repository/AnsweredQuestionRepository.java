@@ -22,7 +22,8 @@ public interface AnsweredQuestionRepository extends JpaRepository<AnsweredQuesti
                        q.optionD,
                        q.optionE,
                        q.correctOption,
-                       q.image
+                       q.image,
+                       q.knowledgeArea
                 FROM ActivityQuestion q
                 WHERE q.activity.id = :activityId
     """)

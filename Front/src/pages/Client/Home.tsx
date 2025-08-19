@@ -151,6 +151,7 @@ export default function ClientHome() {
                     >
                       <MenuItem value="gemini">Gemini</MenuItem>
                       <MenuItem value="gpt-4">GPT-4</MenuItem>
+                      <MenuItem value="deepseek">Deepseek</MenuItem>
                     </Select>
                   </TableCell>
 

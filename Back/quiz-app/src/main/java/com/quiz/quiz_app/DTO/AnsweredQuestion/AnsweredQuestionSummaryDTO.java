@@ -18,6 +18,7 @@ public class AnsweredQuestionSummaryDTO {
     private String optionE;
     private CorrectOption correctOption;
     private String image;
+    private String knowledgeArea;
     private Option selectedOption;
 
     public AnsweredQuestionSummaryDTO(Object[] a) {
@@ -30,6 +31,7 @@ public class AnsweredQuestionSummaryDTO {
         this.optionE = (String) a[6];
         this.correctOption = (CorrectOption) a[7];
         this.image = (String) a[8];
+        this.knowledgeArea = (String) a[9];
     }
 
     // Getters e setters

@@ -1,6 +1,9 @@
 from celery import Celery
 from app.integrations.gemini import inicializar_llm as gemini, fazer_pergunta as fg_gemini
 from app.integrations.gpt import inicializar_llm as gpt, fazer_pergunta as fp_gpt
+from app.integrations.deepseek import inicializar_llm as deepseek, fazer_pergunta as fp_deepseek
+
+
 from app.models.chat_model import fetch_question_answered, fetch_questions_by_activity
 from app.models.atividades_corrigida_model import cria_atividades_corrigida, atualiza_atividades_corrigida
 from app.models.questoes_corrigida_model import adicionar_questoes_corrigida, QuestaoCorrigidaRequest
@@ -51,6 +54,9 @@ def correction_llm(info_question):
         elif info_question["model"] == "gpt-4":
             llm = gpt()
             fazer_pergunta = fp_gpt
+        elif info_question["model"] == "deepseek":
+            llm = deepseek()
+            fazer_pergunta = fp_deepseek
         else:
             print(f"LLM nao cadastrada")
             return False

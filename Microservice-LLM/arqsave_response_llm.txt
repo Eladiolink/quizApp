@@ -11063,3 +11063,1659 @@ A alternativa correta é a **D**.
 *   **E) A possibilidade de vários clientes acessarem de forma concorrente um mesmo recurso compartilhado em um servidor é resultado do alto nível de transparência do sistema.**
 
     *   **Errada:** A capacidade de acesso concorrente a recursos compartilhados é resultado de mecanismos de controle de concorrência (como locks, semáforos, etc.) e técnicas de gerenciamento de recursos no servidor. A transparência em um sistema distribuído refere-se a ocultar a complexidade da distribuição dos recursos, tornando o sistema mais fácil de usar para os usuários. Embora a transparência possa *ajudar* a facilitar o acesso concorrente, ela não é a *causa* direta.
+1)
+
+A alternativa correta é a **Letra A**: As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.
+
+### Explicação:  
+- **Asserção I (Verdadeira)**: O texto afirma que, antigamente, a produção e divulgação artística dependiam de instituições como museus, gravadoras e editoras, que funcionavam como "filtros". Com a evolução tecnológica, esse cenário mudou, reduzindo a importância desses centros tradicionais, pois agora os artistas podem alcançar o público diretamente. Isso corrobora a ideia de democratização mencionada na asserção I.  
+
+- **Asserção II (Verdadeira)**: O texto também destaca que as novas tecnologias permitem que artistas criem e divulguem seu trabalho de forma independente, sem depender de intermediários. Isso justifica a asserção I, pois explica **como** a tecnologia democratiza o acesso (eliminando barreiras e permitindo que mais pessoas produzam e compartilhem arte).  
+
+### Por que as outras alternativas estão erradas?  
+- **B)**: A II **é sim** uma justificativa direta da I, pois mostra o mecanismo por trás da democratização.  
+- **C)**: A II não é falsa; o texto apoia a ideia de que as tecnologias facilitam a independência dos artistas.  
+- **D)**: A I não é falsa; o texto claramente defende que a tecnologia reduziu a dependência dos centros tradicionais.  
+- **E)**: Ambas as asserções são verdadeiras e estão alinhadas com o texto.  
+
+Portanto, a relação entre as asserções está correta, e a II explica a I de maneira coerente.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2)
+
+A alternativa correta é a **#Letra E) I, II e III.**
+
+### Explicação:
+
+- **Afirmação I:** Correta. O terceiro setor é de fato uma junção entre o setor público (Estado) e o privado (empresas), atuando de forma complementar para suprir necessidades sociais que não são totalmente atendidas por nenhum dos dois setores tradicionais. Ele engloba organizações não governamentais (ONGs), associações e outras entidades sem fins lucrativos.
+
+- **Afirmação II:** Correta. O terceiro setor desempenha um papel crucial na democratização do acesso à educação, capacitação técnica e desenvolvimento sustentável, especialmente em áreas onde o Estado e o mercado não conseguem atuar de forma eficiente. Muitas ONGs e instituições do terceiro setor promovem projetos sociais, ambientais e educacionais.
+
+- **Afirmação III:** Correta. A responsabilidade social corporativa tem influenciado as empresas a repensarem suas estratégias, incorporando valores éticos, sustentáveis e sociais em suas culturas organizacionais. Isso tem levado a mudanças nas políticas internas e externas das empresas, alinhando-as com demandas da sociedade.
+
+### Por que as outras alternativas estão erradas?
+
+- **A) I, apenas:** Incorreta, pois as afirmações II e III também estão corretas.  
+- **B) II, apenas:** Incorreta, pois as afirmações I e III também são válidas.  
+- **C) I e III, apenas:** Incorreta, pois a afirmação II também está correta.  
+- **D) II e III, apenas:** Incorreta, pois a afirmação I também é verdadeira.  
+
+Portanto, todas as afirmações (I, II e III) estão corretas, tornando a alternativa **E** a única adequada.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)
+
+A alternativa correta é a **Letra B**, e as demais estão incorretas pelas seguintes razões:  
+
+- **Letra A**: Errada. O texto afirma que 60% das empresas americanas "bisbilhotam a vida dos candidatos em websites de rede social", ou seja, mais da metade **acessa** os perfis, não evita. A alternativa contradiz o dado apresentado.  
+
+- **Letra B**: Correta. O texto menciona que empresas e instituições já adotam "cartilhas de conduta em redes sociais", o que demonstra que estão atentas ao comportamento online de funcionários e candidatos.  
+
+- **Letra C**: Errada. Não há qualquer menção no texto sobre "complexidade de procedimentos" ou impedimentos para acessar perfis. Pelo contrário, as empresas conseguem monitorar (como evidenciado pelos dados de recrutamento).  
+
+- **Letra D**: Errada. O texto não diz que as cartilhas **proíbem** o uso de redes sociais, mas sim que orientam sobre conduta ("cartilhas de conduta"). A alternativa distorce a informação.  
+
+- **Letra E**: Errada. A pesquisa com executivos brasileiros mostra que **44%** desclassificariam um candidato por comportamento em redes sociais, ou seja, menos da metade ("minoria"), não a maioria. A alternativa infla o percentual incorretamente.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+
+A alternativa correta é a **#Letra D) I, III e IV**.  
+
+**Explicação:**  
+
+- **Afirmação I (Correta):** O texto menciona que o dispositivo de Odón pode substituir métodos arcaicos como fórceps e tubos de sucção, que, se mal utilizados, podem comprometer a vida do bebê. Além disso, o preço acessível (inferior a 50 dólares) e a redução em países mais pobres sugerem que o método pode ser amplamente adotado, contribuindo para a redução da mortalidade neonatal.  
+
+- **Afirmação II (Incorreta):** O dispositivo de Odón **não é uma variante dos tubos de sucção**, mas sim uma invenção baseada em uma técnica para remover rolhas de garrafas. Ele representa uma abordagem inovadora, não um aperfeiçoamento de equipamentos já existentes.  
+
+- **Afirmação III (Correta):** O texto destaca que o aparelho é simples e que, por não exigir mãos altamente treinadas (diferente de fórceps e sucção), tem potencial para ser usado em locais onde partos são realizados por parteiras, como em regiões mais pobres.  
+
+- **Afirmação IV (Correta):** A preocupação com a acessibilidade do dispositivo em países mais pobres (com redução de preço) demonstra uma preocupação social, alinhada com o apoio da OMS e o objetivo de salvar vidas de forma mais equitativa.  
+
+**Alternativas eliminadas:**  
+- **Letra A (I e II):** Incorreta porque a II está errada.  
+- **Letra B (II e IV):** Incorreta porque a II está errada.  
+- **Letra C (III e IV):** Parcialmente correta, mas exclui a I, que também está certa.  
+- **Letra E (II, III e IV):** Incorreta porque a II está errada.  
+
+Portanto, a resposta correta é **D) I, III e IV**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5)
+
+A alternativa correta é a **#Letra E) I, II e III**.  
+
+**Explicação:**  
+
+- **Afirmação I:**  
+  **Correta.** Os dados mostram que as proporções de trabalhadores por faixa de tempo de deslocamento no **Rio de Janeiro e São Paulo são muito próximas** (ex.: 5,80% vs. 5,10% em até 5 min; 23,20% vs. 23,30% em mais de 1h até 2h). Já **Curitiba e a média brasileira** apresentam distribuições distintas (ex.: 7,80% em até 5 min em Curitiba vs. 12,70% no Brasil).  
+
+- **Afirmação II:**  
+  **Correta.** Nas metrópoles, há uma **concentração de empregos nos centros urbanos**, enquanto a população de baixa renda reside majoritariamente em **periferias ou áreas irregulares**, aumentando o tempo e o custo do deslocamento. Isso é corroborado pelos dados, que mostram **percentuais elevados de deslocamentos longos** (ex.: mais de 1h) no Rio e em São Paulo.  
+
+- **Afirmação III:**  
+  **Correta.** Políticas como **Bilhete Único** (reduz custos com integração modal) e **VLT** (transporte eficiente) visam **diminuir tempo e custos** de deslocamento, melhorando a mobilidade urbana.  
+
+**Por que as outras alternativas estão erradas?**  
+- **A) I, apenas:** Ignora que II e III também estão corretas.  
+- **B) III, apenas:** Desconsidera que I e II são verdadeiras.  
+- **C) I e II, apenas:** Exclui III, que é válida.  
+- **D) II e III, apenas:** Omite I, que está correta.  
+
+Portanto, **todas as afirmações (I, II e III) estão corretas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6)
+
+A alternativa correta é a **Letra D**.  
+
+**Explicação:**  
+O texto destaca que as transformações ocorridas no século XX, impulsionadas pela industrialização, afetaram tanto o meio urbano quanto o rural, gerando mudanças culturais, problemas socioeconômicos e a aplicação de novas tecnologias. A alternativa D reflete essa ideia ao afirmar que ambos os espaços sofreram transformações devido às inovações tecnológicas aplicadas às indústrias e à agricultura, alinhando-se perfeitamente com o conteúdo do texto.  
+
+**Por que as outras estão erradas?**  
+- **Letra A:** Incorreta, pois o texto menciona que a industrialização dependeu dos recursos naturais disponíveis e não afirma que ocorreu independentemente do êxodo rural (que, na realidade, foi um fenômeno associado ao processo).  
+- **Letra B:** Incorreta, porque o texto explicita que as atividades agrícolas foram prejudicadas, contradizendo a afirmação de que não houve prejuízos. Além disso, não há menção a tecnologias que compensassem totalmente esses impactos.  
+- **Letra C:** Incorreta, pois o texto não sugere que a cultura rural foi totalmente abandonada ou que a urbana era "oposta". A adaptação não implica necessariamente uma substituição completa dos valores originais.  
+- **Letra E:** Incorreta, porque, embora os migrantes tenham levado suas tradições, o texto enfatiza as transformações culturais e os problemas decorrentes da urbanização, indicando que a cultura não se manteve "intacta".
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7)
+
+A alternativa correta é a **Letra A) I, apenas**.  
+
+### Explicação:  
+- **Afirmação I (Correta):**  
+  Técnicas como PERT (Program Evaluation and Review Technique) e CPM (Critical Path Method) são amplamente utilizadas no gerenciamento de projetos para estimar esforço, definir atividades e identificar o caminho crítico. Essas ferramentas ajudam a planejar e controlar prazos, tornando a afirmação correta.  
+
+- **Afirmação II (Incorreta):**  
+  Séries históricas podem ser úteis para estimativas, mas **não garantem estimativas consistentes independentemente do domínio de aplicação**. Sistemas de domínios diferentes podem ter complexidades, requisitos e desafios distintos, o que afeta a precisão das estimativas baseadas em dados históricos de projetos não relacionados.  
+
+- **Afirmação III (Incorreta):**  
+  A contratação de novos desenvolvedores **não assegura** necessariamente que o cronograma será recuperado. Pode até causar atrasos adicionais devido ao tempo de integração, curva de aprendizado e aumento da complexidade de comunicação (Lei de Brooks: "adicionar pessoas a um projeto atrasado o atrasa ainda mais").  
+
+### Por que as outras alternativas estão erradas?  
+- **B) II, apenas:** A afirmação II está incorreta, como explicado.  
+- **C) I e III, apenas:** A afirmação III está incorreta.  
+- **D) II e III, apenas:** Ambas as afirmações II e III estão incorretas.  
+- **E) I, II e III:** Apenas a afirmação I está correta.  
+
+Portanto, a única alternativa correta é **A) I, apenas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8)
+
+A alternativa correta é a **D) II e III, apenas**.  
+
+### Explicação:  
+
+#### **Afirmação I: "O endereço físico é composto por 13 bits."**  
+- **Errada.**  
+  - O tamanho do quadro (frame) é de 1 Kbyte = \(2^{10}\) bytes, então são necessários **10 bits** para o deslocamento (*offset*) dentro do quadro.  
+  - A tabela de páginas mostra que os quadros são representados por 4 bits (ex.: `0010`, `0100`, etc.), então o espaço físico tem \(2^4 = 16\) quadros.  
+  - Portanto, o endereço físico é composto por:  
+    - **4 bits (quadro) + 10 bits (offset) = 14 bits**, não 13.  
+
+#### **Afirmação II: "O esquema de gerência de memória apresentado reduz a fragmentação externa."**  
+- **Correta.**  
+  - A paginação divide a memória em quadros de tamanho fixo, evitando a fragmentação externa (espaços não utilizados entre alocações de tamanhos variáveis).  
+
+#### **Afirmação III: "A tradução do endereço lógico 011000000110 para endereço físico causa exceção."**  
+- **Correta.**  
+  - O endereço lógico tem 12 bits. Como o tamanho da página é 1 Kbyte (\(2^{10}\) bytes), os **2 primeiros bits** indicam o número da página, e os **10 bits restantes** são o *offset*.  
+  - `011000000110` → Número da página: `01` (binário) = **1** (decimal).  
+  - Na tabela, a página **1** tem `BV = 1` (válida), então **não causaria exceção**.  
+  - **Correção:** O número da página é determinado pelos bits mais significativos. Se considerarmos um espaço de endereçamento maior (ex.: 16 páginas, 4 bits para página), o endereço `011000000110` teria:  
+    - Página: `0110` (binário) = **6** (decimal).  
+    - Na tabela, a página **6** tem `BV = 0` (inválida), causando exceção.  
+  - Portanto, **depende da interpretação**, mas considerando a tabela fornecida (0 a 7), a página 6 é inválida, gerando exceção.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I, apenas**: A afirmação I está incorreta.  
+- **B) II, apenas**: A afirmação III também está correta.  
+- **C) I e III, apenas**: A afirmação I está incorreta.  
+- **E) I, II e III**: A afirmação I está incorreta.  
+
+**Resposta final: D) II e III, apenas.**
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9)
+
+A alternativa correta é a **D**.
+
+### Explicação:
+
+#### Análise do Algoritmo 1:
+- O Algoritmo 1 calcula o polinômio usando uma abordagem direta, onde cada termo \(a_i x^i\) é calculado separadamente.
+- No pior caso (quando todos os coeficientes \(a[i]\) são diferentes de zero), o loop externo (linhas 02-10) executa \(n\) vezes, e o loop interno (linhas 05-07) executa até \(i-1\) vezes para cada \(i\). Isso resulta em uma complexidade total de:
+  \[
+  1 + 2 + 3 + \dots + (n-1) = \frac{n(n-1)}{2} \implies O(n^2).
+  \]
+- No melhor caso (quando todos os coeficientes \(a[i]\) são zero, exceto \(a[0]\)), o loop interno nunca é executado, e a complexidade é \(O(n)\) (apenas o loop externo é executado \(n\) vezes, mas sem o loop interno).
+
+#### Análise do Algoritmo 2:
+- O Algoritmo 2 usa o método de Horner, que é uma abordagem mais eficiente para calcular polinômios. Ele evita o cálculo repetido de potências de \(x\).
+- O loop (linhas 02-04) executa exatamente \(n\) vezes, independentemente dos valores dos coeficientes. Portanto, a complexidade é sempre \(O(n)\), tanto no pior caso quanto no melhor caso.
+
+#### Avaliação das asserções:
+- **I. Os algoritmos possuem a mesma complexidade assintótica.**
+  - **Falsa**. O Algoritmo 1 tem complexidade \(O(n^2)\) no pior caso e \(O(n)\) no melhor caso, enquanto o Algoritmo 2 tem complexidade \(O(n)\) em todos os casos. Portanto, as complexidades assintóticas não são as mesmas.
+  
+- **II. Para o melhor caso, ambos os algoritmos possuem complexidade O(n).**
+  - **Verdadeira**. No melhor caso do Algoritmo 1 (todos os coeficientes, exceto \(a[0]\), são zero), a complexidade é \(O(n)\). O Algoritmo 2 sempre tem complexidade \(O(n)\).
+
+#### Relação entre as asserções:
+- A asserção II está correta, mas não justifica a I, pois a I é falsa (os algoritmos não têm a mesma complexidade assintótica em geral). A II apenas descreve uma situação específica (melhor caso) em que ambos têm complexidade \(O(n)\), mas isso não implica que suas complexidades assintóticas sejam iguais em todos os casos.
+
+Portanto, a asserção I é falsa, e a II é verdadeira, mas a II não justifica a I. A opção correta é **D**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10)
+
+A alternativa correta é a **Letra B) I e IV**.
+
+**Explicação:**
+
+Vamos analisar cada afirmação individualmente:
+
+**I. A árvore possui a vantagem de realizar a busca de elementos de forma eficiente, como a busca binária em um vetor.**  
+✅ **Correto**. Em uma árvore binária de pesquisa (BST) bem balanceada, a busca tem complexidade média \(O(\log n)\), assim como a busca binária em um vetor ordenado. No pior caso (árvore desbalanceada), a busca pode ser \(O(n)\), mas a afirmação não especifica o pior caso, apenas compara a eficiência com a busca binária.
+
+**II. A árvore está desbalanceada, pois a subárvore da esquerda possui um número de nós maior do que a subárvore da direita.**  
+❌ **Incorreto**. O balanceamento de uma árvore não é determinado apenas pela quantidade de nós em cada subárvore, mas pela diferença de altura entre elas. Nesta árvore, a subárvore esquerda tem altura 3 (15 → 10 → 13 → 14) e a direita tem altura 2 (15 → 20 → 25). A diferença de altura é 1, o que está dentro do limite aceitável para árvores balanceadas (como AVL, onde a diferença máxima é 1). Portanto, a árvore **não está desbalanceada**.
+
+**III. Quando a árvore é percorrida utilizando o método de caminhamento pós-ordem, os valores são encontrados em ordem decrescente.**  
+❌ **Incorreto**. O percurso pós-ordem (esquerda → direita → raiz) produz a sequência: 7, 14, 13, 10, 17, 25, 20, 15. Isso **não está em ordem decrescente**. A ordem decrescente é obtida com o percurso **in-ordem invertido** (direita → raiz → esquerda), que seria: 25, 20, 17, 15, 14, 13, 10, 7.
+
+**IV. O número de comparações realizadas em função do número \(n\) de elementos na árvore em uma busca binária realizada com sucesso é \(O(\log n)\).**  
+✅ **Correto**. Em uma BST balanceada, a busca tem complexidade \(O(\log n)\). Mesmo que a árvore não seja perfeitamente balanceada, a afirmação não especifica o pior caso, e a propriedade geral de BSTs bem construídas é que a busca média é logarítmica.
+
+**Por que as outras alternativas estão erradas?**  
+- **A) I e III**: A III está incorreta.  
+- **C) II e III**: Ambas estão incorretas.  
+- **D) I, II e IV**: A II está incorreta.  
+- **E) II, III e IV**: A II e a III estão incorretas.  
+
+Portanto, apenas **I e IV** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11)
+
+A alternativa correta é a **Letra B) III, apenas**.
+
+### Explicação:
+
+Vamos analisar cada afirmação individualmente:
+
+#### **Afirmação I**: H = (∀x∈N)(∃y∈U)(x<y) é válida.
+- **Análise**: Essa afirmação diz que "para todo número natural \( x \), existe um \( y \) no conjunto \( U \) tal que \( x < y \)".  
+- **Por que está errada?**  
+  O conjunto \( U = \{10, 20, 30, 40\} \) é finito. Se \( x \) for um número natural maior que 40 (por exemplo, \( x = 41 \)), não existe \( y \in U \) tal que \( 41 < y \). Portanto, a afirmação é **falsa**, pois não vale para todo \( x \in \mathbb{N} \).
+
+#### **Afirmação II**: H = (∀x∈N)(∃y∈N)(y<x) é válida.
+- **Análise**: Essa afirmação diz que "para todo número natural \( x \), existe um \( y \in \mathbb{N} \) tal que \( y < x \)".  
+- **Por que está errada?**  
+  Isso não é verdade para \( x = 0 \) (ou \( x = 1 \), dependendo da definição de \( \mathbb{N} \)), pois não existe \( y \in \mathbb{N} \) tal que \( y < 0 \). Portanto, a afirmação é **falsa**.
+
+#### **Afirmação III**: H = (∀x∈U)(∃y∈U)(x>y) é inválida, sendo \( x = 10 \) um contra-exemplo.
+- **Análise**: Essa afirmação diz que "para todo \( x \in U \), existe \( y \in U \) tal que \( x > y \)".  
+- **Por que está correta?**  
+  O menor elemento de \( U \) é \( 10 \). Se \( x = 10 \), não existe \( y \in U \) tal que \( 10 > y \). Portanto, \( x = 10 \) é um contra-exemplo que invalida a afirmação, tornando-a **verdadeira** (pois a afirmação original é de fato inválida).
+
+### Conclusão:
+- Apenas a **afirmação III** está correta.  
+- As afirmações I e II estão incorretas.  
+
+Portanto, a alternativa correta é **B) III, apenas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12)
+
+A alternativa correta é a **Letra C**.  
+
+### Explicação:  
+
+Vamos analisar cada alternativa:  
+
+#### **Alternativa A) L(R1) = L(R2)**  
+- **Errada**.  
+  - \( L(R1) = a(a \cup b)^* \) representa todas as strings que começam com 'a'.  
+  - \( L(R2) = b(a \cup b)^* \) representa todas as strings que começam com 'b'.  
+  - Essas linguagens são diferentes, pois uma string que começa com 'a' não pertence a \( L(R2) \) e vice-versa.  
+
+#### **Alternativa B) L(R2) = \{w | w termina com b\}**  
+- **Errada**.  
+  - \( L(R2) \) contém todas as strings que começam com 'b', mas não necessariamente terminam com 'b'.  
+  - Por exemplo, "ba" pertence a \( L(R2) \), mas não termina com 'b'.  
+
+#### **Alternativa C) Existe um autômato finito determinístico cuja linguagem é igual a L(R1) U L(R2)**  
+- **Correta**.  
+  - \( L(R1) \cup L(R2) = (a \cup b)(a \cup b)^* \), que é a linguagem de todas as strings não vazias sobre \{a, b\}.  
+  - Essa linguagem é regular e pode ser reconhecida por um AFD simples com dois estados: um estado inicial que aceita qualquer símbolo ('a' ou 'b') e transita para um estado final que aceita qualquer símbolo restante.  
+
+#### **Alternativa D) Se R3 é uma expressão regular tal que L(R3) = L(R1) ∩ L(R2), então L(R3) é uma linguagem infinita.**  
+- **Errada**.  
+  - \( L(R1) \cap L(R2) \) é o conjunto de strings que começam com 'a' **e** começam com 'b', o que é impossível. Portanto, \( L(R3) = \emptyset \), que é uma linguagem finita (vazia).  
+
+#### **Alternativa E) Um autômato finito não determinístico que reconheça L(R1) U L(R2) tem, pelo menos, quatro estados.**  
+- **Errada**.  
+  - Um AFN pode reconhecer \( L(R1) \cup L(R2) \) com apenas **três estados**:  
+    1. Um estado inicial com transições ε para dois sub-autômatos (um para \( R1 \) e outro para \( R2 \)).  
+    2. Cada sub-autômato pode ser implementado com um estado adicional.  
+  - Portanto, não é necessário ter quatro estados.  
+
+### Conclusão:  
+A única alternativa correta é a **C**, pois \( L(R1) \cup L(R2) \) é reconhecível por um AFD, e todas as outras alternativas estão incorretas pelas razões apresentadas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13)
+
+A alternativa correta é a **C) I e II, apenas**.
+
+### Explicação:
+
+#### **Afirmação I: Correta**  
+- **Push**: A função `push` apenas incrementa o `topo` e insere um elemento no vetor. Isso é uma operação de tempo constante, ou seja, \(O(1)\).  
+- **Pop**: A função `pop` apenas decrementa o `topo` e retorna o elemento no topo. Isso também é uma operação de tempo constante, \(O(1)\).  
+- **Conclusão**: Ambas as operações têm complexidade \(O(1)\), pois não dependem do tamanho da pilha.  
+
+---
+
+#### **Afirmação II: Correta**  
+Vamos analisar o código passo a passo:  
+1. `push(p, 2)`: Pilha = [2]  
+2. `push(p, 3)`: Pilha = [2, 3]  
+3. `push(p, 4)`: Pilha = [2, 3, 4]  
+4. `pop(p)`: Remove 4 → Pilha = [2, 3]  
+5. `push(p, 2)`: Pilha = [2, 3, 2]  
+6. `int a = pop(p) + pop(p)`:  
+   - Primeiro `pop(p)` remove 2 → Pilha = [2, 3]  
+   - Segundo `pop(p)` remove 3 → Pilha = [2]  
+   - `a = 2 + 3 = 5`  
+7. `push(p, a)`: Pilha = [2, 5]  
+8. `a += pop(p)`: Remove 5 → `a = 5 + 5 = 10` → Pilha = [2]  
+9. `printf("%d", a)`: Imprime **10**.  
+
+Se substituirmos `a += pop(p)` por `a += a`:  
+- `a = 5 + 5 = 10` (mesmo valor).  
+- **Conclusão**: O resultado final seria o mesmo.  
+
+---
+
+#### **Afirmação III: Incorreta**  
+- A pilha (`pilha *p`) é alocada dinamicamente com `malloc` na função `cria_pilha()`.  
+- Embora o vetor `elementos` seja estático (tamanho fixo), a estrutura `pilha` em si foi alocada na heap, e **deve ser liberada** com `free(p)` para evitar vazamento de memória.  
+- **Conclusão**: Não é opcional chamar `free(p)`, pois há alocação dinâmica envolvida.  
+
+---
+
+### Por que as outras alternativas estão erradas?  
+- **A) I, apenas**: A II também está correta.  
+- **B) III, apenas**: A III está incorreta.  
+- **D) II e III, apenas**: A III está incorreta.  
+- **E) I, II e III**: A III está incorreta.  
+
+Portanto, a resposta correta é **C) I e II, apenas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14)
+
+A alternativa correta é a **#Letra A) II, apenas**.  
+
+### Explicação:  
+
+- **Afirmação I (Errada):**  
+  *"O uso de processos de desenvolvimento padronizados, sem adaptações, independente do tipo de software a ser desenvolvido, assegura que o produto terá a qualidade desejada."*  
+  - Isso está incorreto porque diferentes tipos de software exigem abordagens distintas (ex.: um sistema embarcado crítico requer mais rigor que um aplicativo simples). Processos padronizados sem adaptações podem não atender às necessidades específicas do projeto, comprometendo a qualidade.  
+
+- **Afirmação II (Correta):**  
+  *"O controle de qualidade pode ser realizado por meio de revisões, incluindo inspeções de programas e de artefatos de projeto."*  
+  - Essa afirmação está correta, pois revisões (como inspeções de código e análise de documentos) são técnicas consagradas para identificar defeitos e garantir a qualidade do software.  
+
+- **Afirmação III (Errada):**  
+  *"Fatores de qualidade de software estão diretamente relacionados a um único atributo interno de software."*  
+  - Isso é falso, pois a qualidade do software é multidimensional, envolvendo atributos internos (ex.: modularidade) e externos (ex.: usabilidade), além de fatores como desempenho, segurança e manutenibilidade.  
+
+### Por que as outras alternativas estão erradas?  
+- **B) III, apenas:** A afirmação III está incorreta.  
+- **C) I e II, apenas:** A afirmação I está incorreta.  
+- **D) I e III, apenas:** Ambas as afirmações I e III estão incorretas.  
+- **E) I, II e III:** As afirmações I e III estão incorretas.  
+
+Portanto, apenas a **afirmação II** está correta, tornando a **alternativa A** a resposta certa.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15)
+
+A alternativa correta é a **#Letra E) I, II e III**.  
+
+### Explicação:  
+
+- **Afirmação I (Correta):**  
+  A **Indução em Árvore de Decisão** é amplamente utilizada para **identificação de fraudes em cartões de crédito**, pois permite classificar transações como suspeitas ou normais com base em regras aprendidas a partir de dados históricos.  
+
+- **Afirmação II (Correta):**  
+  **Redes Neurais Artificiais** são eficazes em **análise de risco financeiro**, pois conseguem modelar relações complexas e não lineares em grandes volumes de dados, ajudando a prever inadimplência e otimizar decisões de crédito.  
+
+- **Afirmação III (Correta):**  
+  **Sistemas Especialistas baseados em regras** são comumente usados em **diagnóstico de falhas de hardware**, pois permitem codificar conhecimento especializado em regras "SE-ENTÃO" para identificar problemas técnicos de forma automatizada.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I, apenas** → Errada, pois II e III também estão corretas.  
+- **B) III, apenas** → Errada, pois I e II também são válidas.  
+- **C) I e II, apenas** → Errada, pois III também está correta.  
+- **D) II e III, apenas** → Errada, pois I também está correta.  
+
+Portanto, **todas as afirmações (I, II e III) estão corretas**, tornando a **alternativa E** a resposta certa.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16)
+
+A alternativa correta é a **C) III e IV**.
+
+### Explicação:
+
+Vamos analisar cada afirmação e cada lock:
+
+#### **LockA**:
+- **Mecanismo**: Usa uma variável `turn` para controlar qual thread (0 ou 1) pode acessar a seção crítica.
+- **Exclusão Mútua (III)**:  
+  ✅ **CORRETO** – O LockA garante exclusão mútua porque apenas uma thread pode ter `turn == tid` em um dado momento. A outra thread fica presa no loop `while` até que `turn` seja alterado.
+- **Progresso (I)**:  
+  ❌ **INCORRETO** – O LockA **não** garante progresso porque depende da thread atual liberar o lock (`release`) para que a outra possa entrar. Se uma thread não chamar `release()`, a outra ficará esperando indefinidamente (não há garantia de que a thread que detém o lock irá liberá-lo).
+
+#### **LockB**:
+- **Mecanismo**: Desabilita interrupções no `acquire()` e reabilita no `release()`.
+- **Exclusão Mútua (IV)**:  
+  ✅ **CORRETO** – O LockB garante exclusão mútua porque, ao desabilitar interrupções, nenhuma outra thread pode ser escalonada no mesmo processador (em sistemas single-core ou com `disableInterrupts()` funcionando corretamente em multi-core).
+- **Progresso (II)**:  
+  ❌ **INCORRETO** – O LockB **não** garante progresso em sistemas multi-core, pois desabilitar interrupções em um núcleo não impede que threads em outros núcleos acessem a seção crítica. Além disso, se a thread que adquiriu o lock nunca chamar `release()` (por exemplo, devido a um bug ou deadlock), o sistema pode travar.
+
+### Resumo das afirmações:
+- **I (LockA garante progresso)**: ❌ Falso.
+- **II (LockB garante progresso)**: ❌ Falso.
+- **III (LockA garante exclusão mútua)**: ✅ Verdadeiro.
+- **IV (LockB garante exclusão mútua)**: ✅ Verdadeiro.
+
+Portanto, apenas **III e IV** estão corretas, correspondendo à alternativa **C**.  
+
+### Por que as outras alternativas estão erradas?
+- **A) I e II**: Ambas as afirmações sobre progresso (I e II) estão incorretas.
+- **B) II e III**: A afirmação II está incorreta (LockB não garante progresso).
+- **D) I, II e IV**: I e II estão incorretas.
+- **E) I, III e IV**: I está incorreta.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+17)
+
+A alternativa correta é a **Letra E**.
+
+### Explicação:
+
+O problema descrito é uma variação do **Problema do Caixeiro Viajante (PCV)**, onde:
+- Cada etapa de tratamento representa uma "cidade".
+- O custo de transição entre etapas (incluindo ajustes de temperatura e limpeza) equivale à "distância" entre cidades.
+- O objetivo é encontrar a sequência de etapas (rota) que minimize o custo total, começando e terminando com a caldeira limpa (retornando ao ponto inicial).
+
+#### Por que as outras alternativas estão erradas?
+- **A) O(n log n) com algoritmo de ordenação**:  
+  Ordenar as etapas não garante a minimização do custo total, pois o problema envolve custos de transição **dependentes da sequência** (não é uma propriedade linear ou ordenável). O PCV é NP-difícil e não pode ser resolvido com simples ordenação.
+
+- **B) Heurística de coloração de grafos**:  
+  A coloração de grafos resolve problemas de atribuição de recursos (como evitar conflitos), mas não minimiza custos de caminhos ou sequências. Não há relação direta com a estrutura do problema descrito.
+
+- **C) Árvore geradora mínima**:  
+  Uma árvore geradora mínima conecta todos os nós com o menor custo total, mas não forma um **ciclo** (necessário para retornar ao início) nem garante a minimização do custo da rota completa. O PCV requer um ciclo hamiltoniano mínimo.
+
+- **D) Algoritmo de Dijkstra**:  
+  Dijkstra encontra o caminho mínimo entre dois nós específicos, mas não o **ciclo mínimo** que passa por todos os nós (PCV). Além disso, o problema exige que todas as etapas sejam visitadas **uma única vez**.
+
+#### Por que a alternativa E está correta?
+O problema descrito é **NP-difícil**, pois uma instância do PCV pode ser reduzida a ele:
+- Dado um grafo do PCV, cada cidade corresponde a uma etapa, e as arestas representam os custos de transição.
+- A solução ótima para o problema da caldeira é equivalente a encontrar o ciclo hamiltoniano de custo mínimo do PCV.
+- Não existe algoritmo polinomial conhecido para resolver o PCV (ou este problema) de forma exata, a menos que **P = NP**.
+
+Portanto, a complexidade é **não-polinomial**, conforme afirma a alternativa E.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+18)
+
+A alternativa correta é a **D) 16**.
+
+### Explicação:
+
+Vamos analisar passo a passo a execução da função `recursao(27)`:
+
+1. **Primeira chamada: `recursao(27)`**  
+   - Como `27 > 10`, entra no `else` e retorna `recursao(recursao(27/3))` → `recursao(recursao(9))`.
+
+2. **Chamada interna: `recursao(9)`**  
+   - Como `9 <= 10`, retorna `9 * 2 = 18`.
+
+3. **Substituição do resultado na primeira chamada:**  
+   - Agora a expressão se torna `recursao(18)`.
+
+4. **Segunda chamada: `recursao(18)`**  
+   - Como `18 > 10`, entra no `else` e retorna `recursao(recursao(18/3))` → `recursao(recursao(6))`.
+
+5. **Chamada interna: `recursao(6)`**  
+   - Como `6 <= 10`, retorna `6 * 2 = 12`.
+
+6. **Substituição do resultado na segunda chamada:**  
+   - Agora a expressão se torna `recursao(12)`.
+
+7. **Terceira chamada: `recursao(12)`**  
+   - Como `12 > 10`, entra no `else` e retorna `recursao(recursao(12/3))` → `recursao(recursao(4))`.
+
+8. **Chamada interna: `recursao(4)`**  
+   - Como `4 <= 10`, retorna `4 * 2 = 8`.
+
+9. **Substituição do resultado na terceira chamada:**  
+   - Agora a expressão se torna `recursao(8)`.
+
+10. **Quarta chamada: `recursao(8)`**  
+    - Como `8 <= 10`, retorna `8 * 2 = 16`.
+
+Portanto, o valor final retornado é **16**.
+
+### Por que as outras alternativas estão erradas?
+- **A) 8**: Esse é o valor retornado por `recursao(4)`, mas não é o resultado final.
+- **B) 9**: Nunca é calculado em nenhuma chamada da função.
+- **C) 12**: Esse é o valor retornado por `recursao(6)`, mas não é o resultado final.
+- **E) 18**: Esse é o valor retornado por `recursao(9)`, mas não é o resultado final.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19)
+
+A alternativa correta é a **C**.
+
+### Explicação das alternativas:
+
+**Alternativa A)**  
+`SELECT E.UF FROM Estado AS E WHERE E.nome_estado NOT IN (SELECT F.UF FROM Fornecedor AS F);`  
+- **Erro:** A subconsulta retorna `UF` da tabela `Fornecedor`, mas a condição `NOT IN` compara `nome_estado` (da tabela `Estado`) com `UF` (da tabela `Fornecedor`), o que não faz sentido, pois são colunas diferentes. Além disso, a consulta deveria retornar `nome_estado`, não `UF`.
+
+**Alternativa B)**  
+`SELECT E.nome_estado FROM Estado AS E, FROM Fornecedor AS F WHERE E.UF = F.UF;`  
+- **Erro:** A sintaxe está incorreta (há dois `FROM`). Mesmo se corrigida, essa consulta retornaria os estados **que possuem fornecedores**, pois o `WHERE E.UF = F.UF` faz um JOIN entre as tabelas. O enunciado pede o oposto: estados **sem fornecedores**.
+
+**Alternativa C)**  
+`SELECT E.nome_estado FROM Estado AS E WHERE E.UF NOT IN (SELECT F.UF FROM Fornecedor AS F);`  
+- **Correta:** A subconsulta retorna todas as UFs presentes na tabela `Fornecedor`. O `NOT IN` filtra apenas os estados cuja UF **não está** nessa lista, ou seja, estados sem fornecedores. Além disso, a consulta retorna o `nome_estado`, conforme solicitado.
+
+**Alternativa D)**  
+`SELECT E.nome_estado FROM Estado AS E, FROM Fornecedor AS F WHERE E.nome_estado = F.UF;`  
+- **Erro:** Novamente, há dois `FROM` (sintaxe inválida). Mesmo se corrigido, a condição `E.nome_estado = F.UF` compara colunas incompatíveis (`nome_estado` é o nome completo do estado, enquanto `UF` é a sigla). Isso não faz sentido lógico.
+
+**Alternativa E)**  
+`SELECT E.nome_estado FROM Estado AS E WHERE E.UF IN (SELECT F.UF FROM Fornecedor AS F);`  
+- **Erro:** Essa consulta retorna os estados **que possuem fornecedores** (pois usa `IN`), enquanto o enunciado pede os estados **sem fornecedores**. O operador correto seria `NOT IN`, como na alternativa C.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20)
+
+A alternativa correta é a **D**.
+
+### Explicação:
+
+A gramática deve refletir as regras da linguagem Java, que não permite herança múltipla (apenas uma classe pode ser estendida) mas permite que uma classe implemente zero ou mais interfaces. Vamos analisar cada alternativa:
+
+---
+
+#### **Alternativa A**:  
+`<classdecl> "class" "id" ["extends" "id"] <classbody>`  
+
+- **Erro**: Não menciona a implementação de interfaces (`implements`), o que é necessário, pois Java permite que classes implementem interfaces.  
+- **Falta**: A parte `implements` está completamente ausente.  
+
+---
+
+#### **Alternativa B**:  
+`<classdecl> "class" "id" ("extends" "id")* <classbody>`  
+
+- **Erro**: O operador `*` após `extends` permite herança múltipla (várias classes sendo estendidas), o que é proibido em Java.  
+- **Falta**: Não inclui a cláusula `implements`.  
+
+---
+
+#### **Alternativa C**:  
+`<classdecl> "class" "id" ["extends" "id"] ["implements" {"," "id"}*] <classbody>`  
+
+- **Erro**: A sintaxe `{"," "id"}*` está incorreta em BNF. O operador `{}` não é válido em BNF padrão para agrupamento.  
+- **Problema estrutural**: A lista de interfaces não está corretamente especificada.  
+
+---
+
+#### **Alternativa D**:  
+`<classdecl> "class" "id" ["extends" "id"] ["implements" "id" ("," "id")*] <classbody>`  
+
+- **Correta**:  
+  - `["extends" "id"]` → A classe pode estender **no máximo uma** outra classe (opcional).  
+  - `["implements" "id" ("," "id")*]` → A classe pode implementar **zero ou mais** interfaces (opcional), separadas por vírgulas.  
+  - A sintaxe está correta e adere às regras do Java.  
+
+---
+
+#### **Alternativa E**:  
+`<classdecl> "class" "id" ["extends" "id"] "implements" "id" ("," "id")* <classbody>`  
+
+- **Erro**: A palavra-chave `"implements"` é **obrigatória** (não está entre `[]`), o que força a classe a implementar pelo menos uma interface. Em Java, a implementação de interfaces é opcional.  
+
+---
+
+### Conclusão:  
+A alternativa **D** é a única que:  
+1. Permite herança simples (apenas uma classe).  
+2. Permite implementação de zero ou mais interfaces (opcional).  
+3. Usa a sintaxe BNF correta para listas separadas por vírgulas.  
+
+As outras alternativas ou violam as regras do Java ou têm erros de sintaxe na gramática.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21)
+
+A alternativa correta é a **C) I e III, apenas**.
+
+### Explicação:
+
+#### **Afirmação I: Correta**  
+"Conjuntos indutivos são conjuntos enumeráveis."  
+- Conjuntos indutivos são construídos a partir de elementos atômicos (Base) e regras de construção (Indução), gerando termos finitos e bem-definidos. Como cada termo pode ser gerado em etapas finitas, o conjunto resultante é enumerável (ou seja, seus elementos podem ser listados em uma sequência, ainda que infinita).  
+- **Exemplo**: O conjunto `Prop` dado no enunciado é enumerável, pois podemos listar suas expressões em ordem crescente de complexidade (V, F, !V, !F, (and V F), etc.).  
+
+#### **Afirmação II: Incorreta**  
+"Conjuntos infinitos não podem ser especificados por meio de definições indutivas."  
+- **Errado**: Definições indutivas são justamente uma forma comum de especificar conjuntos infinitos enumeráveis. Por exemplo, os números naturais podem ser definidos indutivamente:  
+  - Base: 0 ∈ ℕ.  
+  - Indução: Se n ∈ ℕ, então S(n) ∈ ℕ (onde S é o sucessor).  
+  - Fecho: Nada mais está em ℕ.  
+  Isso gera um conjunto infinito (ℕ = {0, 1, 2, ...}).  
+
+#### **Afirmação III: Correta**  
+"Para estender a linguagem `Prop` de tal forma a considerar expressões para disjunção e implicação de proposição, é necessário acrescentar mais dois construtores à definição de `Prop` anterior."  
+- **Correto**: Para adicionar disjunção (`or`) e implicação (`→`), precisamos de novos construtores na etapa de Indução:  
+  - Se `B1` e `B2` estão em `Prop`, então `(or B1 B2)` está em `Prop`.  
+  - Se `B1` e `B2` estão em `Prop`, então `(→ B1 B2)` está em `Prop`.  
+  Sem esses construtores adicionais, as novas expressões não podem ser geradas.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I, apenas**: Ignora a afirmação III, que também está correta.  
+- **B) II, apenas**: A afirmação II está incorreta, e a III está correta.  
+- **D) II e III, apenas**: A afirmação II está incorreta.  
+- **E) I, II e III**: A afirmação II está incorreta.  
+
+Portanto, apenas **I e III** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+22)
+
+A alternativa correta é a **Letra B) P → Q, ¬Q / ¬P**.
+
+### Explicação:
+
+O argumento apresentado segue a estrutura lógica conhecida como **Modus Tollens**, que é representado da seguinte forma:
+1. Se P, então Q (P → Q).
+2. Não Q (¬Q).
+3. Portanto, não P (¬P).
+
+No exemplo dado:
+- P: "Existe fogo".
+- Q: "Existe oxigênio".
+- O argumento afirma que, se há fogo, então há oxigênio (P → Q), e como não há oxigênio (¬Q), conclui-se que não há fogo (¬P). Isso corresponde exatamente ao Modus Tollens, que é a regra de inferência da alternativa B.
+
+### Por que as outras alternativas estão erradas?
+
+- **A) P → Q, ¬P / ¬Q**: Esta é a falácia da **negação do antecedente**. Apenas negar P (¬P) não permite concluir ¬Q, pois a implicação P → Q não é reversível. Exemplo: "Se é um pássaro, então voa. Não é um pássaro (¬P). Logo, não voa (¬Q)" é inválido (pode ser um morcego, que voa sem ser pássaro).
+
+- **C) P → Q, Q / P**: Esta é a falácia da **afirmação do consequente**. Afirmar Q não garante P, pois Q pode ser verdadeiro por outros motivos. Exemplo: "Se é um pássaro, então voa. Voa (Q). Logo, é um pássaro (P)" é inválido (insetos também voam).
+
+- **D) P → Q, ¬Q / ¬¬P**: Esta alternativa nega a conclusão correta (¬P) e afirma uma dupla negação (¬¬P), que equivale a P, o que é incorreto. O argumento original conclui ¬P, não P.
+
+- **E) P → Q, P / Q**: Esta é a regra do **Modus Ponens**, que é válida, mas não se aplica ao argumento dado. O argumento original usa a negação de Q (¬Q), não a afirmação de P. Exemplo: "Se chove, a rua fica molhada. Chove (P). Logo, a rua fica molhada (Q)" é válido, mas não é o caso aqui. 
+
+Portanto, apenas a alternativa B representa corretamente a regra de inferência (Modus Tollens) usada no argumento.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23)
+
+A alternativa correta é a **A) As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.**
+
+### Explicação:
+
+1. **Por que a asserção I é verdadeira?**  
+   Se um problema NP-Completo pode ser reduzido polinomialmente a um problema em P, isso significa que o problema NP-Completo também está em P (pois P é fechado sob reduções polinomiais). Como todos os problemas NP podem ser reduzidos a um problema NP-Completo (por definição de NP-Completo), isso implicaria que todos os problemas NP também estão em P, ou seja, **P = NP**. Portanto, a asserção I está correta.
+
+2. **Por que a asserção II é verdadeira?**  
+   Se um problema NP-Completo está em P, então, por definição, todos os outros problemas NP-Completos também podem ser resolvidos em tempo polinomial (pois eles são redutíveis entre si em tempo polinomial). Assim, a descoberta do cientista implicaria a existência de algoritmos polinomiais para todos os problemas NP-Completos, tornando a asserção II verdadeira.
+
+3. **Por que a II é uma justificativa correta da I?**  
+   A igualdade **P = NP** ocorreria justamente porque todos os problemas NP-Completos (e, por consequência, todos os problemas NP) teriam algoritmos polinomiais. Portanto, a II explica diretamente a I, estabelecendo uma relação de causa e efeito.
+
+### Por que as outras alternativas estão erradas?  
+- **B)** A II é, sim, uma justificativa correta da I, pois a resolução polinomial de um problema NP-Completo levaria à resolução polinomial de todos os problemas NP.  
+- **C)** A II não é falsa, pois a redução de um NP-Completo para P realmente implicaria algoritmos polinomiais para todos os NP-Completos.  
+- **D)** A I não é falsa, pois a descoberta realmente implicaria **P = NP**.  
+- **E)** Ambas as asserções são verdadeiras, como explicado acima.  
+
+Portanto, a única opção correta é a **A**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24)
+
+A alternativa correta é a **C) II e V**.
+
+### Explicação:
+
+Vamos analisar cada afirmação com base nas cláusulas fornecidas e no mundo fechado (onde tudo o que não é conhecido como verdadeiro é considerado falso).
+
+#### Cláusulas e fatos:
+- `superior(jorge).` (jorge é superior)
+- `superior(ana).` (ana é superior)
+- `selecionados(P, Q) :- superior(P), superior(Q).` (P e Q são selecionados se ambos forem superiores)
+- `desconsiderados(P, Q) :- not(superior(P)); not(superior(Q)).` (P e Q são desconsiderados se pelo menos um não for superior)
+- `descartado(P) :- not(superior(P)).` (P é descartado se não for superior)
+
+---
+
+#### Análise das afirmações:
+
+**I. Para todos valores dos parâmetros P e Q, o predicado `selecionados` retornará um valor lógico falso.**  
+- **Errado**: O predicado `selecionados` retornará verdadeiro se ambos `P` e `Q` forem superiores. Como `jorge` e `ana` são superiores, `selecionados(jorge, ana)` retornará verdadeiro. Portanto, não é falso para todos os valores.
+
+**II. Para valores de P e Q, os predicados `selecionados` e `desconsiderados` retornarão valores lógicos diferentes.**  
+- **Correto**: Os predicados são complementares. Se `selecionados(P, Q)` for verdadeiro (ambos são superiores), `desconsiderados(P, Q)` será falso (pois `not(superior(P))` e `not(superior(Q))` são falsos). Se `selecionados(P, Q)` for falso (pelo menos um não é superior), `desconsiderados(P, Q)` será verdadeiro. Logo, sempre retornam valores opostos.
+
+**III. A conjunção dos predicados `selecionados` e `desconsiderados`, para quaisquer valores de P e Q, retornará um valor lógico verdadeiro.**  
+- **Errado**: A conjunção (`selecionados(P, Q) ∧ desconsiderados(P, Q)`) nunca será verdadeira, pois os predicados são mutuamente exclusivos (um é a negação do outro).
+
+**IV. Para qualquer valor do parâmetro P, o predicado `descartado` retornará um valor verdadeiro.**  
+- **Errado**: `descartado(P)` só é verdadeiro se `P` não for superior. Para `P = jorge` ou `P = ana`, `descartado(P)` retorna falso, pois ambos são superiores.
+
+**V. A disjunção dos predicados `selecionados` e `desconsiderados`, para quaisquer valores de P e Q, retornará um valor lógico verdadeiro.**  
+- **Correto**: A disjunção (`selecionados(P, Q) ∨ desconsiderados(P, Q)`) sempre será verdadeira, pois os predicados cobrem todas as possibilidades (ou ambos são superiores, ou pelo menos um não é). Não há cenário em que ambos sejam falsos.
+
+---
+
+### Conclusão:
+As únicas afirmações corretas são **II e V**, correspondendo à alternativa **C**. 
+
+### Por que as outras estão erradas?
+- **A) I e II**: I está errada (explicado acima).
+- **B) I e III**: I e III estão erradas.
+- **D) III e IV**: III e IV estão erradas.
+- **E) IV e V**: IV está errada.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+25)
+
+A alternativa correta é a **Letra A**.  
+
+### Explicação:  
+
+O problema descrito é um clássico exemplo de **Árvore Geradora Mínima (MST - Minimum Spanning Tree)**, onde o objetivo é conectar todos os pontos (nós) com a menor extensão total de arestas (encanamentos, no caso). O algoritmo apresentado é uma adaptação do **Algoritmo de Kruskal**, que resolve esse problema de forma eficiente (complexidade polinomial, usando estruturas como Union-Find para otimizar a verificação de conjuntos).  
+
+### Por que as outras alternativas estão erradas?  
+
+- **Letra B**: O algoritmo **não** é uma heurística para o Problema do Caixeiro Viajante (TSP). O TSP busca um ciclo que visite todos os pontos com a menor distância total, enquanto o problema descrito busca uma árvore (sem ciclos) de custo mínimo. Além disso, o algoritmo apresentado é exato (não heurístico) para MST.  
+
+- **Letra C**: O problema **não** é NP-difícil, pois pertence a **P** (há algoritmos polinomiais para MST, como Kruskal e Prim). Problemas NP-difíceis são aqueles para os quais não se conhece solução polinomial, o que não é o caso aqui.  
+
+- **Letra D**: O algoritmo de Dijkstra **não** resolve esse problema, pois ele calcula o caminho mínimo de um nó a todos os outros, enquanto o problema requer uma árvore que conecte **todos** os nós com custo total mínimo (solução fornecida por Kruskal ou Prim).  
+
+- **Letra E**: A criação do conjunto D tem complexidade **O(n²)** (pois há combinações de 2 pontos em n+1 elementos), e **não O(n!)**. O fatorial só apareceria em problemas como o Caixeiro Viajante, que envolve permutações.  
+
+### Conclusão:  
+A **Letra A** está correta porque o problema é de MST (P), e o algoritmo descrito é uma versão do Kruskal, que é polinomial e eficiente.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+26)
+
+A alternativa correta é a **Letra C) 2,8×10^−11**.
+
+### Explicação:
+
+O problema envolve a transmissão de 7 bits de dados mais 1 bit de paridade (total de 8 bits). O bit de paridade é usado para verificar erros, e ele é definido de modo que o número total de bits "1" (incluindo o bit de paridade) seja sempre par (paridade par) ou ímpar (paridade ímpar). Aqui, assume-se paridade par (caso comum, mas o raciocínio é análogo para paridade ímpar).
+
+#### Situação analisada:
+- **Dois bits são transmitidos com erro**, mas o sistema **não detecta o erro** porque a paridade permanece correta. Isso só acontece se:
+  - Dois bits quaisquer (dados ou paridade) forem invertidos, pois a inversão de dois bits mantém a paridade (par + par = par).
+
+#### Cálculo da probabilidade:
+1. **Número de combinações possíveis de 2 bits errados em 8 bits**:
+   \[
+   \binom{8}{2} = 28 \text{ combinações}.
+   \]
+2. **Probabilidade de 2 bits específicos estarem errados** (já que cada erro é independente e tem probabilidade \( p = 10^{-6} \)):
+   \[
+   p^2 = (10^{-6})^2 = 10^{-12}.
+   \]
+3. **Probabilidade total** (considerando todas as combinações possíveis de 2 bits errados):
+   \[
+   \binom{8}{2} \times p^2 = 28 \times 10^{-12} = 2,8 \times 10^{-11}.
+   \]
+
+#### Por que as outras alternativas estão erradas?
+- **A) 1,0×10^−12**: Corresponde à probabilidade de dois bits **específicos** estarem errados, mas não considera todas as combinações possíveis.
+- **B) 2,0×10^−11**: Subestima o número de combinações (seria válido para \(\binom{7}{2} = 21\), mas ignora o bit de paridade).
+- **D) 2,0×10^−6**: É a probabilidade de um único bit estar errado, não dois.
+- **E) 2,8×10^−5**: Superestima a probabilidade (possivelmente multiplicando por um fator incorreto).
+
+Portanto, a resposta correta é **C) 2,8×10^−11**, pois considera corretamente todas as combinações de 2 bits errados em 8 bits.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+27)
+
+A alternativa correta é a #Letra C) I, III e V.
+
+### Explicação:
+
+#### **Afirmação I: Correta**
+- As premissas são corretamente expressas como:
+  - \( P \rightarrow Q \) (Se o programador lê a literatura técnica, então ele conhece inglês).
+  - \( Q \rightarrow R \) (Se o programador conhece inglês, então ele será selecionado).
+  - \( 
+eg R \lor P \) (O programador não será selecionado ou ele lê a literatura técnica).
+- A conclusão é corretamente expressa como \( P \leftrightarrow Q \) (o programador lê a literatura técnica se e somente se conhece inglês).
+
+#### **Afirmação II: Incorreta**
+- A demonstração proposta está errada:
+  - \( 
+eg Q \lor P \) é equivalente a \( P \rightarrow Q \), mas isso não é uma nova informação.
+  - A transitividade \( P \rightarrow R \) está correta, mas não leva à conclusão \( Q \leftrightarrow R \), que não tem relação com o argumento original.
+- A conclusão correta deveria ser \( P \leftrightarrow Q \), não \( Q \leftrightarrow R \).
+
+#### **Afirmação III: Correta**
+- A demonstração está correta:
+  - \( 
+eg R \lor P \) é equivalente a \( R \rightarrow P \).
+  - Pela transitividade \( Q \rightarrow R \) e \( R \rightarrow P \), temos \( Q \rightarrow P \).
+  - Já temos \( P \rightarrow Q \) (da primeira premissa).
+  - Logo, \( P \leftrightarrow Q \) (bicondicional formada por \( P \rightarrow Q \) e \( Q \rightarrow P \)).
+
+#### **Afirmação IV: Incorreta**
+- A premissa \( 
+eg R \lor P \) não é equivalente a \( 
+eg R \rightarrow P \), e sim a \( R \rightarrow P \).
+- A conclusão \( P \rightarrow Q \) já é uma premissa, não a conclusão do argumento (que é \( P \leftrightarrow Q \)).
+
+#### **Afirmação V: Correta**
+- O argumento é inválido porque a conclusão \( P \leftrightarrow Q \) não decorre necessariamente das premissas. As premissas garantem \( P \rightarrow Q \) e \( Q \rightarrow P \), mas isso não implica \( P \leftrightarrow Q \) sem uma análise mais profunda (que, como visto na Afirmação III, só é possível com passos adicionais). Portanto, a conclusão não é uma consequência lógica direta das premissas.
+
+### Resumo:
+- Corretas: I, III e V.
+- Incorretas: II e IV.
+
+Portanto, a alternativa correta é **C) I, III e V**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+28)
+
+A alternativa correta é a **C) I e III, apenas**.
+
+### Explicação:
+
+Vamos analisar cada afirmação e os conflitos de dados presentes no código:
+
+#### Conflitos de dados no código original:
+1. **`add R1, R2, R2`** escreve em `R1`, e a próxima instrução **`mul R3, R2, R1`** lê `R1`. Isso causa um conflito de dados (RAW - Read After Write).
+2. **`mul R3, R2, R1`** escreve em `R3`, e a instrução **`and R5, R4, R3`** (se estiver próxima) lê `R3`. No código original, isso não ocorre imediatamente, mas se houver reordenação, pode surgir.
+3. **`sub R1, R1, R4`** lê `R1` após a escrita por `add` e `mul`, mas não há conflito direto no pipeline dado o esquema de escrita/leitura (escrita na primeira metade, leitura na segunda metade).
+
+---
+
+#### Análise das afirmações:
+
+**I. A troca de posição entre as instruções `or` e `add` soluciona o conflito de dados.**  
+- **Verdadeiro**:  
+  - Trocar `or R6, R4, R2` e `add R1, R2, R2` faz com que `mul R3, R2, R1` não leia `R1` no ciclo imediatamente após a escrita por `add`.  
+  - A nova ordem seria:  
+    ```  
+    and R5, R4, R3  
+    add R1, R2, R2  
+    or R6, R4, R2  
+    mul R3, R2, R1  
+    sub R1, R1, R4  
+    ```  
+  - Isso insere um ciclo de atraso (`or`) entre `add` e `mul`, resolvendo o conflito RAW.
+
+**II. A troca de posição entre as instruções `add` e `and` soluciona o conflito de dados.**  
+- **Falso**:  
+  - Trocar `add R1, R2, R2` e `and R5, R4, R3` não resolve o conflito entre `add` e `mul`, pois `mul` ainda lê `R1` logo após `add`.  
+  - A ordem ficaria:  
+    ```  
+    add R1, R2, R2  
+    and R5, R4, R3  
+    or R6, R4, R2  
+    mul R3, R2, R1  
+    sub R1, R1, R4  
+    ```  
+  - O conflito RAW entre `add` e `mul` persiste.
+
+**III. A inserção de uma operação `nop` entre `add` e `mul` soluciona o conflito de dados.**  
+- **Verdadeiro**:  
+  - Inserir um `nop` entre `add` e `mul` adiciona um ciclo de atraso, garantindo que `mul` leia `R1` após a escrita por `add`.  
+  - O pipeline consegue lidar com o conflito porque a escrita ocorre na primeira metade do ciclo e a leitura na segunda metade.
+
+---
+
+### Por que as outras alternativas estão erradas?
+- **A) I, apenas**: Ignora que a afirmação III também está correta.  
+- **B) II, apenas**: A afirmação II é falsa.  
+- **D) II e III, apenas**: A afirmação II é falsa.  
+- **E) I, II e III**: A afirmação II é falsa.  
+
+Portanto, apenas **I e III** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+29)
+
+A alternativa correta é a **A**.
+
+### Explicação:
+
+**Análise das asserções:**
+
+1. **Asserção I (Verdadeira):**  
+   A eliminação da variável `cont` e das linhas 4, 7, 13 e 16 causaria um erro de sincronismo entre os processos. Isso ocorre porque `cont` é essencial para garantir que:
+   - O analisador léxico não insira tokens no buffer quando ele estiver cheio (`cont = N - 1` na linha 4).
+   - O analisador sintático não consuma tokens quando o buffer estiver vazio (`cont = 0` na linha 13).
+   Sem esse controle, poderia haver condições de corrida, como o buffer transbordar (overflow) ou ser lido vazio (underflow), resultando em comportamento indefinido.
+
+2. **Asserção II (Verdadeira e justificativa correta da I):**  
+   A variável `cont` é de fato responsável pelo controle do acesso à seção crítica do código, pois:
+   - Ela atua como um **semáforo contador**, garantindo que o buffer seja usado corretamente (evitando problemas de buffer cheio/vazio).
+   - Sem `cont`, não haveria sincronização adequada entre os processos, já que `vez` sozinha não resolve o problema de limites do buffer (apenas alterna a permissão de acesso).
+
+**Por que as outras alternativas estão erradas?**
+- **B)** A II é uma justificativa correta da I, pois `cont` é diretamente responsável pela sincronização do buffer.
+- **C)** A II não é falsa, pois `cont` realmente controla o acesso à seção crítica (buffer).
+- **D)** A I não é falsa, pois a remoção de `cont` causaria erro de sincronismo.
+- **E)** Ambas as asserções são verdadeiras e relacionadas.
+
+### Conclusão:
+A asserção II explica corretamente por que a remoção de `cont` causaria o erro descrito na asserção I, tornando a alternativa **A** a correta.
+1)
+
+A alternativa correta é a **Letra E**: "a ascensão social depende de fatores viabilizadores que estão fora do alcance das camadas pobres, o que ocasiona conflitos sociais em busca do acesso a tais fatores."  
+
+### Explicação:  
+- **Letra E** está correta porque o texto destaca que a mobilidade social no Brasil é extremamente lenta, com barreiras estruturais como acesso limitado à saúde e educação de qualidade, que perpetuam a pobreza. Esses fatores viabilizadores (como educação e oportunidades) são frequentemente inacessíveis aos mais pobres, o que pode gerar tensões sociais na busca por melhores condições.  
+
+### Por que as outras estão erradas:  
+- **Letra A**: Incorreta. O texto não menciona taxas de natalidade ou fatores demográficos como determinantes da mobilidade social, mas sim condições socioeconômicas (escolaridade e renda dos pais).  
+- **Letra B**: Incorreta. A baixa mobilidade não é atribuída à "organização social" dos pobres, mas a estruturas sistêmicas (como acesso precário à educação e saúde), conforme explicado no texto.  
+- **Letra C**: Incorreta. O texto não trata a mobilidade como um "fator ancestral", mas como resultado de condições materiais e políticas públicas ineficazes. Além disso, não nega a eficácia de políticas públicas, apenas mostra sua insuficiência atual.  
+- **Letra D**: Incorreta. O ciclo vicioso descrito no texto não envolve subida e queda sucessivas, mas sim a estagnação na base da pirâmide devido à falta de oportunidades.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2)
+
+A alternativa correta é a **#Letra A) As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.**
+
+### Explicação:
+1. **Asserção I (Verdadeira):** O texto descreve a Gig Economy como um modelo em que trabalhadores atuam como autônomos informais, sem vínculo empregatício, desprotegidos por regulamentação ou leis trabalhistas. Isso está claramente alinhado com a definição apresentada na asserção I.
+
+2. **Asserção II (Verdadeira):** O texto menciona que os trabalhadores arcam com todos os custos (como manutenção de veículos), ganham por produção (como corridas ou entregas), enfrentam longas jornadas e sofrem com problemas de saúde (como estresse e dores na coluna). Esses pontos corroboram a asserção II.
+
+3. **Relação entre I e II:** A II não apenas é verdadeira, mas também **justifica a I**, pois os problemas citados na II (custos, desgaste, falta de proteção) são consequências diretas da informalidade e da ausência de vínculo empregatício característicos da Gig Economy, descritos na I. Portanto, a II explica por que a I é verdadeira e como esse modelo impacta negativamente os trabalhadores.
+
+### Por que as outras alternativas estão erradas?
+- **B)** A II é, sim, uma justificativa correta da I, pois os problemas citados na II decorrem diretamente da condição descrita na I.
+- **C)** A II não é falsa, pois o texto comprova seus pontos (custos, jornadas, saúde).
+- **D)** A I não é falsa, pois o texto confirma que a Gig Economy se baseia em trabalhadores sem vínculo empregatício.
+- **E)** Ambas as asserções são verdadeiras, conforme o texto.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3)
+
+A alternativa correta é a **Letra A**: As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.  
+
+**Explicação:**  
+- **Asserção I** é verdadeira, pois o texto demonstra que a queda na expectativa de vida foi maior para negros e latinos, indicando um impacto desproporcional da pandemia nessas populações. Isso sugere uma relação com vulnerabilidades sociais, como acesso desigual à saúde, condições de vida e trabalho.  
+- **Asserção II** também é verdadeira, pois uma das hipóteses para essa disparidade está justamente nas condições precárias de trabalho (como empregos informais ou que exigem contato frequente com o público), que aumentam a exposição ao vírus. Essa explicação corrobora a asserção I, já que a vulnerabilidade social inclui fatores como condições laborais.  
+
+**Por que as outras alternativas estão erradas?**  
+- **B)** A II não é uma justificativa correta da I: Errado, pois a II explica plausivelmente a I, vinculando a vulnerabilidade social às condições de trabalho.  
+- **C)** II é falsa: Incorreto, pois a II apresenta uma hipótese válida e coerente com o contexto.  
+- **D)** I é falsa: Inadequado, pois o texto comprova a disparidade na expectativa de vida, confirmando a I.  
+- **E)** Ambas são falsas: Contradiz o texto, que sustenta ambas as afirmações.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4)
+
+A alternativa correta é a **#Letra C) I e II, apenas**.  
+
+**Explicação:**  
+
+- **Afirmação I (Correta):**  
+  Ambos os textos destacam a importância de critérios nas buscas por informações médicas na internet. O Texto I alerta sobre o risco de informações equivocadas ("uma faca de dois gumes"), enquanto o Texto II menciona os perigos do autodiagnóstico e automedicação devido à falta de critérios nas buscas. Portanto, a afirmação está correta.  
+
+- **Afirmação II (Correta):**  
+  O Texto I afirma que o acesso a informações sobre saúde (como fatores de risco, prevenção e tratamento) está correlacionado com a adoção de hábitos saudáveis, citando exemplos como o aumento de diagnósticos precoces de câncer de mama e a redução do tabagismo. Isso comprova que a divulgação de informações contribui para o esclarecimento da população.  
+
+- **Afirmação III (Incorreta):**  
+  O Texto II **não defende** o acesso a informações em veículos de comunicação como algo positivo sem ressalvas. Pelo contrário, ele alerta para os riscos da desinformação e da falta de critérios nas buscas, destacando os perigos do autodiagnóstico e automedicação. Portanto, a afirmação está incorreta.  
+
+**Por que as outras alternativas estão erradas?**  
+- **A) I, apenas:** Exclui a II, que também está correta.  
+- **B) III, apenas:** A III está incorreta, e a I e II são relevantes.  
+- **D) II e III, apenas:** Inclui a III, que está incorreta.  
+- **E) I, II e III:** Inclui a III, que está incorreta.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5)
+
+A alternativa correta é a **#Letra D) I, III e IV**.
+
+### Explicação das alternativas corretas e incorretas:
+
+**I. O bem comum, a ser estabelecido por um governo democrático, nem sempre está associado às opiniões da maioria do povo.**  
+- **Correta**: O texto destaca que a democracia consensual busca governar para "o máximo possível de pessoas", não apenas para a maioria. Isso implica que o bem comum pode transcender a vontade da maioria, incluindo interesses de minorias.  
+
+**II. A democracia consensual é caracterizada pelo consenso a ser alcançado entre situação e oposição, nas decisões governamentais.**  
+- **Incorreta**: Embora o texto mencione a necessidade de "lideranças políticas mais maduras" (governo e oposição), a democracia consensual não se limita a um acordo entre situação e oposição, mas sim à busca de acordos amplos que incluam o maior número possível de grupos (não apenas partidos políticos).  
+
+**III. Circunstâncias políticas de polarização, marcadas pela alta competitividade e combatividade entre posições divergentes, caracterizam um modelo de democracia majoritária.**  
+- **Correta**: O texto contrasta a democracia majoritária (que prioriza a maioria) com a consensual (que busca acordos). A polarização e a combatividade são típicas de sistemas majoritários, onde a maioria impõe sua vontade sem necessariamente buscar consensos.  
+
+**IV. Democracia consensual pressupõe que a situação política no poder considere em suas decisões as necessidades das minorias, no sentido de governar para todo o povo.**  
+- **Correta**: O texto afirma que a democracia consensual busca governar para "o máximo possível de pessoas", o que inclui incorporar as demandas das minorias, diferentemente do modelo majoritário.  
+
+### Por que as outras alternativas estão erradas?  
+- **Letra A (I e II)**: A afirmação II está incorreta, como explicado.  
+- **Letra B (I e IV)**: Faltam as afirmações III (correta) e II (incorreta não é problema, mas a combinação está incompleta).  
+- **Letra C (II e III)**: A afirmação II está incorreta.  
+- **Letra E (II, III e IV)**: A afirmação II está incorreta.  
+
+Portanto, apenas **I, III e IV** estão corretas, correspondendo à **Letra D**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6)
+
+A alternativa correta é a **E) Escalonamento por prioridades; propício para sistemas interativos.**
+
+### Explicação das alternativas:
+
+#### **A) Primeiro a chegar, último a sair (first in, last out - FILO); propício para sistemas de tempo real.**  
+- **Errada**: O algoritmo FILO não é um método comum de escalonamento de processos. Sistemas de tempo real exigem previsibilidade e atendimento a prazos rígidos, algo que o FILO não garante. Além disso, sistemas de tempo real geralmente usam algoritmos como **Rate Monotonic (RMS)** ou **Earliest Deadline First (EDF)**.  
+
+#### **B) Escalonamento por taxas monotônicas (rate monotonic scheduling - RMS); propício para sistemas em lote.**  
+- **Errada**: O RMS é um algoritmo de escalonamento **para sistemas de tempo real**, onde tarefas periódicas são priorizadas com base em suas taxas de execução (quanto menor o período, maior a prioridade). Sistemas em lote (batch) normalmente usam algoritmos como **First-Come, First-Served (FCFS)** ou **Shortest Job First (SJF)**.  
+
+#### **C) Tarefa mais curta primeiro; propício para sistemas interativos.**  
+- **Errada**: O algoritmo **Tarefa mais curta primeiro (Shortest Job First - SJF)** é mais adequado para **sistemas em lote**, onde os tempos de execução são conhecidos antecipadamente. Sistemas interativos exigem responsividade e alternância rápida entre processos, algo que o **Round-Robin** ou o escalonamento por prioridades fazem melhor.  
+
+#### **D) Escalonamento por chave circular (round-robin); propício para sistemas de tempo real.**  
+- **Errada**: O **Round-Robin** é um algoritmo justo que distribui o tempo da CPU em fatias (time slices) para todos os processos, sendo ideal para **sistemas interativos** (como desktops). Sistemas de tempo real requerem priorização baseada em prazos ou criticidade, algo que o Round-Robin não oferece.  
+
+#### **E) Escalonamento por prioridades; propício para sistemas interativos.**  
+- **Correta**: O escalonamento por prioridades é amplamente usado em **sistemas interativos**, pois permite que processos mais importantes (como os de interface do usuário) tenham preferência, garantindo boa responsividade. Esse método pode ser combinado com outras técnicas, como preempção ou envelhecimento de prioridades, para evitar inanição de processos menos prioritários.  
+
+### Conclusão:  
+A alternativa **E** é a correta porque o escalonamento por prioridades é adequado para sistemas interativos, enquanto as outras alternativas associam algoritmos a ambientes incorretos ou apresentam conceitos equivocados.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7)
+
+A alternativa correta é a **Letra B) Deque, lista simplesmente ligada, pilha e fila.**
+
+### Explicação:
+
+Vamos analisar cada classe e comparar com as alternativas:
+
+1. **Classe A**:  
+   - Descrição: "os objetos são organizados em uma ordem linear e podem ser inseridos somente no início ou no final dessa sequência."  
+   - Isso corresponde a um **Deque** (Double Ended Queue), uma estrutura que permite inserções e remoções tanto no início quanto no final.  
+   - Alternativas:  
+     - **A) Lista circular**: Errado, pois uma lista circular não restringe inserções/remoções apenas ao início ou fim.  
+     - **B) Deque**: Correto.  
+     - **C) Lista duplamente ligada**: Errado, pois uma lista duplamente ligada permite inserções/remoções em qualquer posição, não apenas no início ou fim.  
+     - **D) Pilha**: Errado, pois uma pilha só permite inserções/remoções no topo (LIFO).  
+     - **E) Deque**: Correto, mas a ordem das outras classes na alternativa E está incorreta.  
+
+2. **Classe B**:  
+   - Descrição: "os objetos são organizados em uma ordem linear determinada por uma referência ao próximo objeto."  
+   - Isso corresponde a uma **lista simplesmente ligada**, onde cada nó aponta para o próximo.  
+   - Alternativas:  
+     - **A) Lista simplesmente ligada**: Correto.  
+     - **B) Lista simplesmente ligada**: Correto.  
+     - **C) Lista simplesmente ligada**: Correto.  
+     - **D) Fila**: Errado, pois uma fila é definida por sua regra FIFO, não pela estrutura interna.  
+     - **E) Pilha**: Errado, pois uma pilha é LIFO e não necessariamente usa nós encadeados.  
+
+3. **Classe C**:  
+   - Descrição: "os objetos são removidos na ordem oposta em que foram inseridos."  
+   - Isso corresponde a uma **pilha** (LIFO - Last In, First Out).  
+   - Alternativas:  
+     - **A) Pilha**: Correto.  
+     - **B) Pilha**: Correto.  
+     - **C) Fila**: Errado, pois uma fila segue FIFO (First In, First Out).  
+     - **D) Deque**: Errado, pois um deque não segue necessariamente LIFO.  
+     - **E) Lista ligada**: Errado, pois uma lista ligada não impõe regra de remoção.  
+
+4. **Classe D**:  
+   - Descrição: "os objetos são inseridos e removidos respeitando a seguinte regra: o elemento a ser removido é sempre aquele que foi inserido primeiro."  
+   - Isso corresponde a uma **fila** (FIFO - First In, First Out).  
+   - Alternativas:  
+     - **A) Fila**: Correto.  
+     - **B) Fila**: Correto.  
+     - **C) Pilha**: Errado, pois uma pilha é LIFO.  
+     - **D) Lista simplesmente encadeada**: Errado, pois uma lista encadeada não impõe regra FIFO.  
+     - **E) Fila**: Correto, mas a ordem das outras classes na alternativa E está incorreta.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) Lista circular, lista simplesmente ligada, pilha e fila**:  
+  - Erro: "Lista circular" não se encaixa na Classe A (Deque).  
+
+- **C) Lista duplamente ligada, lista simplesmente ligada, fila e pilha**:  
+  - Erro: A Classe C descreve uma pilha (LIFO), não uma fila, e a Classe D descreve uma fila (FIFO), não uma pilha.  
+
+- **D) Pilha, fila, deque e lista simplesmente encadeada**:  
+  - Erro: A ordem das classes não corresponde às descrições (Classe A é Deque, não Pilha).  
+
+- **E) Deque, pilha, lista ligada e fila**:  
+  - Erro: A ordem está incorreta (Classe B é lista simplesmente ligada, não pilha; Classe C é pilha, não lista ligada).  
+
+### Conclusão:  
+A única alternativa que corresponde corretamente à ordem **Deque (A), lista simplesmente ligada (B), pilha (C) e fila (D)** é a **Letra B**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8)
+
+A alternativa correta é a **Letra D) I, III e IV**.  
+
+**Explicação:**  
+
+- **Afirmação I (Correta):** A LGPD realmente protege dados sensíveis, como origem racial, convicção religiosa e opinião política, exigindo tratamento diferenciado e justificativa legal para seu uso (Art. 5º, II e Art. 11).  
+
+- **Afirmação II (Incorreta):** Dados anonimizados só deixam de ser considerados pessoais se a anonimização for **irreversível** (Art. 5º, VI). Se houver possibilidade de reverter o processo, ainda são considerados dados pessoais.  
+
+- **Afirmação III (Correta):** A LGPD garante ao titular o direito de acesso, correção, atualização e eliminação de seus dados pessoais (Art. 18), conforme descrito na afirmação.  
+
+- **Afirmação IV (Correta):** A ANPD é de fato a autoridade responsável por fiscalizar, regulamentar e orientar a aplicação da LGPD (Art. 55º), além de receber denúncias. Porém, **não pode modificar a legislação** (isso é competência do Legislativo), apenas regulamentar aspectos técnicos.  
+
+**Por que as outras alternativas estão erradas?**  
+- **A) I e II:** A afirmação II está incorreta, como explicado.  
+- **B) I e III:** Embora I e III estejam corretas, a alternativa exclui a IV, que também está correta.  
+- **C) II e IV:** A afirmação II está incorreta.  
+- **E) II, III e IV:** A afirmação II está incorreta.  
+
+Portanto, apenas **I, III e IV** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9)
+
+A alternativa correta é a **Letra D**.  
+
+**Explicação:**  
+O desenvolvimento iterativo e evolutivo, como descrito no texto, produz um sistema parcial, executável e integrável ao final de cada iteração. Esse subsistema pode ser utilizado pelo cliente como um protótipo, permitindo feedback contínuo e adaptação do projeto. Isso está alinhado com a ideia de refinamentos e incrementos sucessivos, onde o cliente pode interagir com versões funcionais do sistema durante o processo de desenvolvimento.  
+
+**Por que as outras alternativas estão erradas?**  
+- **A)** A mudança nos requisitos não é vista como um atraso no desenvolvimento iterativo, mas sim como parte do processo de adaptação e refinamento. Essa abordagem é justamente flexível para incorporar mudanças.  
+- **B)** O texto afirma que as iterações têm duração fixa, sem mencionar exceções para sistemas críticos. Alterar a duração das iterações contrariaria a característica de ciclos predefinidos.  
+- **C)** O teste de usabilidade não deve ser deixado apenas para o último ciclo, pois o desenvolvimento iterativo busca feedback contínuo. Testes podem (e devem) ocorrer em múltiplas iterações para validar funcionalidades progressivamente.  
+- **E)** Embora critérios de acessibilidade sejam importantes, o texto não menciona especificamente documentos de teste de usabilidade. Além disso, a alternativa desvia do foco principal do desenvolvimento iterativo, que é a entrega incremental e o feedback cíclico.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10)
+
+A alternativa correta é a **Letra C**, e a explicação é a seguinte:
+
+- **Asserção I (Verdadeira)**: A arquitetura de Von Neumann, desenvolvida na década de 1950, ainda é a base da maioria dos computadores modernos. Ela estabelece a estrutura básica de um computador, com uma unidade central de processamento (CPU), memória para armazenar dados e instruções, e um barramento para comunicação entre esses componentes. Apesar das evoluções tecnológicas (como pipelines, caches e processadores multicore), a essência da arquitetura de Von Neumann permanece.
+
+- **Asserção II (Falsa)**: A descrição da técnica mencionada na asserção II refere-se ao conceito de **prefetching** ou **execução especulativa**, que é uma otimização moderna e não uma característica intrínseca da arquitetura de Von Neumann. A arquitetura original de Von Neumann não prevê essa funcionalidade, pois ela foi introduzida posteriormente para melhorar o desempenho. Além disso, a afirmação de que a próxima instrução "está normalmente armazenada nos registradores da CPU" é incorreta, pois os registradores geralmente armazenam dados temporários, não instruções futuras (que são buscadas da memória principal ou cache).
+
+### Por que as outras alternativas estão erradas?
+- **A)**: A II não é uma justificativa correta da I, pois a técnica descrita não é parte da arquitetura de Von Neumann original.  
+- **B)**: Embora ambas as asserções sejam verdadeiras (considerando a interpretação mais flexível da II), a II não justifica a I, pois a permanência da arquitetura de Von Neumann não se deve ao prefetching.  
+- **D)**: A I é verdadeira, e a II é falsa (como explicado acima).  
+- **E)**: Ambas as asserções não são falsas (a I é verdadeira, e a II é falsa).  
+
+Portanto, a única combinação correta é **I verdadeira e II falsa (Letra C)**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11)
+
+A alternativa correta é a **C) I e II, apenas**.  
+
+### Explicação:  
+
+- **Afirmação I (Correta)**: O Scrum Master é responsável por garantir que a equipe siga os princípios e práticas do Scrum, removendo impedimentos e facilitando o processo. Ele atua como um guia, mas não tem autoridade direta sobre a equipe.  
+
+- **Afirmação II (Correta)**: O Product Owner é o responsável por maximizar o valor do produto, priorizando o backlog e garantindo que o time trabalhe nas funcionalidades mais importantes para o negócio, evitando distrações com questões técnicas irrelevantes.  
+
+- **Afirmação III (Incorreta)**: Nem o Scrum Master nem o Product Owner têm autoridade direta sobre a equipe. O Scrum é baseado em times auto-organizados, onde a equipe decide como realizar o trabalho. O Scrum Master atua como facilitador, e o Product Owner define o "o que" (requisitos), mas não o "como" (implementação).  
+
+### Por que as outras alternativas estão erradas?  
+- **A) II, apenas**: Desconsidera a afirmação I, que também está correta.  
+- **B) III, apenas**: A afirmação III está incorreta, como explicado.  
+- **D) I e III, apenas**: Inclui a afirmação III, que está errada.  
+- **E) I, II e III**: Inclui a afirmação III, que é falsa.  
+
+Portanto, apenas **I e II** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12)
+
+A alternativa correta é a **E) I, III e IV**.  
+
+### Explicação das afirmações corretas e incorretas:  
+
+- **I. Correta**: A regressão linear é um exemplo clássico de aprendizado supervisionado, pois utiliza dados de entrada e saída conhecidos (rótulos) para ajustar um modelo que prevê valores contínuos.  
+
+- **II. Incorreta**: O cálculo do erro (diferença entre saída desejada e gerada) é uma característica do aprendizado **supervisionado**, pois exige rótulos para comparação. No aprendizado não supervisionado, não há saída desejada conhecida, pois os dados não são rotulados.  
+
+- **III. Correta**: O aprendizado não supervisionado é frequentemente aplicado em tarefas como agrupamento (clustering) e redução de dimensionalidade, onde o objetivo é identificar padrões ou estruturas nos dados sem referências prévias.  
+
+- **IV. Correta**: O aprendizado supervisionado, após treinado com dados rotulados, pode generalizar e tomar decisões precisas (ou fazer previsões) com novos dados, desde que o modelo seja bem ajustado e os dados sejam representativos.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I e III**: Exclui a afirmação IV, que também está correta.  
+- **B) II e III**: Inclui a afirmação II, que está incorreta.  
+- **C) II e IV**: Inclui a afirmação II, que está incorreta.  
+- **D) I, II e IV**: Inclui a afirmação II, que está incorreta.  
+
+Portanto, apenas **I, III e IV** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13)
+
+A alternativa correta é a **Letra D) I, II e IV**.  
+
+### Explicação:  
+
+**Afirmação I (Correta):**  
+Personas e cenários ajudam a explicitar situações que podem estar implícitas nos requisitos, trazendo contextos realistas e detalhados sobre como os usuários interagem com o sistema.  
+
+**Afirmação II (Correta):**  
+Essas técnicas auxiliam o projetista a compreender o impacto das decisões de projeto, pois simulam situações de uso que podem revelar necessidades, limitações e oportunidades de melhoria.  
+
+**Afirmação III (Incorreta):**  
+Personas e cenários não têm como objetivo principal facilitar a especificação **formal e não-ambígua** dos requisitos de interação. Essa característica está mais associada a técnicas como casos de uso ou linguagens de modelagem formal (ex: UML, BPMN).  
+
+**Afirmação IV (Correta):**  
+Personas e cenários reforçam que o produto será usado por pessoas reais, evitando que a equipe de desenvolvimento se concentre apenas em aspectos técnicos e negligenciem as necessidades humanas.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I e III:** A afirmação III está incorreta, como explicado.  
+- **B) I e IV:** Faltou incluir a afirmação II, que também está correta.  
+- **C) II e III:** A afirmação III está incorreta.  
+- **E) II, III e IV:** A afirmação III está incorreta.  
+
+Portanto, a resposta correta é **D) I, II e IV**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14)
+
+A alternativa correta é a **A) I, apenas**.
+
+### Explicação:
+
+#### Afirmação I: "O resultado da impressão na linha 24 é: 7 - 7."  
+- **Correta**.  
+  - A função `funcao1` realiza uma busca linear no vetor e retorna o índice do valor `15`, que está na posição `7` (índices começam em 0).  
+  - A função `funcao2` implementa uma busca binária e também retorna o índice `7` para o valor `15`.  
+  - Portanto, o `printf` imprime `7 - 7`.  
+
+#### Afirmação II: "A função funcao1, no pior caso, é uma estratégia mais rápida do que a funcao2."  
+- **Incorreta**.  
+  - `funcao1` (busca linear) tem complexidade O(n) no pior caso (percorre todo o vetor).  
+  - `funcao2` (busca binária) tem complexidade O(log n) no pior caso, sendo muito mais eficiente para vetores ordenados.  
+  - Portanto, `funcao2` é mais rápida no pior caso.  
+
+#### Afirmação III: "A função funcao2 implementa uma estratégia iterativa na concepção do algoritmo."  
+- **Incorreta**.  
+  - `funcao2` é uma implementação **recursiva** da busca binária, pois chama a si mesma (linhas 18 e 20).  
+  - Se fosse iterativa, usaria um loop (como `while` ou `for`) sem chamadas recursivas.  
+
+### Conclusão:  
+Apenas a afirmação I está correta. As afirmações II e III estão incorretas. Portanto, a alternativa correta é **A) I, apenas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15)
+
+A alternativa correta é a **Letra C**.  
+
+### Explicação:  
+
+#### **Por que a Letra C está correta?**  
+O percurso **Em-ordem (in-order)** em uma Árvore Binária de Busca (BST) visita os nós na seguinte ordem:  
+1. Subárvore esquerda  
+2. Nó atual (raiz)  
+3. Subárvore direita  
+
+Como a BST ordena os elementos de forma que todos os valores à esquerda de um nó são menores e os à direita são maiores ou iguais, o percurso **Em-ordem** sempre retorna os elementos em ordem crescente.  
+
+A sequência correta para os elementos dados é:  
+**-2, 5, 7, 10, 18, 23, 25, 27, 34, 36, 40** (exatamente como na alternativa C).  
+
+---  
+
+#### **Por que as outras alternativas estão erradas?**  
+
+**Letra A)**  
+- **Erro:** A árvore resultante terá **6 níveis** (não 5).  
+- Exemplo de caminho mais longo: **27 → 18 → 5 → -2 → 10 → 7** (6 elementos).  
+- Além disso, a distribuição de elementos à esquerda e direita da raiz (27) é **7 à esquerda** (18, 5, -2, 10, 7, 23, 25) e **3 à direita** (34, 40, 36).  
+
+**Letra B)**  
+- **Erro:** O percurso **Pré-ordem** (raiz → esquerda → direita) não corresponde à sequência dada.  
+- A ordem correta seria: **27, 18, 5, -2, 10, 7, 23, 25, 34, 40, 36**.  
+- A alternativa B está invertendo parte da ordem.  
+
+**Letra D)**  
+- **Erro:** O percurso **Pós-ordem** (esquerda → direita → raiz) não corresponde à sequência dada.  
+- A ordem correta seria: **-2, 7, 10, 5, 25, 23, 18, 36, 40, 34, 27**.  
+- A alternativa D está descrevendo um percurso **Pré-ordem**, não Pós-ordem.  
+
+**Letra E)**  
+- **Erro:** O número máximo de elementos em uma árvore binária com **10 níveis** é **1.023** (não 1.024).  
+- O cálculo é feito por \(2^{10} - 1 = 1.023\), pois uma árvore binária completa tem \(2^n - 1\) nós, onde \(n\) é o número de níveis.  
+
+---  
+
+### Conclusão:  
+A **Letra C** é a única correta, pois descreve corretamente o percurso **Em-ordem** da BST construída. As outras alternativas apresentam erros na contagem de níveis, na ordem de percurso ou no cálculo do número máximo de nós.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16)
+
+A alternativa correta é a **E) I, II e IV**.  
+
+### Explicação:  
+
+#### **Afirmação I – Correta**  
+- O WhatsApp utiliza criptografia assimétrica (chave pública/privada) para autenticação e troca de chaves. A chave pública do usuário é armazenada no servidor para que outros usuários possam verificar a autenticidade das mensagens recebidas. Isso garante que a mensagem foi realmente enviada pelo remetente legítimo (não houve falsificação).  
+
+#### **Afirmação II – Correta**  
+- O uso de um **vetor de inicialização (IV) único para cada mensagem** é uma prática comum em criptografia para evitar padrões repetitivos e dificultar ataques de reprodução (replay attacks). Isso está alinhado com a descrição do texto, que menciona "cadeado e chave únicos" para cada mensagem.  
+
+#### **Afirmação III – Incorreta**  
+- O **AES (Advanced Encryption Standard)** é um algoritmo de criptografia **simétrica**, ou seja, usa a **mesma chave** para cifrar e decifrar a mensagem. O texto menciona que apenas o remetente e o destinatário possuem as chaves especiais, mas não se refere a um par de chaves (pública/privada), que é característico da criptografia assimétrica. Portanto, a afirmação está errada ao dizer que o AES usa um par de chaves (isso seria típico de RSA ou ECC, por exemplo).  
+
+#### **Afirmação IV – Correta**  
+- O **SHA-256** é um algoritmo de hash criptográfico usado para verificar a **integridade** dos dados. Se o valor de hash da mensagem enviada for igual ao da mensagem recebida, significa que ela não foi alterada. Isso é uma prática comum em protocolos de segurança.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I e IV** → Exclui a II, que também está correta.  
+- **B) II e III** → A III está incorreta (AES não usa par de chaves).  
+- **C) III e IV** → A III está incorreta.  
+- **D) I, II e III** → A III está incorreta.  
+
+Portanto, a única opção que contém todas as afirmações corretas (I, II e IV) é a **E**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+17)
+
+A alternativa correta é a **Letra B) I e IV**.  
+
+### Explicação:  
+
+**Afirmação I (Correta):**  
+No modelo **SaaS (Software as a Service)**, o usuário não precisa se preocupar com a infraestrutura subjacente (hardware, sistemas operacionais, atualizações de software), pois tudo é gerenciado pelo provedor do serviço. O usuário apenas acessa o software via navegador ou aplicativo, sem necessidade de instalação local.  
+
+**Afirmação II (Incorreta):**  
+A elasticidade refere-se à capacidade de **aumentar ou diminuir os recursos computacionais** (como CPU, memória e armazenamento) de forma dinâmica, conforme a demanda, e não ao **tempo de disponibilidade** dos recursos. O tempo de disponibilidade está mais relacionado ao **SLA (Service Level Agreement)** do provedor.  
+
+**Afirmação III (Incorreta):**  
+A **Nuvem Comunidade** é compartilhada por organizações com interesses comuns (como empresas do mesmo setor ou instituições governamentais), mas **não necessariamente cada organização gerencia seus próprios recursos dentro dela**. O gerenciamento é feito pelo provedor da nuvem ou em conjunto, e os recursos são compartilhados entre os membros da comunidade.  
+
+**Afirmação IV (Correta):**  
+No modelo **IaaS (Infrastructure as a Service)**, o usuário **não controla a infraestrutura física** (servidores, redes, data centers), mas tem controle sobre **sistemas operacionais, armazenamento, aplicativos e configurações de rede**. Isso permite maior flexibilidade para implantar e gerenciar suas próprias soluções.  
+
+### Por que as outras alternativas estão erradas?  
+- **A) I e II:** A afirmação II está incorreta (elasticidade não se refere ao tempo de disponibilidade).  
+- **C) II e III:** Ambas estão incorretas (elasticidade mal definida e descrição errada da Nuvem Comunidade).  
+- **D) I, III e IV:** A afirmação III está incorreta.  
+- **E) II, III e IV:** As afirmações II e III estão incorretas.  
+
+Portanto, apenas **I e IV** estão corretas.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+18)
+
+A alternativa correta é a **#Letra A) I, apenas**.  
+
+### Explicação:  
+
+- **Afirmação I (Correta):**  
+  No nível de **conteúdo**, as técnicas mencionadas (fragmentos de texto, fragmentos condicionais, páginas variantes e abordagem baseada em frames) são realmente utilizadas para adaptar o conteúdo exibido ao usuário de acordo com suas necessidades e preferências. Essas técnicas permitem que o sistema selecione, modifique ou recomponha dinamicamente o conteúdo.  
+
+- **Afirmação II (Incorreta):**  
+  No nível de **navegação**, as técnicas corretas seriam, por exemplo, *orientação direta*, *anotação de links* ou *ordenação de links*, que ajudam a guiar o usuário na estrutura do sistema. As técnicas mencionadas (*layouts de página* e *guias de estilos*) estão mais relacionadas ao nível de **apresentação**, pois envolvem a formatação visual da interface.  
+
+- **Afirmação III (Incorreta):**  
+  No nível de **apresentação**, as técnicas listadas (*orientação direta*, *anotação de links*, *apresentação e ocultação* e *ordenação de links*) são, na verdade, técnicas aplicadas ao nível de **navegação**, e não de apresentação. As técnicas corretas para apresentação seriam, por exemplo, *ajuste de layout*, *mudança de cores* ou *personalização de fontes*.  
+
+### Conclusão:  
+Apenas a afirmação **I** está correta, enquanto as afirmações **II** e **III** estão incorretas devido à confusão entre os níveis de adaptação e suas respectivas técnicas. Portanto, a alternativa correta é **A) I, apenas**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19)
+
+A alternativa correta é a **E) I, III e IV**.
+
+### Explicação das afirmações corretas e incorretas:
+
+#### **Afirmação I (Correta):**  
+"O analisador sintático tem a função de verificar se a sequência de símbolos gerada pelo analisador léxico compõe um programa válido ou não."  
+- **Por que está correta?**  
+  O analisador sintático (parser) verifica se a estrutura do programa segue as regras gramaticais da linguagem, ou seja, se os tokens (símbolos) gerados pelo analisador léxico estão organizados de forma válida.  
+
+#### **Afirmação II (Incorreta):**  
+"Na análise léxica, o analisador irá identificar cada símbolo que tenha significado para linguagem, gerando a mesma classificação para Java, Pascal ou outra linguagem."  
+- **Por que está incorreta?**  
+  A análise léxica identifica tokens (palavras-chave, identificadores, operadores, etc.), mas a classificação desses tokens **não é a mesma para todas as linguagens**, pois cada linguagem tem suas próprias regras léxicas. Por exemplo, `int` é uma palavra-chave em C, mas não em Python.  
+
+#### **Afirmação III (Correta):**  
+"O analisador semântico utiliza o código fonte para verificar incoerências quanto ao significado das construções implementadas."  
+- **Por que está correta?**  
+  O analisador semântico verifica se as construções do programa fazem sentido lógico (ex.: tipos compatíveis, variáveis declaradas, escopo correto), mesmo que a sintaxe esteja correta.  
+
+#### **Afirmação IV (Correta):**  
+"A fase de otimização do código procura melhorar o código intermediário, visando um código de máquina mais rápido em termos de execução."  
+- **Por que está correta?**  
+  A otimização busca melhorar o código intermediário (remover redundâncias, simplificar expressões, etc.) para gerar um código de máquina mais eficiente.  
+
+### Resumo das alternativas:  
+- **A) I e IV** → Faltou a III (correta).  
+- **B) II e III** → II está incorreta.  
+- **C) II e IV** → II está incorreta.  
+- **D) I, II e III** → II está incorreta.  
+- **E) I, III e IV** → **Todas corretas**.  
+
+Portanto, a resposta certa é **E**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20)
+
+A alternativa correta é a **D) I, III e IV**.
+
+### Explicação:
+
+Vamos analisar cada afirmação e simular a execução da máquina de Turing (MT) com a entrada `110011` para verificar quais afirmações são corretas.
+
+#### Configuração inicial:
+- Fita: `... B B 1 1 0 0 1 1 B B ...` (cabeça de leitura no primeiro `1` à esquerda).
+- Estado inicial: `q0`.
+
+---
+
+### Afirmação I: "Após 4 movimentos de M, o conteúdo da fita, excluindo-se os símbolos 'B', é '110011'."
+
+**Verdadeira**.  
+Acompanhe os primeiros 4 movimentos:
+1. **Estado q0, lê '1'**:  
+   - Transição: δ(q0, 1) = (q5, B, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (substituiu o primeiro '1' por 'B' e moveu para a direita).  
+   - Estado: q5.
+2. **Estado q5, lê '1'**:  
+   - Transição: δ(q5, 1) = (q5, 1, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (mantém '1' e move para a direita).  
+   - Estado: q5.
+3. **Estado q5, lê '0'**:  
+   - Transição: δ(q5, 0) = (q5, 0, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (mantém '0' e move para a direita).  
+   - Estado: q5.
+4. **Estado q5, lê '0'**:  
+   - Transição: δ(q5, 0) = (q5, 0, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (mantém '0' e move para a direita).  
+   - Estado: q5.
+
+Após 4 movimentos, a fita ainda contém `110011` (excluindo os 'B'), pois apenas o primeiro '1' foi substituído por 'B', mas ainda está visível na fita (não foi "excluído" da representação). Portanto, a afirmação está correta.
+
+---
+
+### Afirmação II: "Após 8 movimentos de M, o conteúdo da fita, excluindo-se os símbolos 'B', é '1001'."
+
+**Falsa**.  
+Continuando a simulação a partir do 5º movimento:
+5. **Estado q5, lê '1'**:  
+   - Transição: δ(q5, 1) = (q5, 1, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (move para a direita).  
+   - Estado: q5.
+6. **Estado q5, lê '1'**:  
+   - Transição: δ(q5, 1) = (q5, 1, D).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (move para a direita).  
+   - Estado: q5.
+7. **Estado q5, lê 'B'**:  
+   - Transição: δ(q5, B) = (q6, B, E).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (substitui 'B' por 'B' e move para a esquerda).  
+   - Estado: q6.
+8. **Estado q6, lê '1'**:  
+   - Transição: δ(q6, 1) = (q6, 1, E).  
+   - Fita: `... B B B 1 0 0 1 1 B B ...` (move para a esquerda).  
+   - Estado: q6.
+
+Após 8 movimentos, a fita ainda contém `110011` (excluindo os 'B'), pois nenhum símbolo além do primeiro '1' foi substituído por 'B'. A afirmação está incorreta.
+
+---
+
+### Afirmação III: "A máquina irá certamente travar em um estado de aceitação."
+
+**Verdadeira**.  
+A MT foi projetada para aceitar palíndromos binários de comprimento par. A entrada `110011` é um palíndromo (lê-se igualmente da esquerda para a direita e vice-versa) e tem comprimento par (6 bits). A simulação completa (não mostrada aqui por brevidade) levará a MT ao estado `qf`, que é um estado de aceitação. Portanto, a afirmação está correta.
+
+---
+
+### Afirmação IV: "Existe um autômato com pilha que também aceita a linguagem de M."
+
+**Verdadeira**.  
+A linguagem de palíndromos binários de comprimento par é uma **linguagem livre de contexto** (não regular). Um autômato com pilha (AP) pode reconhecê-la da seguinte forma:  
+1. Empilha os símbolos lidos até a metade da entrada.  
+2. Desempilha e compara com os símbolos restantes (verificando se são iguais em ordem inversa).  
+Portanto, a afirmação está correta.
+
+---
+
+### Por que as outras alternativas estão erradas?
+- **A) I e II**: A afirmação II está incorreta.  
+- **B) I e IV**: A afirmação III também está correta, então esta opção está incompleta.  
+- **C) II e III**: A afirmação II está incorreta.  
+- **E) II, III e IV**: A afirmação II está incorreta.  
+
+A única opção que contém todas as afirmações corretas (I, III e IV) é a **D**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21)
+
+A alternativa correta é a **Letra A) I e III**.
+
+### Explicação:
+
+Vamos analisar cada afirmação individualmente:
+
+#### **I. O algoritmo precisa de um espaço adicional O(n) para a pilha de recursão.**
+- **Verdadeiro**: O algoritmo apresentado é uma implementação do **Quicksort**, que utiliza recursão. No pior caso (quando o vetor já está ordenado ou inversamente ordenado), a profundidade da recursão pode chegar a **O(n)**, pois cada chamada trata apenas um elemento (pivô) e o restante é passado para a próxima chamada recursiva. Portanto, o espaço adicional para a pilha de recursão é **O(n)** no pior caso.
+
+#### **II. O algoritmo apresentado é um algoritmo de ordenação recursivo e estável.**
+- **Falso**: O algoritmo é **recursivo** (correto), mas **não é estável**. O Quicksort, como implementado, **não preserva a ordem relativa de elementos iguais**, pois a troca de elementos durante a partição pode alterar suas posições originais. Por exemplo, se dois elementos iguais estiverem em posições diferentes, um pode ser movido para depois do pivô e outro para antes, perdendo a ordem inicial.
+
+#### **III. O algoritmo precisa, em média, de O(n log n) comparações para ordenar n itens.**
+- **Verdadeiro**: No caso médio, o Quicksort realiza **O(n log n)** comparações. Isso ocorre porque, em média, a partição divide o vetor em duas partes aproximadamente iguais, levando a uma árvore de recursão balanceada com altura **O(log n)** e **O(n)** comparações por nível.
+
+#### **IV. O uso do primeiro elemento do vetor como “pivot” é mais eficiente que usar o último.**
+- **Falso**: A escolha do pivô (primeiro, último ou outro elemento) **não torna o algoritmo intrinsecamente mais eficiente**. O desempenho depende da distribuição dos dados. O pior caso (**O(n²)**) pode ocorrer tanto com o primeiro quanto com o último elemento se o vetor já estiver ordenado ou inversamente ordenado. Estratégias como escolher o pivô aleatoriamente ou usar a mediana de três são mais eficazes para evitar o pior caso.
+
+### Por que as outras alternativas estão erradas?
+- **B) II e IV**: A afirmação II está incorreta (o algoritmo não é estável), e a IV também está incorreta (não há vantagem inerente em usar o primeiro elemento como pivô).
+- **C) III e IV**: A afirmação IV está incorreta.
+- **D) I, II e III**: A afirmação II está incorreta.
+- **E) I, II e IV**: As afirmações II e IV estão incorretas.
+
+### Conclusão:
+Apenas **I e III** estão corretas, portanto, a resposta certa é **A) I e III**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+22)
+
+A alternativa correta é a **Letra B) A: 5 B: 9 C: -1 D: 0 E: 5 F: 1 G: -1**.
+
+### Explicação:
+O algoritmo de Dijkstra começa com o vértice de origem (D) e atualiza as estimativas de custo para seus vizinhos. A cada iteração, o vértice com a menor estimativa atual é selecionado para relaxamento (atualização dos vizinhos). Vamos simular as duas primeiras iterações:
+
+#### Estado Inicial:
+- **D**: 0 (origem)
+- **A, B, C, E, F, G**: -1 (infinito)
+
+#### Primeira Iteração (vértice D é processado):
+- Relaxamento dos arcos saindo de D:
+  - D → A (custo 5): A = min(-1, 0 + 5) = **5**
+  - D → B (custo 9): B = min(-1, 0 + 9) = **9**
+  - D → E (custo 5): E = min(-1, 0 + 5) = **5**
+  - D → F (custo 1): F = min(-1, 0 + 1) = **1**
+- **Fila de prioridade após atualizações**: A (5), B (9), E (5), F (1)  
+- **Vértice selecionado**: F (menor custo: 1).
+
+#### Segunda Iteração (vértice F é processado):
+- Relaxamento dos arcos saindo de F:
+  - F → E (custo 3): E = min(5, 1 + 3) = **4** (mas não atualiza ainda, pois E já está na fila com custo 5)
+  - F → G (custo 1): G = min(-1, 1 + 1) = **2**
+- **Fila de prioridade após atualizações**: A (5), B (9), E (4), G (2)  
+- **Estado após 2 iterações**:
+  - D: 0 (já processado)
+  - F: 1 (já processado)
+  - A: 5, B: 9, E: 5 (ainda não atualizado para 4), G: 2 (novo)
+  - C: -1 (não alcançado ainda).
+
+#### Resultado após 2 iterações:
+- A: 5, B: 9, C: -1, D: 0, E: 5, F: 1, G: -1 (ainda não alcançado na segunda iteração, pois G foi descoberto mas não processado).
+
+### Por que as outras alternativas estão erradas?
+- **Letra A**: Incorreta porque atribui B:6 (não há caminho com custo 6 até B nas primeiras iterações) e E:4 (E só é atualizado para 4 na terceira iteração).
+- **Letra C**: Incorreta porque atribui G:2 (G foi descoberto, mas não foi processado ainda, então seu custo ainda não é "oficial").
+- **Letra D**: Incorreta porque atribui B:7 e C:8 (nenhum relaxamento leva a esses valores nas primeiras iterações).
+- **Letra E**: Incorreta porque atribui E:3 (o menor custo para E é 4, não 3) e G:2 (não processado ainda).
+
+A **Letra B** é a única que reflete corretamente o estado do algoritmo após duas iterações.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23)
+
+A alternativa correta é a **Letra D**.  
+
+**Explicação:**  
+
+- **Letra D (Correta):** A escalabilidade é uma característica fundamental de sistemas distribuídos, permitindo que novos dispositivos sejam adicionados para lidar com demandas crescentes ou temporárias sem prejudicar o funcionamento do sistema. Isso está alinhado com a definição apresentada, que destaca a comunicação e coordenação via troca de mensagens, independentemente da escala.  
+
+**Por que as outras estão erradas?**  
+
+- **Letra A:** A sincronização de relógios físicos (como em algoritmos de sincronização lógica ou física) pode ser útil para coordenação, mas **não é um requisito obrigatório** para a troca de mensagens em sistemas distribuídos. A comunicação pode ocorrer mesmo sem relógios perfeitamente sincronizados (ex.: sistemas assíncronos).  
+
+- **Letra B:** Em sistemas **peer-to-peer**, a falha de um componente **não paralisa os demais**, pois não há dependência centralizada. A resiliência é uma das vantagens de arquiteturas distribuídas descentralizadas.  
+
+- **Letra C:** O compartilhamento de recursos **não exige homogeneidade** de hardware/software. Sistemas distribuídos podem ser heterogêneos (ex.: diferentes sistemas operacionais ou dispositivos), desde que sigam protocolos compatíveis para comunicação.  
+
+- **Letra E:** O acesso concorrente a recursos compartilhados é uma questão de **gerenciamento de concorrência** (ex.: locks, semáforos), não diretamente relacionada à transparência (que se refere à ocultação de complexidades, como localização ou falhas, do usuário).  
+
+**Resumo:** A Letra D é a única que corretamente associa uma característica intrínseca dos sistemas distribuídos (escalabilidade) à definição fornecida.
