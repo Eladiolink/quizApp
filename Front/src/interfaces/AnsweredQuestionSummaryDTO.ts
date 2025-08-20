@@ -10,6 +10,7 @@ export interface AnsweredQuestionSummaryDTO {
     image: string;
     selectedOption: Option;
     knowledgeArea: String;
+    questionNumber: Number;
   }
   
   export type Option = "A" | "B" | "C" | "D" | "E";

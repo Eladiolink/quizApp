@@ -164,6 +164,10 @@ export default function ActivityResultPage() {
              <Typography variant="subtitle1" fontWeight="bold">
                Área de Conhecimento: {currentQuestion.knowledgeArea}
             </Typography>
+
+            <Typography variant="subtitle1" fontWeight="bold">
+               Número da Questão: {currentQuestion.questionNumber}
+            </Typography>
           </Paper>
 
           {/* Card de correção/explicação com espaçamento abaixo */}
