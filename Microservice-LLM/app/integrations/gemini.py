@@ -12,7 +12,11 @@ def texto_para_markdown(texto_raw):
 
 def inicializar_llm(model="gemini-2.0-flash", temperature=0.8):
     google_api_key = os.getenv("GOOGLE_API_KEY") # Altere para GOOGLE_API_KEY
-
+    
+    if "TEMPERATURE" in os.environ:
+        temperature = os.getenv("TEMPERATURE")
+        print("TEMPERATURE está definida!")
+        
     if not google_api_key:
         raise ValueError("A chave da API do Google não foi fornecida nem encontrada no arquivo .env.")
 

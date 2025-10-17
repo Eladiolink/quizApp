@@ -14,6 +14,9 @@ def inicializar_llm(model="deepseek/deepseek-r1:free", temperature=0.8):
     if not openai_api_key:
         raise ValueError("A chave da API não foi fornecida nem encontrada no arquivo .env.")
 
+    if "TEMPERATURE" in os.environ:
+        temperature = os.getenv("TEMPERATURE")
+        print("TEMPERATURE está definida!")
     # Inicializar modelo LLM
     llm = ChatOpenAI(
         model=model,

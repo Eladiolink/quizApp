@@ -26,6 +26,11 @@ def inicializar_llm(model="deepseek-chat", temperature=0.8):
 
 def fazer_pergunta(client, pergunta):
     temperature = 0.8
+
+    if "TEMPERATURE" in os.environ:
+        temperature = float(os.getenv("TEMPERATURE"))
+        print("TEMPERATURE está definida!")
+
     model = "deepseek-chat"
     try:
         response = client.chat.completions.create(

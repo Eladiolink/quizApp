@@ -13,6 +13,10 @@ def texto_para_markdown(texto_raw):
 def inicializar_llm(model="gpt-4.1-2025-04-14", temperature=0.8):
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
+    if "TEMPERATURE" in os.environ:
+        temperature = os.getenv("TEMPERATURE")
+        print("TEMPERATURE está definida!")
+
     if not openai_api_key:
         raise ValueError("A chave da API da OpenAI não foi fornecida nem encontrada no arquivo .env.")
 
@@ -20,17 +24,14 @@ def inicializar_llm(model="gpt-4.1-2025-04-14", temperature=0.8):
     llm = ChatOpenAI(
         model=model,
         temperature=temperature,
-        openai_api_key=openai_api_key
+        openai_api_key=openai_api_key,
+        max_tokens=1000
     )
     return llm
 
 def fazer_pergunta(llm, pergunta):
     messages = [HumanMessage(content=pergunta)]
     resposta = llm.invoke(messages)
-
-    # No ChatOpenAI, os metadados de uso também podem estar disponíveis via resposta.response_metadata
-    # print("QUANTIDADE TOTAL DE TOKENS: ", resposta.response_metadata.get('total_tokens', 'N/A'))
-
     res_formatada = texto_para_markdown(resposta.content)
     return res_formatada
 

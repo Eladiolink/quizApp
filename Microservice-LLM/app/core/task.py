@@ -62,16 +62,22 @@ def correction_llm(info_question):
             return False
 
         print(list(question.keys()))
-        pergunta = f"""Respoda a questão e fale qual é a alternativa correta e por que as outras alternativas estão erradas:
+        pergunta = f"""Responda a questão abaixo. Sua resposta deve seguir EXATAMENTE o formato a seguir, sem usar negrito, hashtags, parênteses ou markdown.
+                    
+                        Formato obrigatório:
+
+                        A alternativa correta é a letra X.
+
+                        Explicação: [sua explicação aqui, dizendo por que essa está certa e as outras estão erradas]
+
+                        Questão:
                         {question["questao"]}
 
                         A) {question["opcao_a"]}
                         B) {question["opcao_b"]}
                         C) {question["opcao_c"]}
                         D) {question["opcao_d"]}
-                        E) {question["opcao_e"]}
-        Começe com: "A alternativa correta é a #Letra", e após isso mostre a explicação.
-        """
+                        E) {question["opcao_e"]}"""
         
         print(f"PROCESSANDO PERGUNTA {count}")
 
