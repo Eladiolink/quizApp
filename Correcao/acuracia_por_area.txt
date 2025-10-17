@@ -1,0 +1,26 @@
+\begin{table}[h]
+\centering
+\caption{Taxa de acertos por área de conhecimento}
+\label{tab:acuracia_area}
+\begin{tabular}{l c c c}
+\toprule
+ & gpt & gemini & deepseek \\
+area_conhecimento &  &  &  \\
+\midrule
+Análise de Algoritmos & 0.83\% & 0.83\% & 0.83\% \\
+Arquitetura e Organização de Computadores. & 1.00\% & 1.00\% & 1.00\% \\
+Banco de Dados & 1.00\% & 1.00\% & 1.00\% \\
+Conhecimento Geral & 0.93\% & 0.93\% & 0.80\% \\
+Construção de Compiladores & 1.00\% & 1.00\% & 1.00\% \\
+Engenharia de Software & 0.89\% & 0.89\% & 0.78\% \\
+Estrutura de Dados & 0.62\% & 0.62\% & 1.00\% \\
+Fundamentos Matemáticos & 0.60\% & 0.80\% & 0.80\% \\
+Inteligencia Artificial & 1.00\% & 1.00\% & 1.00\% \\
+Redes de Computadores & 1.00\% & 1.00\% & 1.00\% \\
+Segurança da Informação & 0.67\% & 1.00\% & 1.00\% \\
+Sistemas Distribuídos & 1.00\% & 1.00\% & 1.00\% \\
+Sistemas Operacionais & 0.43\% & 0.43\% & 0.57\% \\
+Teoria da Computação & 0.89\% & 0.89\% & 0.89\% \\
+\bottomrule
+\end{tabular}
+\end{table}

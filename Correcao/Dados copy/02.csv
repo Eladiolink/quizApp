@@ -1,0 +1,74 @@
+﻿id,ano,numero_questao,area_conhecimento,opcao_correta,gpt,gemini,deepseek
+1,2014,1,Conhecimento Geral,A,A,A,A
+2,2014,2,Conhecimento Geral,C,C,C,C
+3,2014,4,Conhecimento Geral,B,B,B,E
+4,2014,5,Conhecimento Geral,D,D,D,D
+5,2014,7,Conhecimento Geral,E,E,E,E
+6,2014,8,Conhecimento Geral,D,D,D,D
+7,2014,10,Engenharia de Software,A,A,A,A
+8,2014,11,Sistemas Operacionais,B,D,E,C
+9,2014,12,Analise de Algoritmos,D,D,C,D
+10,2014,13,Estrutura de Dados,B,B,B,B
+11,2014,14,Teoria da Computação,B,D,D,B
+12,2014,15,Teoria da Computação,C,C,C,C
+13,2014,16,Estrutura de Dados,C,A,A,C
+14,2014,17,Engenharia de Software,A,A,A,A
+15,2014,18,Inteligencia Artificial,E,E,E,E
+16,2014,21,Sistemas Operacionais,B,C,C,C
+17,2014,22,Analise de Algoritmos,E,E,E,E
+18,2014,23,Estrutura de Dados,D,D,A,A
+19,2014,24,Banco de Dados,C,C,C,C
+20,2014,25,Teoria da Computação,D,D,D,D
+21,2014,26,Fundamentos Matematicos,C,C,C,C
+22,2014,27,Fundamentos Matematicos,B,B,B,B
+23,2014,28,Teoria da Computação,A,A,A,A
+24,2014,29,Fundamentos Matematicos,C,C,C,C
+25,2014,30,Teoria da Computação,A,A,A,A
+26,2014,31,Redes,C,C,C,C
+27,2014,32,Fundamentos Matematicos,A,C,A,A
+28,2014,33,Sistemas Operacionais,B,C,C,C
+29,2014,34,Fundamentos Matematicos,E,B,A,C
+30,2021,1,Conhecimento Geral,E,E,E,E
+31,2021,4,Conhecimento Geral,B,B,A,B
+32,2021,6,Conhecimento Geral,A,A,A,A
+33,2021,7,Conhecimento Geral,C,C,C,C
+34,2021,8,Conhecimento Geral,D,D,D,D
+35,2021,9,Sistemas Operacionais,E,E,C,E
+36,2021,10,Estrutura de Dados,B,B,B,B
+37,2021,12,Conhecimento Geral,B,B,B,D
+38,2021,13,Engenharia de Software,E,D,D,D
+39,2021,14,Arquitetura e Organização de Computadores.,C,C,B,C
+40,2021,15,Engenharia de Software,C,C,C,C
+41,2021,18,Inteligencia Artificial,E,E,E,E
+42,2021,19,Engenharia de Software,D,D,D,D
+43,2021,20,Analise de Algoritmos,A,A,A,A
+44,2021,23,Estrutura de Dados,C,C,C,C
+45,2021,24,Segurança da Informação,E,E,E,E
+46,2021,25,Sistemas Distribuídos,B,B,B,B
+47,2021,26,Engenharia de Software,A,A,A,E
+48,2021,30,Construção de Compiladores,E,E,E,E
+49,2021,31,Teoria da Computação,E,E,B,B
+50,2021,32,Estrutura de Dados,A,A,A,A
+51,2021,34,Estrutura de Dados,C,B,B,B
+52,2021,35,Sistemas Distribuídos,D,D,D,D
+53,2017,2,Conhecimento Geral,C,C,C,C
+54,2017,6,Conhecimento Geral,E,E,E,E
+55,2017,7,Conhecimento Geral,A,A,A,A
+56,2017,10,Engenharia de Software,C,C,C,C
+57,2017,11,Engenharia de Software,E,E,E,E
+58,2017,14,Teoria da Computação,C,C,C,C
+59,2017,15,Segurança da Informação,D,B,D,D
+60,2017,16,Segurança da Informação,E,E,E,E
+61,2017,17,Inteligencia Artificial,A,A,A,A
+62,2017,18,Estrutura de Dados,D,D,D,D
+63,2017,20,Redes de Computadores,D,D,D,D
+64,2017,21,Teoria da Computação,A,B,A,B
+65,2017,22,Analise de Algoritmos,C,C,C,C
+66,2017,23,Teoria da Computação,A,A,A,A
+67,2017,25,Analise de Algoritmos,C,C,C,C
+68,2017,28,Engenharia de Software,D,D,D,D
+69,2017,29,Sistemas Operacionais,E,C,D,D
+70,2017,31,Sistemas Operacionais,E,E,E,E
+71,2017,33,Analise de Algoritmos,D,D,D,D
+72,2017,35,Sistemas Operacionais,E,E,E,E
+

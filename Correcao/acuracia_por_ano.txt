@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\caption{Taxa de acertos por ano}
+\label{tab:acuracia_ano}
+\begin{tabular}{l c c c}
+\toprule
+ & gpt & gemini & deepseek \\
+ano &  &  &  \\
+\midrule
+2014 & 0.69\% & 0.76\% & 0.83\% \\
+2017 & 0.90\% & 1.00\% & 1.00\% \\
+2021 & 0.87\% & 0.78\% & 0.74\% \\
+\bottomrule
+\end{tabular}
+\end{table}
