@@ -1,0 +1,14 @@
+\begin{table}[h]
+\centering
+\caption{Percentual de erros em comum entre modelos}
+\label{tab:relacao_erros}
+\begin{tabular}{llll}
+\toprule
+ & gpt & gemini & deepseek \\
+\midrule
+gpt & 0.19\% & 0.11\% & 0.07\% \\
+gemini & 0.11\% & 0.17\% & 0.10\% \\
+deepseek & 0.07\% & 0.10\% & 0.15\% \\
+\bottomrule
+\end{tabular}
+\end{table}
